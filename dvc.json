@@ -1,0 +1,122 @@
+name: Cập nhật dữ liệu Thuế Nghệ An
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Loại dữ liệu cần cập nhật"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - full
+          - news
+  schedule:
+    # GitHub dùng UTC. Chạy lệch đầu giờ để giảm nguy cơ bị trễ/bỏ lịch.
+    - cron: "17,47 * * * *"
+    - cron: "23 */6 * * *"
+  push:
+    branches: ["main"]
+    paths:
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/update-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nghean-tax-data-update
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    name: Thu thập và lưu dữ liệu
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Cài phụ thuộc
+        run: npm ci
+
+      - name: Xác định chế độ cập nhật
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            MODE="${{ inputs.mode }}"
+          elif [[ "${{ github.event_name }}" == "schedule" && "${{ github.event.schedule }}" == "23 */6 * * *" ]]; then
+            MODE="full"
+          elif [[ "${{ github.event_name }}" == "push" ]]; then
+            MODE="full"
+          else
+            MODE="news"
+          fi
+          echo "MODE=$MODE" >> "$GITHUB_ENV"
+          echo "Chế độ cập nhật: $MODE"
+
+      - name: Cập nhật tin tức
+        if: env.MODE == 'news'
+        run: npm run collect:news
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          READER_ENABLED: "true"
+          REQUEST_TIMEOUT_MS: "20000"
+          REQUEST_RETRIES: "1"
+          MAX_NEWS_PAGES: "15"
+          MAX_READER_NEWS_PAGES: "20"
+          READER_TIMEOUT_MS: "90000"
+          READER_DELAY_MS: "3500"
+
+      - name: Cập nhật toàn bộ dữ liệu
+        if: env.MODE == 'full'
+        run: npm run collect:full
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          READER_ENABLED: "true"
+          REQUEST_TIMEOUT_MS: "20000"
+          REQUEST_RETRIES: "1"
+          MAX_NEWS_PAGES: "15"
+          MAX_DOC_PAGES: "80"
+          MAX_READER_NEWS_PAGES: "20"
+          MAX_READER_DOC_PAGES: "40"
+          READER_TIMEOUT_MS: "90000"
+          READER_DELAY_MS: "3500"
+
+      - name: Kiểm tra JSON
+        run: npm run validate
+
+      - name: Ghi báo cáo vào trang Summary
+        if: always()
+        shell: bash
+        run: npm run report >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Lưu dữ liệu và chẩn đoán vào repository
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "nghean-tax-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Không có thay đổi dữ liệu."
+            exit 0
+          fi
+          git commit -m "data: cập nhật dữ liệu tự động ($MODE)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Xác nhận đã lấy live, không chỉ dùng dữ liệu dự phòng
+        if: always()
+        run: npm run assert:refresh

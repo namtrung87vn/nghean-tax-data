@@ -1,0 +1,10 @@
+1. Tạo GitHub repository PUBLIC tên nghean-tax-data.
+2. Upload toàn bộ nội dung trong ZIP vào nhánh main.
+3. Settings > Actions > General > Workflow permissions > Read and write permissions > Save.
+4. Settings > Pages > Deploy from a branch > main > /docs > Save.
+5. Actions > Cập nhật toàn bộ dữ liệu Thuế Nghệ An > Run workflow.
+6. Mở https://TEN_GITHUB.github.io/nghean-tax-data/health.json
+7. Cloudflare Worker: thay code bằng worker/worker-github-pages-full.js.
+8. Worker Settings > Variables: GITHUB_DATA_BASE=https://TEN_GITHUB.github.io/nghean-tax-data
+9. Deploy Worker.
+10. Mở WORKER_URL/health và WORKER_URL/news?tab=thue&page=1.

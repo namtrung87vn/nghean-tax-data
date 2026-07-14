@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "dataset": "docs-huongdan",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 6693/CT-TTHT ngày 26/12/2024 trả lời Công ty CP Đầu tư dịch vụ và Thương mại An Gia Phát về việc xác định nghĩa vụ thuế vãng lai ngoại tỉnh cho hoạt động chuyển nhượng bất động sản",
+      "date": "26/12/2024",
+      "code": "6693/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2F8053df8f-2169-4e75-891a-9e85260ebcb0"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 6653/CT-TTHT ngày 25/12/2024 trả lời Công ty TNHH Xuất nhập khẩu Sông Lam đề nghị hướng dẫn lập hóa đơn đối với hoạt động ủy thác xuất khẩu",
+      "date": "25/12/2024",
+      "code": "6653/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2F6bdfedd2-97bc-434f-b9db-9f0af812eec4"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 985/CT-TTHT 28/2/2025 trả lời Công ty CP Xuất nhập khẩu Nghệ An về việc hướng dẫn chính sách thuế GTGT",
+      "date": "03/03/2025",
+      "code": "985/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2Fca196e20-4726-44d4-9657-1431b6385168"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 899/CT-TTHT ngày 24/2/2025 trả lời Công ty TNHH Kido Vinh về việc hướng dẫn đối tượng được miễn giảm thuế theo hiệp định tránh đánh thuế hai lần",
+      "date": "27/02/2025",
+      "code": "899/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2Fcadec21d-7e81-499c-8283-bf3c2a2b4a95"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 800/CT-TTHT ngày 19/02/2025 về việc hướng dẫn thủ tục hưởng ưu đãi đầu tư Dự án tại Cụm CN Nghĩa Long",
+      "date": "19/02/2025",
+      "code": "800/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2F30df2be7-d7cc-44af-a0ec-6ce8856ad4d2"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 71/CT-TTHT ngày 05/01/2025 trả lời Độc giả Lê Thị Phương Thảo (theo Phiếu chuyển số 01/PC-TCT ngày 02/01/2025 của Tổng cục Thuế) về việc hướng dẫn kê khai phí Bảo vệ môi trường",
+      "date": "05/01/2025",
+      "code": "71/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2F0db396da-63ab-4c8e-9e91-dc0e5acc3481"
+    },
+    {
+      "tab": "huongdan",
+      "title": "Công văn số 6694/CT-TTHT ngày 26/12/2024 trả lời Công ty TNHH Radiant Opto-Electronics Việt Nam Nghệ An về việc hướng dẫn chính sách thuế nhà thầu nước ngoài",
+      "date": "26/12/2024",
+      "code": "6694/CT-TTHT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOBFQE0IEBNTK9220N1&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fdocsystem%2Ftaxdocument%2F7e6f9e9d-b3b5-4f12-99ce-deea53604e6a"
+    }
+  ],
+  "itemCount": 7,
+  "lastAttemptAt": null
+}

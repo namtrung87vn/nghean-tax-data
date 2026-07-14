@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "dataset": "dnrrvt",
+  "updatedAt": "2026-07-14T02:49:27.000Z",
+  "sourceUpdatedAt": "2026-07-14T02:49:27.000Z",
+  "lastAttemptAt": "2026-07-14T02:49:27.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép.",
+  "sourceStatus": 200,
+  "itemCount": 10,
+  "previousItemCount": 0,
+  "items": [
+    {
+      "ngayQd": "15/08/2019",
+      "soQd": "2225/QĐ-CT",
+      "coQuan": "Cục thuế Tỉnh Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/f22a9baa-bed3-4e26-91f8-330f81aade43/2225.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACEf22a9baa-bed3-4e26-91f8-330f81aade43",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/4d057cfd-1b65-4168-b2c3-16137d3d690c/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T8.2019%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACE4d057cfd-1b65-4168-b2c3-16137d3d690c"
+    },
+    {
+      "ngayQd": "15/07/2019",
+      "soQd": "1750/QĐ-CT",
+      "coQuan": "Cục Thuế tỉnh Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/5ce0a151-2c1d-46b8-b32f-f8e168c69d9c/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T7.2019%29+%281%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACE5ce0a151-2c1d-46b8-b32f-f8e168c69d9c",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/75bcec64-a56c-48db-aee1-7d7608b34e20/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T7.2019%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACE75bcec64-a56c-48db-aee1-7d7608b34e20"
+    },
+    {
+      "ngayQd": "16/07/2018",
+      "soQd": "Quyết định 1532/QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/2a5a6936-9909-4921-994e-69383f51419e/1532.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE2a5a6936-9909-4921-994e-69383f51419e",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/5c657b40-0052-4e9d-8b13-77eb23f31521/dsrr.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE5c657b40-0052-4e9d-8b13-77eb23f31521"
+    },
+    {
+      "ngayQd": "15/06/2018",
+      "soQd": "Quyết định số 1247 QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/fbbe4893-a9c3-4584-a821-1f5e299340b5/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T6.2018%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACEfbbe4893-a9c3-4584-a821-1f5e299340b5",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/ac87fdf0-8a9b-4709-bd7b-20ef399bb9c2/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T6.2018%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACEac87fdf0-8a9b-4709-bd7b-20ef399bb9c2"
+    },
+    {
+      "ngayQd": "15/05/2018",
+      "soQd": "Quyết định 931/QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/a82f0068-64fb-44bc-b777-1390da4880d0/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T5.2018%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACEa82f0068-64fb-44bc-b777-1390da4880d0",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/e841ac38-2d2a-486a-9e4b-830cb06d6140/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T5.2018%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACEe841ac38-2d2a-486a-9e4b-830cb06d6140"
+    },
+    {
+      "ngayQd": "16/04/2018",
+      "soQd": "Quyết định số 673/QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/5ff7e8f3-7b33-4914-930a-d7e39dfc8184/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T4.2018%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACE5ff7e8f3-7b33-4914-930a-d7e39dfc8184",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/df4f490d-d19e-46b6-add7-27da78547dbb/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T4.2018%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACEdf4f490d-d19e-46b6-add7-27da78547dbb"
+    },
+    {
+      "ngayQd": "15/03/2018",
+      "soQd": "Quyết định 362/QĐ-CT",
+      "coQuan": "",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/50662cef-df42-4879-9f3a-3fba7e1be675/Quy%E1%BA%BFt_%C4%91%E1%BB%8Bnh_doanh_nghi%E1%BB%87p_r%E1%BB%A7i_ro_theo_th%C3%B4ng_t%C6%B0_39_th%C3%A1ng_3_2018.zip?MOD=AJPERES&CACHEID=ROOTWORKSPACE50662cef-df42-4879-9f3a-3fba7e1be675",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/92735c90-7d00-4b68-aea4-7cc53538c129/thong+bao+DNRR+thang+3.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACE92735c90-7d00-4b68-aea4-7cc53538c129"
+    },
+    {
+      "ngayQd": "15/01/2018",
+      "soQd": "Quyết định số 89 /QĐ-CT",
+      "coQuan": "",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/5a2cf40a-ca95-4b8e-b53f-543afd679ee6/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T1.2018%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACE5a2cf40a-ca95-4b8e-b53f-543afd679ee6",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/263cf1cb-ddfa-4efb-b455-44515ae264b5/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T1.2018%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACE263cf1cb-ddfa-4efb-b455-44515ae264b5"
+    },
+    {
+      "ngayQd": "14/12/2017",
+      "soQd": "Quyết định số 2894/QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ AN",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/bb4df867-67a7-4346-998a-b8ec44920dd7/Q%C4%90+s%E1%BB%91+2894.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACEbb4df867-67a7-4346-998a-b8ec44920dd7",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/34efcd0e-7660-4289-beca-1627e21d8a20/DS+DN+RR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE34efcd0e-7660-4289-beca-1627e21d8a20"
+    },
+    {
+      "ngayQd": "15/11/2017",
+      "soQd": "Quyết định số 2646/QĐ-CT",
+      "coQuan": "Cục Thuế Nghệ An",
+      "qdFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/d589bb09-df77-4d98-b706-f0c5c0b9be98/Q%C4%90+DN+R%E1%BB%A7i+ro+cao+theo+TT39+%28T11.2017%29.doc?MOD=AJPERES&CACHEID=ROOTWORKSPACEd589bb09-df77-4d98-b706-f0c5c0b9be98",
+      "dsDnFileUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/ba230659-fd23-4bf6-a5da-77da337ac29b/Danh+s%C3%A1ch+DN+rui+ro+TT39+%28T11.2017%29.xls?MOD=AJPERES&CACHEID=ROOTWORKSPACEba230659-fd23-4bf6-a5da-77da337ac29b"
+    }
+  ],
+  "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt"
+}

@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "dataset": "docs-nganh",
+  "updatedAt": "2026-07-14T02:49:27.000Z",
+  "sourceUpdatedAt": "2026-07-14T02:49:27.000Z",
+  "lastAttemptAt": "2026-07-14T02:49:27.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Hai mục hiện hành được khởi tạo từ chỉ mục chính thức; collector sẽ lấy toàn bộ danh sách khi nguồn phản hồi.",
+  "sourceStatus": 200,
+  "itemCount": 2,
+  "previousItemCount": 0,
+  "items": [
+    {
+      "tab": "nganh",
+      "code": "4684/CT-CS",
+      "date": "09/07/2026",
+      "title": "Công văn số 4684/CT-CS ngày 09/7/2026 của Cục Thuế về chính sách thuế",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2"
+    },
+    {
+      "tab": "nganh",
+      "code": "4683/CT-CS",
+      "date": "09/07/2026",
+      "title": "Công văn số 4683/CT-CS ngày 09/7/2026 của Cục Thuế về trả lời Công văn 6130/LDO-KTR1 về vướng mắc hạch toán thuê đất vào chi phí quản lý doanh nghiệp",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2"
+    }
+  ],
+  "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2",
+  "sourceType": "official-index-fallback"
+}
