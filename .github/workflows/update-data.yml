@@ -1,0 +1,90 @@
+name: Cập nhật dữ liệu Thuế Nghệ An
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Loại dữ liệu cần cập nhật"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - full
+          - news
+
+  schedule:
+    # Cập nhật tin tức hai lần mỗi giờ
+    - cron: "17,47 * * * *"
+
+    # Cập nhật toàn bộ dữ liệu mỗi 6 giờ
+    - cron: "23 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nghean-tax-data-update
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    name: Thu thập và lưu dữ liệu
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Tải mã nguồn repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Cài đặt Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Cài đặt thư viện
+        run: npm ci
+
+      - name: Xác định chế độ cập nhật
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            MODE="${{ inputs.mode }}"
+          elif [[ "${{ github.event.schedule }}" == "23 */6 * * *" ]]; then
+            MODE="full"
+          else
+            MODE="news"
+          fi
+
+          echo "MODE=$MODE" >> "$GITHUB_ENV"
+          echo "Chế độ cập nhật: $MODE"
+
+      - name: Cập nhật tin tức
+        if: env.MODE == 'news'
+        run: npm run collect:news
+
+      - name: Cập nhật toàn bộ dữ liệu
+        if: env.MODE == 'full'
+        run: npm run collect:full
+
+      - name: Kiểm tra dữ liệu JSON
+        run: npm run validate
+
+      - name: Lưu dữ liệu mới vào repository
+        shell: bash
+        run: |
+          git config user.name "nghean-tax-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add docs
+
+          if git diff --cached --quiet; then
+            echo "Không có dữ liệu mới cần lưu."
+            exit 0
+          fi
+
+          git commit -m "Tự động cập nhật dữ liệu Thuế Nghệ An"
+          git pull --rebase origin main
+          git push origin main
