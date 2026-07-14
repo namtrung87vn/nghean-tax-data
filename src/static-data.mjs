@@ -1,0 +1,42 @@
+export const INTRO_DATA = {
+  tochuc: [
+    {
+      id: "intro-0",
+      title: "Nhiệm vụ ban biên tập",
+      date: "05/04/2011",
+      link: "https://nghean.gdt.gov.vn/wps/portal/?1dmy&page=6_049IL8VSO3VHF0I1AMGLAN3IT5&urile=wcm:path:/nghean/site/intro/gtbbt/51eee00046621b7e8fb28f844940dfd3",
+    },
+    {
+      id: "intro-1",
+      title: "Lịch sử Cục thuế Nghệ An",
+      date: "08/08/2011",
+      link: "https://nghean.gdt.gov.vn/wps/portal/?1dmy&page=6_049IL8VSO3VHF0I1AMGLAN3IT5&urile=wcm:path:/nghean/site/intro/tcct/8ddd800047e1f6c0b64eff313809786d",
+    },
+    {
+      id: "intro-2",
+      title: "Chức năng, nhiệm vụ, quyền hạn tổ chức Thuế tỉnh Nghệ An",
+      date: "08/08/2011",
+      link: "https://nghean.gdt.gov.vn/wps/portal/?1dmy&page=6_049IL8VSO3VHF0I1AMGLAN3IT5&urile=wcm:path:/nghean/site/intro/tcct/20204e0047e1f605b635ff313809786d",
+    },
+    {
+      id: "intro-3",
+      title: "Thông tin ban lãnh đạo Thuế tỉnh Nghệ An",
+      date: "08/08/2011",
+      link: "https://nghean.gdt.gov.vn/wps/portal/?1dmy&page=6_049IL8VSO3VHF0I1AMGLAN3IT5&urile=wcm:path:/nghean/site/intro/tcct/e441890047e1f44ab61cff313809786d",
+    },
+    {
+      id: "intro-4",
+      title: "Cơ cấu tổ chức Thuế tỉnh Nghệ An",
+      date: "08/08/2011",
+      link: "https://nghean.gdt.gov.vn/wps/portal/intro?1dmy=&page=6_049IL8VSO3VHF0I1AMGLAN3IT5&urile=wcm:path:/nghean/site/intro/tcct/e441890047e1f44ab61cff313809786d",
+    },
+  ],
+  diachi: [
+    {
+      id: "diachi-0",
+      title: "Địa chỉ cơ quan Thuế",
+      date: "",
+      link: "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN3SQ7",
+    },
+  ],
+};

@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "dataset": "news-thue",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "tab": "thue",
+      "title": "THUẾ CƠ SỞ 5 TỈNH NGHỆ AN TỔ CHỨC HỘI NGHỊ SƠ KẾT CÔNG TÁC THUẾ 6 THÁNG ĐẦU NĂM, TRIỂN KHAI NHIỆM VỤ 6 THÁNG CUỐI NĂM 2026",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2F6b745b47-5dbb-40cd-83c5-13daeab8c10d",
+      "date": "02/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thue",
+      "title": "THUẾ TỈNH NGHỆ AN TỔ CHỨC LỄ CHÀO CỜ THÁNG 6 NĂM 2026",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2Fd44949ce-6df5-44c2-af88-1f70f47d1fa1",
+      "date": "01/06/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thue",
+      "title": "THUẾ TỈNH NGHỆ AN VÀ THANH TRA TỈNH NGHỆ AN TĂNG CƯỜNG PHỐI HỢP TRONG CÔNG TÁC QUẢN LÝ THUẾ",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2F9df8b637-caa3-404c-a2fe-6cf4f446fb52",
+      "date": "21/05/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thue",
+      "title": "THUẾ TỈNH NGHỆ AN: THÀNH KÍNH TRI ÂN BÁC, TỰ HÀO TIẾP BƯỚC TRUYỀN THỐNG QUÊ HƯƠNG",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2Fca17b239-be1f-4361-a3b1-3c129dd7bdd4",
+      "date": "18/05/2026",
+      "imageUrl": ""
+    }
+  ],
+  "lastAttemptAt": null,
+  "itemCount": 4
+}

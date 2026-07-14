@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "dataset": "news-thongbao",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "tab": "thongbao",
+      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh ông Thái Bá Nghĩa, giám đốc CTy CP XD PT nhà 68 Nghệ An- 2901870796",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2F720ff9ee-91be-47ca-bb71-477cfa6e1cb6",
+      "date": "03/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thongbao",
+      "title": "THÔNG BÁO Về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh. CÔNG TY TNHH KIẾN TRÚC VÀ XÂY DỰNG ĐẠI PHONG, MST:2901911611.",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fced09645-71b2-496d-93d7-dc3bd7e7b061",
+      "date": "02/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh Ông Dương Đình Thịnh; Giám Đốc Công ty TNHH Kiến trúc và Xây dựng Đại Phong.",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fb699b322-4182-42e9-ad17-0cf8aea7e799",
+      "date": "02/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh đối với hộ kinh doanh Lữ Xuân Hằng; Mã số thuế: 040078016963; CCCD: 040078016963",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fe23a6053-ad67-4ecd-a548-519693ec3540",
+      "date": "30/06/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "thongbao",
+      "title": "Về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh đối với Ông: Lưu Xuân Nghĩa",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2F549505f5-d1a5-46a5-bb49-29a1a2883a6e",
+      "date": "29/06/2026",
+      "imageUrl": ""
+    }
+  ],
+  "lastAttemptAt": null,
+  "itemCount": 5
+}

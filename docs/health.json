@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "degraded": true,
+  "service": "nghean-tax-github-pages",
+  "generatedAt": "2026-07-13T08:50:31.922Z",
+  "sourceHost": "nghean.gdt.gov.vn",
+  "requiredDatasets": [
+    "news-thue",
+    "news-kinhte",
+    "news-thongbao",
+    "docs-huongdan",
+    "dvc",
+    "videos"
+  ],
+  "datasets": {
+    "dnrrvt": {
+      "ok": false,
+      "stale": true,
+      "seed": true,
+      "itemCount": 0,
+      "updatedAt": null,
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "docs-huongdan": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 7,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "docs-khac": {
+      "ok": false,
+      "stale": true,
+      "seed": true,
+      "itemCount": 0,
+      "updatedAt": null,
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "docs-nganh": {
+      "ok": false,
+      "stale": true,
+      "seed": true,
+      "itemCount": 0,
+      "updatedAt": null,
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "dvc": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 13,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "news-kinhte": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 9,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "news-thongbao": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 5,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "news-thue": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 4,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "tthc-phananh": {
+      "ok": false,
+      "stale": true,
+      "seed": true,
+      "itemCount": 0,
+      "updatedAt": null,
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "tthc": {
+      "ok": false,
+      "stale": true,
+      "seed": true,
+      "itemCount": 0,
+      "updatedAt": null,
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    },
+    "videos": {
+      "ok": true,
+      "stale": true,
+      "seed": true,
+      "itemCount": 4,
+      "updatedAt": "2026-07-09T15:15:00.000Z",
+      "lastAttemptAt": null,
+      "sourceUrl": "",
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
+    }
+  }
+}

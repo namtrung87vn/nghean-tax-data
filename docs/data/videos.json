@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "dataset": "videos",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "title": "Video tổng kết công tác xây dựng Đảng",
+      "date": "",
+      "videoUrl": "",
+      "thumb": "",
+      "playable": false
+    },
+    {
+      "title": "Video tổng kết chiến dịch 30 ngày đêm hoàn thành các chỉ tiêu Đề án 420",
+      "date": "",
+      "videoUrl": "",
+      "thumb": "",
+      "playable": false
+    },
+    {
+      "title": "Lễ phát động chiến dịch 30 ngày đêm hoàn thành Đề án 420",
+      "date": "",
+      "videoUrl": "",
+      "thumb": "",
+      "playable": false
+    },
+    {
+      "title": "Thuế Tỉnh Nghệ An tổ chức Hội thao nhân ngày kỷ niệm 80 năm ngành Thuế Việt Nam và 35 năm ngày truyến thống Thuế tỉnh Nghệ An",
+      "date": "",
+      "videoUrl": "https://nghean.gdt.gov.vn/wps/wcm/connect/2431fd48-e18d-49bf-a589-e4573c739c78/6985100120168.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE2431fd48-e18d-49bf-a589-e4573c739c78",
+      "thumb": "",
+      "playable": true
+    }
+  ],
+  "itemCount": 4,
+  "lastAttemptAt": null
+}

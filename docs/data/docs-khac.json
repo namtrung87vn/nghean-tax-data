@@ -1,0 +1,12 @@
+{
+  "ok": false,
+  "dataset": "docs-khac",
+  "updatedAt": null,
+  "sourceUpdatedAt": null,
+  "lastAttemptAt": null,
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [],
+  "itemCount": 0
+}

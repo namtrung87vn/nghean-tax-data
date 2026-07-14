@@ -1,0 +1,104 @@
+{
+  "ok": true,
+  "dataset": "dvc",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "id": "dvc-1",
+      "title": "Văn bản, hướng dẫn chung về chính sách thuế mới",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/Home/vbhdtm",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-2",
+      "title": "Công khai thông tin hộ kinh doanh nộp thuế khoán",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/Home/hct.search",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-3",
+      "title": "Danh sách doanh nghiệp rủi ro cao về thuế",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-4",
+      "title": "Quyết định cưỡng chế về hóa đơn",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/Home/qdcchd?1dmy&current=true&urile=wcm:path:/nghean/site/sa-qdcchd",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-5",
+      "title": "Danh sách địa điểm bán hàng hoàn thuế GTGT",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/Home/htgtgt",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-6",
+      "title": "Tra cứu thông tin người nộp thuế",
+      "url": "http://tracuunnt.gdt.gov.vn/tcnnt/mstdn.jsp",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-7",
+      "title": "Nộp hồ sơ kê khai thuế qua mạng",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/ihtkk",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-8",
+      "title": "Quyết toán thuế TNCN (cá nhân)",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/quyettoanttncn",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-9",
+      "title": "Hỗ trợ kê khai thuế",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/hotrokekhai",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-10",
+      "title": "Tra cứu thông tin hóa đơn",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/news/detail?1dmy&current=true&urile=wcm:path:/wps/wcm/connect/nghean/site/news/annocement/400d6414-9c56-4b13-a7ac-3668e44f0132",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-11",
+      "title": "TNCN Online",
+      "url": "http://tncnonline.com.vn/",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-12",
+      "title": "Quản lý hành nghề dịch vụ thuế",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/quanlyhanhnghedvt",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    },
+    {
+      "id": "dvc-13",
+      "title": "Chuyên mục hóa đơn",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/nghean/bills",
+      "imageUrl": "",
+      "rawImageUrl": ""
+    }
+  ],
+  "itemCount": 13,
+  "lastAttemptAt": null
+}

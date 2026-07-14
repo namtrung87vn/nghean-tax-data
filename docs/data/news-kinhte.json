@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "dataset": "news-kinhte",
+  "updatedAt": "2026-07-09T15:15:00.000Z",
+  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
+  "stale": true,
+  "seed": true,
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "items": [
+    {
+      "tab": "kinhte",
+      "title": "Chính phủ kéo dài thời hạn ưu đãi thuế xăng dầu đến 30/9",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/e95ca020-f2b9-4f23-ac5f-9cf2f57fcb08",
+      "date": "09/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Thư ngỏ đề nghị người nộp thuế Hưởng ứng...",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/da315c61-6310-4c8b-b27e-d4bcf312d69e",
+      "date": "",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Tài liệu hướng dẫn doanh nghiệp/tổ chức ...",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/b01c8a99-d7b0-4695-9831-893611609197",
+      "date": "",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Một số điểm mới về tạm hoãn xuất cảnh th...",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/7d812d7d-06a6-4f99-87e2-75f45f4f158f",
+      "date": "",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Chính sách Thuế, phí ưu đãi tiếp sức hàn...",
+      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/1e5a4e4d-ef42-4fde-8427-2915bf14d376",
+      "date": "",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Chính phủ kéo dài thời hạn ưu đãi thuế xăng dầu đến 30/9",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fe95ca020-f2b9-4f23-ac5f-9cf2f57fcb08",
+      "date": "09/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Thư ngỏ đề nghị người nộp thuế Hưởng ứng Chiến dịch “Làm sạch mã số thuế - Tháo gỡ điểm nghẽn trong kinh doanh”",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fda315c61-6310-4c8b-b27e-d4bcf312d69e",
+      "date": "07/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Tài liệu hướng dẫn doanh nghiệp/tổ chức giải thể/chấm dứt hoạt động/khôi phục hiệu lực mã số thuế",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fb01c8a99-d7b0-4695-9831-893611609197",
+      "date": "07/07/2026",
+      "imageUrl": ""
+    },
+    {
+      "tab": "kinhte",
+      "title": "Một số điểm mới về tạm hoãn xuất cảnh theo Nghị định số 252/2026/NĐ-CP",
+      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2F7d812d7d-06a6-4f99-87e2-75f45f4f158f",
+      "date": "06/07/2026",
+      "imageUrl": ""
+    }
+  ],
+  "lastAttemptAt": null,
+  "itemCount": 9
+}
