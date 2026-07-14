@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: fetch failed | Reader: Reader không trả văn bản.",
   "items": [
     {
       "tab": "huongdan",
@@ -58,5 +58,5 @@
     }
   ],
   "itemCount": 7,
-  "lastAttemptAt": null
+  "lastAttemptAt": "2026-07-14T06:57:45.514Z"
 }
