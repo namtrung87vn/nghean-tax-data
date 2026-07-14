@@ -59,6 +59,7 @@ export async function saveSuccess(name, items, source = {}) {
     sourceUrl: source.sourceUrl || "",
     sourceStatus: source.sourceStatus || 200,
     fetchedItemCount: Number(source.fetchedItemCount ?? items.length),
+    diagnostics: source.diagnostics || null,
     itemCount: items.length,
     previousItemCount: Array.isArray(current.items) ? current.items.length : 0,
     items,

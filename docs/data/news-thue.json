@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | Reader: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255.",
+  "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách.",
   "items": [
     {
       "tab": "thue",
@@ -34,30 +34,12 @@
       "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2Fca17b239-be1f-4361-a3b1-3c129dd7bdd4",
       "date": "18/05/2026",
       "imageUrl": ""
-    },
-    {
-      "tab": "thue",
-      "title": "Ngành Thuế Nghệ An – 35 năm hình thành và phát triển",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tZNNc4IwEIZ_jUcmG4MEjlCZgkJtVVBycTBFoJWgNWr77xunF2s_sMM0l8zO7D7v5t0NYmiOmEgPZZ7KshbpWsUJMxagW35gxpPRoO9Q8N1xaNNbqwuhgWafE5w7zwU_iMNhCH1yYxuIXVX_w7GhqT5GDDEu5EYWKBF5kaWiA7tSZh0Q2XHXAb7nstirUCeUAwbQsKFzTe9xri2xmWk0BcC4y8FcWSfYhpePKLkqe9bkDvv9bbOT3jlhTB8UIfLvHYwdPPLxZcI3_jaJJKpJekaggQO-NfGCKfHIkKoRHMrsiCJRv1Rq4pM_euB9Ubiwwe22VGjA4__Fk5b4AWL5ul5-_KXyabtltlrYWsjsVaJ5-43dVFFUmeRNex6bx-mqyKtF6JLe6dq9A1Qc2Ek!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
-      "date": "09/09/2025",
-      "imageUrl": ""
-    },
-    {
-      "tab": "thue",
-      "title": "THUẾ TỈNH NGHỆ AN TỔ CHỨC HỘI THAO TRUYỀN THỐNG - CHÀO MỪNG 80 NĂM NGÀY TRUYỀN THỐNG NGÀNH THUẾ VIỆT NAM VÀ 35 NĂM NGÀNH THUẾ NGHỆ AN",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tVNbb4IwFP41PpK2Fm15hEkGCnPzNumLqRWhmxSdVee_X8l82MgMW8z60pyc811OTj7AwBwwxY8y41qWim9MnbDuAtpOGNHZeNjveQSG_ih2yb3ThnEXzAADTCi91TlIVJanXLXgXuq0BVV62regOAidH0xJ22tOyHJl2YIvLbvTwRalKbcciNEKCWoLtK7ItkKuQPKr6ecmd6xqX3kurOO9h8CHYTSLBzHs4Tv3gr9Of8FfF2jEs-8jPzho2qHGMCJPRmQaPnoIeWgYIpAYk-SLBIk8GDrjIJrgAA-IcXGU6QlMVflWmIuP_3iDANYVanv67RsVGujR_9LjG-n7gGWbcvmZJfmy2zHXBKZUOn3XYH57YrZFQfFZSut1RE-TdZ4Vi9jHnerbfwCucZ2H/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
-      "date": "08/09/2025",
-      "imageUrl": ""
-    },
-    {
-      "tab": "thue",
-      "title": "LỄ KHAI GIẢNG CHƯƠNG TRÌNH ĐÀO TẠO, TẬP HUẤN VỀ KHAI THÁC VÀ SỬ DỤNG ỨNG DỤNG QUẢN LÝ THUẾ CHO CÔNG CHỨC THUẾ TỈNH NGHỆ AN",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tZJdT4MwFIZ_yy64JC2UteUSHBEYzESUjd4YYHzpKMx1TP31dlmWGM0yDbE3Jyfn7XM-8gIGVoDxdGiqVDQdTzcyTxh-gobpBTSO7vyZTaDn3IcWuTV1GGIQAwZYzkUvapDwqi5SrsBdIwoF8uKwU2C-z0W9lynUTELpulSLaTZVjRyVKsUUqjomKKUZQiXWjrA-b9Yg-ZV6eW06dixfeBaU_9lJcibYC9eBXhCH8xDO0I2Fz4LLjETOQL4QSGBDz4zc4AG5aE4wWA5NcQCPvHtt5UGjP67o_ujwbUtHH9nhCl77XzwaifcBqzZddrJq87zdMkv6seOieBNgNd6QfdtS9K6-lKGDjMQfPuyFegyBNZl8AllHZsM!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
-      "date": "15/08/2025",
-      "imageUrl": ""
     }
   ],
-  "lastAttemptAt": "2026-07-14T05:12:28.793Z",
-  "itemCount": 7,
-  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng."
+  "lastAttemptAt": null,
+  "itemCount": 4,
+  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng.",
+  "fetchedItemCount": 0,
+  "partial": true,
+  "sourceMode": "seed-homepage-only"
 }

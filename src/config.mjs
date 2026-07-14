@@ -40,4 +40,12 @@ export const config = {
   readerDelayMs: num("READER_DELAY_MS", 3500),
   maxReaderNewsPages: num("MAX_READER_NEWS_PAGES", 15),
   maxReaderDocPages: num("MAX_READER_DOC_PAGES", 30),
+  browserEnabled: String(process.env.BROWSER_ENABLED || "true").toLowerCase() !== "false",
+  browserTimeoutMs: num("BROWSER_TIMEOUT_MS", 90000),
+  browserSettleMs: num("BROWSER_SETTLE_MS", 2200),
+  browserRetryDelayMs: num("BROWSER_RETRY_DELAY_MS", 1200),
+  maxBrowserNewsPages: num("MAX_BROWSER_NEWS_PAGES", 30),
+  maxBrowserDocPages: num("MAX_BROWSER_DOC_PAGES", 80),
+  cacheImages: String(process.env.CACHE_IMAGES || "true").toLowerCase() !== "false",
+  maxCachedImages: num("MAX_CACHED_IMAGES", 120),
 };

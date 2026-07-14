@@ -1,56 +1,64 @@
 @echo off
 setlocal
+chcp 65001 >nul
 cd /d "%~dp0\.."
 
 echo =====================================================
-echo  CAP NHAT DU LIEU THUE NGHE AN TU MAY WINDOWS
-ECHO =====================================================
+echo CAP NHAT DU LIEU THUE NGHE AN BANG CHROMIUM TREN MAY NAY
+echo =====================================================
 
-where node >nul 2>nul || (
-  echo Khong tim thay Node.js. Hay cai Node.js 22 LTS.
-  pause
-  exit /b 1
-)
-where git >nul 2>nul || (
-  echo Khong tim thay Git. Hay cai Git hoac GitHub Desktop.
-  pause
-  exit /b 1
-)
-
+echo [1/5] Cai cac goi project...
 call npm ci
-if errorlevel 1 goto :fail
+if errorlevel 1 goto :error
 
+echo [2/5] Cai Playwright 1.61.1...
+call npm install --no-save --no-package-lock playwright@1.61.1
+if errorlevel 1 goto :error
+
+echo [3/5] Cai Chromium neu chua co...
+call npx playwright install chromium
+if errorlevel 1 goto :error
+
+echo [4/5] Lay toan bo du lieu va thumbnail...
+set BROWSER_ENABLED=true
+set BROWSER_TIMEOUT_MS=120000
+set BROWSER_SETTLE_MS=3000
+set MAX_BROWSER_NEWS_PAGES=50
+set MAX_BROWSER_DOC_PAGES=120
+set CACHE_IMAGES=true
+set MAX_CACHED_IMAGES=200
 set READER_ENABLED=false
-set REQUEST_TIMEOUT_MS=30000
-set REQUEST_RETRIES=2
-set MAX_NEWS_PAGES=30
-set MAX_DOC_PAGES=100
-
 call npm run collect:full
-if errorlevel 1 echo Mot so nguon loi; du lieu cu van duoc giu.
+if errorlevel 1 goto :error
+
+echo [5/5] Kiem tra va day len GitHub...
 call npm run validate
-if errorlevel 1 goto :fail
+if errorlevel 1 goto :error
 
 git add docs
-for /f %%i in ('git diff --cached --name-only') do set HAS_CHANGES=1
-if not defined HAS_CHANGES (
-  echo Khong co thay doi de day len GitHub.
-  pause
-  exit /b 0
+git diff --cached --quiet
+if not errorlevel 1 (
+  echo Khong co du lieu moi de commit.
+  goto :done
 )
-
-git commit -m "data: cap nhat tu may Windows"
-if errorlevel 1 goto :fail
+git commit -m "data: cap nhat tu may Windows bang Chromium"
+if errorlevel 1 goto :error
 git pull --rebase origin main
-if errorlevel 1 goto :fail
+if errorlevel 1 goto :error
 git push origin main
-if errorlevel 1 goto :fail
+if errorlevel 1 goto :error
 
-echo Cap nhat va day len GitHub thanh cong.
-pause
-exit /b 0
+goto :done
 
-:fail
-echo Cap nhat that bai. Xem thong bao phia tren.
+:error
+echo.
+echo CAP NHAT THAT BAI. Hay chup man hinh loi va gui lai.
 pause
 exit /b 1
+
+:done
+echo.
+echo CAP NHAT HOAN TAT.
+echo Mo: https://namtrung87vn.github.io/nghean-tax-data/
+pause
+endlocal

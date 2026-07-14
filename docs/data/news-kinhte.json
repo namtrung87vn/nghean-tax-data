@@ -5,41 +5,13 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | Reader: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255.",
+  "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách.",
   "items": [
     {
       "tab": "kinhte",
       "title": "Chính phủ kéo dài thời hạn ưu đãi thuế xăng dầu đến 30/9",
       "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/e95ca020-f2b9-4f23-ac5f-9cf2f57fcb08",
       "date": "09/07/2026",
-      "imageUrl": ""
-    },
-    {
-      "tab": "kinhte",
-      "title": "Thư ngỏ đề nghị người nộp thuế Hưởng ứng...",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/da315c61-6310-4c8b-b27e-d4bcf312d69e",
-      "date": "",
-      "imageUrl": ""
-    },
-    {
-      "tab": "kinhte",
-      "title": "Tài liệu hướng dẫn doanh nghiệp/tổ chức ...",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/b01c8a99-d7b0-4695-9831-893611609197",
-      "date": "",
-      "imageUrl": ""
-    },
-    {
-      "tab": "kinhte",
-      "title": "Một số điểm mới về tạm hoãn xuất cảnh th...",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/7d812d7d-06a6-4f99-87e2-75f45f4f158f",
-      "date": "",
-      "imageUrl": ""
-    },
-    {
-      "tab": "kinhte",
-      "title": "Chính sách Thuế, phí ưu đãi tiếp sức hàn...",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/1e5a4e4d-ef42-4fde-8427-2915bf14d376",
-      "date": "",
       "imageUrl": ""
     },
     {
@@ -71,6 +43,9 @@
       "imageUrl": ""
     }
   ],
-  "lastAttemptAt": "2026-07-14T05:14:05.262Z",
-  "itemCount": 9
+  "lastAttemptAt": null,
+  "itemCount": 5,
+  "fetchedItemCount": 0,
+  "partial": true,
+  "sourceMode": "seed-homepage-only"
 }

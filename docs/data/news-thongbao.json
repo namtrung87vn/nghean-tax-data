@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | Reader: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255. ; http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: Cannot convert argument to a ByteString because the character at index 8 has a value of 7845 which is greater than 255.",
+  "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách.",
   "items": [
     {
       "tab": "thongbao",
@@ -41,37 +41,12 @@
       "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2F549505f5-d1a5-46a5-bb49-29a1a2883a6e",
       "date": "29/06/2026",
       "imageUrl": ""
-    },
-    {
-      "tab": "thongbao",
-      "title": "Thông báo công khai danh sách NNT nợ tiền thuế và các khoản thu khác thuộc NSNN tháng 8/2025 (QLDN1)",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tZNNc4IwEIZ_iweOTDaABI5QaQFBW6kf5NKJGJWOBq0Z7PjrG6cXaz-wY5tLZmd2n3fz7gZRlOtG2wLbBYLRBFHB6nLBZFkJtlJxTu0nsNwocUZZP-74BKJgkHrkzjUgtdH4Y4LfCwOIklHaTaFj3ng2ohfVf3M8aKofIYpoIeRGLlEuFkvOhAa7UnINBN_vNGBCVAVfcyE1sAp7PjWwq5MZcXSLkbmuQqzPgHGMnTZzbevI2xTlDOUXZY-bDKI_P2981DslDMiDIgyjex9jH_cjfJ7whcVNIrlqkpwQSOJD5GZh8miGZpeoKdQl36OhqF7WaujZLz0IPymc2RAYVyo04PH_4s0r8TGii1U1ff9O5fN2Sz21s5WQ_FWiyZ8s7ZqubuO659SbYJ4GppXH9cHv6ccr8bxW6w2BxXzK/dz/d5/L2dBISEvZ0FBIS9nQSEh/?1dmy=&page=6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3Apath%3A%2Fnghean%2Fsite%2Fnews%2Fannocement%2F89cef597-72de-43e5-a684-54845bfc4194",
-      "date": "03/09/2025",
-      "imageUrl": ""
-    },
-    {
-      "tab": "thongbao",
-      "title": "THÔNG BÁO Về việc cá nhân thuộc trường hợp bị tạm hoãn xuất cảnh Phạm Xuân Chiến (Chi nhánh công ty TNHH đầu tư hệ thống truyền thông - công nghệ thông tin Việt Nam; mã số thuế: 0102575134-001)",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tZFRb4IwFIV_jY_NLdqU8ohsGTqUZQyQviwtIHaTgluj2379MD4tUXEz60vT5Nxz7ncKHBbAtdiqShjVaLHu3hmnz5g4k4AlUTie-7d4YgVxwMLEYlML0mOCIJndz_DNyHMp8IvmTxwX980nwIHn2rRmBZmuVqXQA_yuTDnAsshfi-6iDiEyHyJBLYyIIAIxwRxEhcwJE_aSMXtv0uaqgOwiddrXCj_PNAVerRt56Fe9bDbc7SAabcoPA4u_U6R7jjObPdDjgh__1bd81sHbpyJCbwTpVpU7iHXzVneE0S-79fsSInxlQo_98H_trSvt2zqOazb6RFzSR_9rPEd3nmS7p2XtZd-lqv_P/dz/d5/L2dBISEvZ0FBIS9nQSEh/?1dmy=&page=6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3Apath%3A%2Fnghean%2Fsite%2Fnews%2Fannocement%2F6cf8ece7-e95e-45f5-b01d-f924fd283224",
-      "date": "30/08/2025",
-      "imageUrl": ""
-    },
-    {
-      "tab": "thongbao",
-      "title": "Thông báo công khai danh sách NNT nợ tiền thuế và các khoản thu khác liên quan đến NSNN tháng 8/2025 (QLDN2)",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/!ut/p/z1/tZPBUoMwEIafxUOPmSwkDeQIWguVWi2llVycAGlFJVRlWvXppdbR0RFxrOWSIdn9_t0_WSzwBRZarvKFrPJSy9v6PxbsEij3A3sajgZHrgV-bzx0rD43Ycjw7DVg4PCe51IzsCfHNrAukBG4YZ-HJhbNx0ZI3_LfBdxTrwd-MB2eDOGIHDrsNb9VHxo-B9ryp1hgkepqWV3hWC-ulNQdeMgr1QGt1g8dkFqXqSqUrjqQgDItCRTxlDJEEy6RTUAhxk3ZJTKlXWAb3jLNMxz_KvpH_zYG_a7_5gDxsz2zTb0tN_i5hm-uqE3kC2FsnddFRv6ZaxiuMfINHNddWM0udPFslas1jnR5X9SvMvww2WB8PudzjrJM2ojyDBBXMkN2vasITSjhFHvQomDCjgoteHO_eGNH_ACLxW2ZbOc9v767E049FKWu1GOFL_5lKrYdfDwiK3DB56EXTIhHTizW3MFf8F_GoGfuF2_sF092xC-LKIoKmzzl6GbsPbunqH-Y2OvJvKiXJ7LZiAer7bJwDg5eAKjVAE8!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
-      "date": "22/08/2025",
-      "imageUrl": ""
-    },
-    {
-      "tab": "thongbao",
-      "title": "THÔNG BÁO Về việc cá nhân thuộc trường hợp bị tạm hoãn xuất cảnh Hà Thế Nam (Công ty CP tư vấn đầu tư Tín Minh, Mã số thuế: 2901783906)",
-      "url": "https://nghean.gdt.gov.vn/wps/wcm/connect/c38a54a1-6145-4dc3-928a-afad50d1c7ee/2.%2BTB%2Bc%C3%A1%2Bnh%C3%A2n%2Bthu%E1%BB%99c%2Btr%C6%B0%E1%BB%9Dng%2Bh%E1%BB%A3p%2Bt%E1%BA%A1m%2Bho%C3%A3n%2Bxu%E1%BA%A5t%2Bc%E1%BA%A3nh%2BH%C3%A0%2BTh%E1%BA%BF%2BNam.pdf?CACHEID=ROOTWORKSPACEc38a54a1-6145-4dc3-928a-afad50d1c7ee&MOD=AJPERES",
-      "date": "22/08/2025",
-      "imageUrl": ""
     }
   ],
-  "lastAttemptAt": "2026-07-14T05:15:41.726Z",
-  "itemCount": 9,
-  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng."
+  "lastAttemptAt": null,
+  "itemCount": 5,
+  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng.",
+  "fetchedItemCount": 0,
+  "partial": true,
+  "sourceMode": "seed-homepage-only"
 }

@@ -1,37 +1,13 @@
-# Dữ liệu Thuế Nghệ An — GitHub Actions + GitHub Pages
+# Dữ liệu Thuế Nghệ An V4 — Chromium + GitHub Pages
 
-Repository này tự lấy dữ liệu công khai từ `nghean.gdt.gov.vn`, giữ bản hợp lệ gần nhất và phát JSON tĩnh qua GitHub Pages.
+V4 dùng Chromium/Playwright trên GitHub Actions để mở đúng các trang danh sách của `nghean.gdt.gov.vn`, đi qua phân trang, lưu JSON và thumbnail vào GitHub Pages.
 
-## Luồng hoạt động
+Điểm chính:
 
-```text
-nghean.gdt.gov.vn
-        ↓ GitHub Actions theo lịch
-repo/docs/data/*.json
-        ↓ GitHub Pages
-Cloudflare Worker
-        ↓
-Zalo Mini App
-```
+- Không trộn 4 tin trang chủ với seed cũ.
+- Chỉ ghi đè tin tức khi xác nhận đúng trang danh sách.
+- Lưu thumbnail trong `docs/media`.
+- Workflow đỏ nếu `seed`, `stale`, lấy thiếu trang đầu hoặc không có ảnh.
+- Có script Windows để cập nhật bằng mạng của người dùng khi GitHub runner bị nguồn chặn.
 
-## Cài nhanh
-
-1. Tạo repository **Public** trên GitHub, nên đặt tên `nghean-tax-data`.
-2. Upload toàn bộ nội dung thư mục này vào nhánh `main`.
-3. Vào **Settings → Actions → General → Workflow permissions**, chọn **Read and write permissions**.
-4. Vào **Settings → Pages**:
-   - Source: **Deploy from a branch**
-   - Branch: `main`
-   - Folder: `/docs`
-   - Bấm **Save**.
-5. Vào tab **Actions**, mở workflow **Cập nhật toàn bộ dữ liệu Thuế Nghệ An**, bấm **Run workflow**.
-6. Mở `https://TEN_GITHUB.github.io/TEN_REPOSITORY/health.json`.
-7. Cấu hình Worker bằng file `worker/worker-github-pages-full.js` và đặt biến:
-   - `GITHUB_DATA_BASE=https://TEN_GITHUB.github.io/TEN_REPOSITORY`
-8. Deploy Worker, rồi kiểm tra `/health` và `/news?tab=thue&page=1`.
-
-Xem hướng dẫn đầy đủ trong `HUONG_DAN_TRIEN_KHAI.md`.
-
-## Cập nhật V2 ngày 14/07/2026
-
-Bản V2 bổ sung phân trang nhiều trang nguồn, dữ liệu TTHC/Văn bản khác/Văn bản ngành/Doanh nghiệp rủi ro và hỗ trợ Mini App tải thêm khi cuộn. Xem `UPDATE_GUIDE_2026-07-14.md`.
+Xem `HUONG_DAN_CAP_NHAT_V4.md`.

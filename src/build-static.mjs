@@ -43,6 +43,9 @@ for (const file of files) {
     sourceMode: data.sourceMode || "",
     fetchedItemCount: Number(data.fetchedItemCount || 0),
     partial: Boolean(data.partial),
+    firstPageItemCount: Number(data.diagnostics?.browser?.firstPageItemCount || 0),
+    visitedPages: Number(data.diagnostics?.browser?.visitedPages || 0),
+    imageCount: items.filter((item) => item.imagePath || item.imageUrl || item.thumb || item.thumbUrl).length,
     lastError: data.lastError || "",
   };
 }
@@ -89,6 +92,9 @@ const rows = Object.entries(datasets)
       <td><a href="data/${encodeURIComponent(name)}.json">${esc(name)}</a></td>
       <td class="num">${item.itemCount}</td>
       <td class="num">${item.fetchedItemCount || 0}</td>
+      <td class="num">${item.firstPageItemCount || 0}</td>
+      <td class="num">${item.visitedPages || 0}</td>
+      <td class="num">${item.imageCount || 0}</td>
       <td><span class="badge ${cls}">${esc(status)}</span></td>
       <td>${esc(item.sourceMode || "—")}</td>
       <td>${esc(item.updatedAt || "—")}</td>
@@ -117,7 +123,7 @@ const html = `<!doctype html>
       <p><b>Tạo lúc:</b> ${esc(generatedAt)} · <a href="health.json">Mở health.json</a></p>
     </section>
     <table>
-      <thead><tr><th>Bộ dữ liệu</th><th>Tổng lưu</th><th>Vừa lấy</th><th>Trạng thái</th><th>Nguồn</th><th>Cập nhật</th><th>Lỗi gần nhất</th></tr></thead>
+      <thead><tr><th>Bộ dữ liệu</th><th>Tổng lưu</th><th>Vừa lấy</th><th>Trang đầu</th><th>Số trang</th><th>Có ảnh</th><th>Trạng thái</th><th>Nguồn</th><th>Cập nhật</th><th>Lỗi gần nhất</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
   </main>

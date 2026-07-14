@@ -1,9 +1,9 @@
 {
   "name": "nghean-tax-github-pages",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
-  "description": "Thu thập dữ liệu Thuế Nghệ An bằng GitHub Actions và phát JSON qua GitHub Pages",
+  "description": "Thu thập dữ liệu Thuế Nghệ An bằng Chromium trên GitHub Actions, lưu JSON và thumbnail qua GitHub Pages",
   "engines": {
     "node": ">=20"
   },
@@ -14,6 +14,7 @@
     "validate": "node src/validate.mjs",
     "test": "npm run build:static && npm run validate",
     "report": "node src/report-refresh.mjs",
-    "assert:refresh": "node src/assert-refresh.mjs"
+    "assert:refresh": "node src/assert-refresh.mjs",
+    "collect:browser": "node src/refresh-full.mjs && node src/build-static.mjs"
   }
 }
