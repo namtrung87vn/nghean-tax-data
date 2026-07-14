@@ -1,6 +1,6 @@
 {
   "name": "nghean-tax-github-pages",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
   "type": "module",
   "description": "Thu thập dữ liệu Thuế Nghệ An bằng Chromium trên GitHub Actions, lưu JSON và thumbnail qua GitHub Pages",
@@ -16,5 +16,8 @@
     "report": "node src/report-refresh.mjs",
     "assert:refresh": "node src/assert-refresh.mjs",
     "collect:browser": "node src/refresh-full.mjs && node src/build-static.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
   }
 }
