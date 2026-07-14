@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách.",
+  "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed",
   "items": [
     {
       "tab": "thue",
@@ -36,7 +36,7 @@
       "imageUrl": ""
     }
   ],
-  "lastAttemptAt": null,
+  "lastAttemptAt": "2026-07-14T15:16:19.579Z",
   "itemCount": 4,
   "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng.",
   "fetchedItemCount": 0,
