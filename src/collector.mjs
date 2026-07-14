@@ -15,7 +15,14 @@ import {
   parseTthc,
   parseVideos,
 } from "./parsers.mjs";
-import { markFailure, saveSuccess } from "./store.mjs";
+import { markFailure, readDataset, saveSuccess } from "./store.mjs";
+import {
+  crawlReader,
+  readDnrrvtPage,
+  readDocumentsPage,
+  readNewsPage,
+  readTthcPage,
+} from "./reader-fallback.mjs";
 import { absoluteUrl, uniqueBy } from "./utils.mjs";
 
 const NEWS = {
@@ -54,6 +61,34 @@ const DOCS = {
     "/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611518V5",
   ],
 };
+
+function readerUrls(paths) {
+  const out = [];
+  for (const pathOrUrl of paths || []) {
+    if (/^https?:\/\//i.test(pathOrUrl)) {
+      out.push(pathOrUrl);
+      continue;
+    }
+    const path = String(pathOrUrl).startsWith("/") ? String(pathOrUrl) : `/${pathOrUrl}`;
+    // Reader thường ổn định hơn với HTTPS; vẫn giữ HTTP làm dự phòng.
+    out.push(`https://nghean.gdt.gov.vn${path}`);
+    out.push(`http://nghean.gdt.gov.vn${path}`);
+  }
+  return uniqueBy(out, (x) => x);
+}
+
+async function mergeCurrent(dataset, freshItems, keyFn) {
+  const current = await readDataset(dataset);
+  const oldItems = Array.isArray(current.items) ? current.items : [];
+  return {
+    current,
+    items: uniqueBy([...(freshItems || []), ...oldItems], keyFn),
+  };
+}
+
+function joinedErrors(errors) {
+  return errors.filter(Boolean).join(" | ").slice(0, 8000);
+}
 
 async function firstWorking(paths, options = {}) {
   const errors = [];
@@ -110,22 +145,63 @@ export async function collectNewsTab(tab) {
   const cfg = NEWS[tab];
   if (!cfg) throw new Error(`Tab tin không hợp lệ: ${tab}`);
   const dataset = `news-${tab}`;
+  const errors = [];
+  let directItems = [];
+  let readerItems = [];
+  let sourceUrl = "";
+  let sourceStatus = 200;
+
   try {
     const first = await firstWorking(cfg.paths);
-    let items = await crawlPagedGet(
+    sourceUrl = first.url;
+    sourceStatus = first.status;
+    directItems = await crawlPagedGet(
       first,
       (text, baseUrl) => parseNews(text, baseUrl, tab, cfg.marker),
       config.maxNewsPages
     );
-    items = uniqueBy(items, (x) => x.url);
-    await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
-    console.log(`[collector] ${dataset}: ${items.length} mục`);
-    return items;
   } catch (error) {
+    errors.push(`Trực tiếp: ${error?.message || error}`);
+  }
+
+  // GitHub-hosted runner hiện bị nguồn Thuế từ chối/timeout. Dùng Reader như một IP trung gian hợp lệ.
+  if (directItems.length < 10) {
+    try {
+      const result = await crawlReader(
+        readerUrls(cfg.paths),
+        (url) => readNewsPage(url, tab, cfg.marker),
+        config.maxReaderNewsPages
+      );
+      readerItems = result.items;
+      if (!sourceUrl && result.firstSuccessUrl) sourceUrl = result.firstSuccessUrl;
+      if (result.errors.length) errors.push(`Reader: ${result.errors.join(" ; ")}`);
+    } catch (error) {
+      errors.push(`Reader: ${error?.message || error}`);
+    }
+  }
+
+  const fresh = uniqueBy([...directItems, ...readerItems], (x) => x.url);
+  if (fresh.length === 0) {
+    const error = new Error(joinedErrors(errors) || "Không thu được tin trực tiếp hoặc qua Reader.");
     await markFailure(dataset, error);
     console.error(`[collector] ${dataset} lỗi:`, error.message);
     throw error;
   }
+
+  const merged = await mergeCurrent(dataset, fresh, (x) => x.url || `${x.date}|${x.title}`);
+  const partial = fresh.length < 10;
+  const sourceMode = directItems.length && readerItems.length ? "direct+reader" : readerItems.length ? "reader" : "direct";
+  await saveSuccess(dataset, merged.items, {
+    sourceUrl,
+    sourceStatus,
+    sourceMode,
+    fetchedItemCount: fresh.length,
+    partial,
+    stale: partial,
+    lastError: partial ? joinedErrors(errors) || `Mới lấy được ${fresh.length} mục; giữ thêm dữ liệu cũ.` : "",
+  });
+  console.log(`[collector] ${dataset}: mới ${fresh.length}, tổng lưu ${merged.items.length}, nguồn ${sourceMode}`);
+  return merged.items;
 }
 
 export async function collectAllNews() {
@@ -144,9 +220,17 @@ export async function collectDocsTab(tab) {
   const paths = DOCS[tab];
   if (!paths) throw new Error(`Tab văn bản không hợp lệ: ${tab}`);
   const dataset = `docs-${tab}`;
+  const errors = [];
+  let directItems = [];
+  let readerItems = [];
+  let sourceUrl = "";
+  let sourceStatus = 200;
+
   try {
     const first = await firstWorking(paths);
-    let items = parseDocuments(first.text, first.url, tab);
+    sourceUrl = first.url;
+    sourceStatus = first.status;
+    directItems = parseDocuments(first.text, first.url, tab);
     const actionUrl = parseSearchFormAction(first.text, first.url);
     const maxPage = Math.max(1, parseMaxPage(first.text, config.maxDocPages));
     let cookie = first.cookie || "";
@@ -174,27 +258,59 @@ export async function collectDocsTab(tab) {
             if (maxPage === 1 || emptyPages >= 2) break;
           } else {
             emptyPages = 0;
-            const before = items.length;
-            items.push(...parsed);
-            items = uniqueBy(items, (x) => `${x.code}|${x.date}|${x.title}`);
-            if (items.length === before && maxPage === 1) break;
+            const before = directItems.length;
+            directItems.push(...parsed);
+            directItems = uniqueBy(directItems, (x) => `${x.code}|${x.date}|${x.title}`);
+            if (directItems.length === before && maxPage === 1) break;
           }
         } catch (error) {
-          console.warn(`[collector] ${dataset} trang ${pageNum} lỗi:`, error.message);
+          errors.push(`Trang POST ${pageNum}: ${error?.message || error}`);
           if (maxPage === 1) break;
         }
       }
     }
-
-    items = uniqueBy(items, (x) => `${x.code}|${x.date}|${x.title}`);
-    await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
-    console.log(`[collector] ${dataset}: ${items.length} mục`);
-    return items;
   } catch (error) {
+    errors.push(`Trực tiếp: ${error?.message || error}`);
+  }
+
+  if (directItems.length < 10) {
+    try {
+      const result = await crawlReader(
+        readerUrls(paths),
+        (url) => readDocumentsPage(url, tab),
+        config.maxReaderDocPages
+      );
+      readerItems = result.items;
+      if (!sourceUrl && result.firstSuccessUrl) sourceUrl = result.firstSuccessUrl;
+      if (result.errors.length) errors.push(`Reader: ${result.errors.join(" ; ")}`);
+    } catch (error) {
+      errors.push(`Reader: ${error?.message || error}`);
+    }
+  }
+
+  const key = (x) => `${x.code}|${x.date}|${x.title}`;
+  const fresh = uniqueBy([...directItems, ...readerItems], key);
+  if (fresh.length === 0) {
+    const error = new Error(joinedErrors(errors) || "Không thu được danh sách văn bản.");
     await markFailure(dataset, error);
     console.error(`[collector] ${dataset} lỗi:`, error.message);
     throw error;
   }
+
+  const merged = await mergeCurrent(dataset, fresh, key);
+  const partial = fresh.length < 10;
+  const sourceMode = directItems.length && readerItems.length ? "direct+reader" : readerItems.length ? "reader" : "direct";
+  await saveSuccess(dataset, merged.items, {
+    sourceUrl,
+    sourceStatus,
+    sourceMode,
+    fetchedItemCount: fresh.length,
+    partial,
+    stale: partial,
+    lastError: partial ? joinedErrors(errors) || `Mới lấy được ${fresh.length} văn bản; giữ thêm dữ liệu cũ.` : "",
+  });
+  console.log(`[collector] ${dataset}: mới ${fresh.length}, tổng lưu ${merged.items.length}, nguồn ${sourceMode}`);
+  return merged.items;
 }
 
 export async function collectAllDocs() {
@@ -216,34 +332,63 @@ export async function collectTthc() {
     "/wps/portal/Home/tthc",
     "/wps/portal/home/tthc",
   ];
+  const errors = [];
+  let directItems = [];
+  let readerItems = [];
+  let sourceUrl = "";
+  let sourceStatus = 200;
+
   try {
     const first = await firstWorking(paths);
-    let items = parseTthc(first.text, first.url);
+    sourceUrl = first.url;
+    sourceStatus = first.status;
+    directItems = parseTthc(first.text, first.url);
     const viewAllUrls = findViewAllUrls(first.text, first.url);
-
     for (const viewAll of viewAllUrls) {
       try {
         const all = await fetchTextDetailed(viewAll, { retries: 1, cookie: first.cookie, headers: { referer: first.url } });
-        const crawled = await crawlPagedGet(
-          all,
-          (text, baseUrl) => parseTthc(text, baseUrl),
-          40
-        );
-        items.push(...crawled);
+        const crawled = await crawlPagedGet(all, (text, baseUrl) => parseTthc(text, baseUrl), 60);
+        directItems.push(...crawled);
       } catch (error) {
-        console.warn("[collector] tthc link xem toàn bộ lỗi:", error.message);
+        errors.push(`Xem toàn bộ: ${error?.message || error}`);
       }
     }
-
-    items = uniqueBy(items, (x) => x.link || `${x.group}|${x.stt}|${x.title}`);
-    await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
-    console.log(`[collector] ${dataset}: ${items.length} mục`);
-    return items;
   } catch (error) {
+    errors.push(`Trực tiếp: ${error?.message || error}`);
+  }
+
+  if (directItems.length < 10) {
+    try {
+      const result = await crawlReader(
+        readerUrls(paths),
+        (url) => readTthcPage(url),
+        40
+      );
+      readerItems = result.items;
+      if (!sourceUrl && result.firstSuccessUrl) sourceUrl = result.firstSuccessUrl;
+      if (result.errors.length) errors.push(`Reader: ${result.errors.join(" ; ")}`);
+    } catch (error) {
+      errors.push(`Reader: ${error?.message || error}`);
+    }
+  }
+
+  const key = (x) => x.link || `${x.group}|${x.title}`;
+  const fresh = uniqueBy([...directItems, ...readerItems], key);
+  if (fresh.length === 0) {
+    const error = new Error(joinedErrors(errors) || "Không thu được thủ tục hành chính.");
     await markFailure(dataset, error);
-    console.error(`[collector] ${dataset} lỗi:`, error.message);
     throw error;
   }
+  const merged = await mergeCurrent(dataset, fresh, key);
+  const partial = fresh.length < 10;
+  const sourceMode = directItems.length && readerItems.length ? "direct+reader" : readerItems.length ? "reader" : "direct";
+  await saveSuccess(dataset, merged.items, {
+    sourceUrl, sourceStatus, sourceMode, fetchedItemCount: fresh.length,
+    partial, stale: partial,
+    lastError: partial ? joinedErrors(errors) || `Mới lấy được ${fresh.length} thủ tục; giữ thêm dữ liệu cũ.` : "",
+  });
+  console.log(`[collector] ${dataset}: mới ${fresh.length}, tổng lưu ${merged.items.length}, nguồn ${sourceMode}`);
+  return merged.items;
 }
 
 export async function collectFeedback() {
@@ -319,22 +464,53 @@ export async function collectDnrrvt() {
     "/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt",
     "/wps/portal/Home/dnrrvt",
   ];
+  const errors = [];
+  let directItems = [];
+  let readerItems = [];
+  let sourceUrl = "";
+  let sourceStatus = 200;
+
   try {
     const first = await firstWorking(paths);
-    let items = await crawlPagedGet(
-      first,
-      (text, baseUrl) => parseDnrrvt(text, baseUrl),
-      100
-    );
-    items = uniqueBy(items, (x) => `${x.soQd}|${x.ngayQd}|${x.coQuan}`);
-    await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
-    console.log(`[collector] ${dataset}: ${items.length} mục`);
-    return items;
+    sourceUrl = first.url;
+    sourceStatus = first.status;
+    directItems = await crawlPagedGet(first, (text, baseUrl) => parseDnrrvt(text, baseUrl), 100);
   } catch (error) {
+    errors.push(`Trực tiếp: ${error?.message || error}`);
+  }
+
+  if (directItems.length < 20) {
+    try {
+      const result = await crawlReader(
+        readerUrls(paths),
+        (url) => readDnrrvtPage(url),
+        100
+      );
+      readerItems = result.items;
+      if (!sourceUrl && result.firstSuccessUrl) sourceUrl = result.firstSuccessUrl;
+      if (result.errors.length) errors.push(`Reader: ${result.errors.join(" ; ")}`);
+    } catch (error) {
+      errors.push(`Reader: ${error?.message || error}`);
+    }
+  }
+
+  const key = (x) => `${x.soQd}|${x.ngayQd}|${x.coQuan}`;
+  const fresh = uniqueBy([...directItems, ...readerItems], key);
+  if (fresh.length === 0) {
+    const error = new Error(joinedErrors(errors) || "Không thu được danh sách doanh nghiệp rủi ro cao.");
     await markFailure(dataset, error);
-    console.error(`[collector] ${dataset} lỗi:`, error.message);
     throw error;
   }
+  const merged = await mergeCurrent(dataset, fresh, key);
+  const partial = fresh.length < 20;
+  const sourceMode = directItems.length && readerItems.length ? "direct+reader" : readerItems.length ? "reader" : "direct";
+  await saveSuccess(dataset, merged.items, {
+    sourceUrl, sourceStatus, sourceMode, fetchedItemCount: fresh.length,
+    partial, stale: partial,
+    lastError: partial ? joinedErrors(errors) || `Mới lấy được ${fresh.length} mục; giữ thêm dữ liệu cũ.` : "",
+  });
+  console.log(`[collector] ${dataset}: mới ${fresh.length}, tổng lưu ${merged.items.length}, nguồn ${sourceMode}`);
+  return merged.items;
 }
 
 export async function collectOthers() {

@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "/wps/portal: http://nghean.gdt.gov.vn/wps/portal: fetch failed | https://nghean.gdt.gov.vn/wps/portal: fetch failed | /wps/portal/nghean: http://nghean.gdt.gov.vn/wps/portal/nghean: fetch failed | https://nghean.gdt.gov.vn/wps/portal/nghean: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: fetch failed",
+  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
   "items": [
     {
       "id": "dvc-1",
@@ -100,5 +100,5 @@
     }
   ],
   "itemCount": 13,
-  "lastAttemptAt": "2026-07-14T03:50:39.027Z"
+  "lastAttemptAt": null
 }

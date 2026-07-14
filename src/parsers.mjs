@@ -12,6 +12,7 @@ function contextAround(html, index, radius = 1400) {
 export function parseNews(html, baseUrl, tab, marker) {
   const items = [];
   const anchorRe = /<a\b[^>]*href\s*=\s*(['"])(.*?)\1[^>]*>([\s\S]*?)<\/a>/gi;
+  const badImage = /(?:banner|logo|home\.|blank\.|favicon|loading|icon|sub_banner|spacer|pixel|thuevietnam|tracuuthongtin)/i;
   let m;
   while ((m = anchorRe.exec(html))) {
     const rawHref = decodeHtml(m[2]).replace(/&amp;/g, "&");
@@ -22,11 +23,50 @@ export function parseNews(html, baseUrl, tab, marker) {
     if (!wanted) continue;
     const title = stripTags(m[3]);
     if (!title || title.length < 8 || /^xem (thêm|chi tiết)$/i.test(title)) continue;
-    const ctx = contextAround(html, m.index);
-    const date = ctx.match(/\(?\b(\d{2}\/\d{2}\/\d{4})\b\)?/)?.[1] || "";
-    const imgTag = ctx.match(/<img\b[^>]*src\s*=\s*(['"])(.*?)\1[^>]*>/i)?.[0] || "";
-    const imageUrl = imgTag ? absoluteUrl(baseUrl, attr(imgTag, "src")) : "";
-    items.push({ tab, title, url: absoluteUrl(baseUrl, rawHref), date, imageUrl });
+
+    const start = Math.max(0, m.index - 1500);
+    const end = Math.min(html.length, anchorRe.lastIndex + 3000);
+    const ctx = html.slice(start, end);
+    const localAnchorIndex = m.index - start;
+
+    let date = "";
+    const afterAnchor = ctx.slice(localAnchorIndex);
+    const beforeAnchor = ctx.slice(0, localAnchorIndex);
+    date = afterAnchor.match(/\(?\b(\d{2}\/\d{2}\/\d{4})\b\)?/)?.[1]
+      || beforeAnchor.match(/\(?\b(\d{2}\/\d{2}\/\d{4})\b\)?(?![\s\S]*\d{2}\/\d{2}\/\d{4})/)?.[1]
+      || "";
+
+    let imageUrl = "";
+    let bestScore = Number.POSITIVE_INFINITY;
+    const imgRe = /<img\b[^>]*src\s*=\s*(['"])(.*?)\1[^>]*>/gi;
+    let im;
+    while ((im = imgRe.exec(ctx))) {
+      const src = decodeHtml(im[2]);
+      if (!src || badImage.test(src)) continue;
+      const distance = Math.abs(im.index - localAnchorIndex);
+      const directionPenalty = im.index > localAnchorIndex + 1500 ? 1000 : 0;
+      const score = distance + directionPenalty;
+      if (score < bestScore) {
+        bestScore = score;
+        imageUrl = absoluteUrl(baseUrl, src);
+      }
+    }
+
+    let summary = "";
+    const summaryArea = ctx.slice(localAnchorIndex, Math.min(ctx.length, localAnchorIndex + 2600));
+    const paragraphs = [...summaryArea.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+      .map((x) => stripTags(x[1]))
+      .filter((x) => x.length >= 35 && x.length <= 1200 && x !== title);
+    if (paragraphs.length) summary = paragraphs[0];
+
+    items.push({
+      tab,
+      title,
+      url: absoluteUrl(baseUrl, rawHref),
+      date,
+      imageUrl,
+      summary,
+    });
   }
   return uniqueBy(items, (x) => x.url);
 }

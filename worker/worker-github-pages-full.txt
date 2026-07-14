@@ -3139,7 +3139,7 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
       const result = await githubFetchJsonFile(base, "health.json", ctx);
       return githubCorsJson({
         ...result.data,
-        gateway: "cloudflare-worker-github-pages",
+        gateway: "cloudflare-worker-github-pages-v3",
         githubDataBase: base,
         gatewayCacheStale: result.staleGatewayCache,
         gatewayError: result.gatewayError || "",
@@ -3170,6 +3170,10 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
         updatedAt: result.payload.updatedAt || null,
         lastAttemptAt: result.payload.lastAttemptAt || null,
         lastError: result.payload.lastError || result.gatewayError || "",
+        sourceMode: result.payload.sourceMode || "",
+        fetchedItemCount: Number(result.payload.fetchedItemCount || 0),
+        seed: Boolean(result.payload.seed),
+        partial: Boolean(result.payload.partial),
       });
     }
 
@@ -3188,6 +3192,10 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
         stale: Boolean(result.payload.stale || result.staleGatewayCache),
         updatedAt: result.payload.updatedAt || null,
         lastError: result.payload.lastError || result.gatewayError || "",
+        sourceMode: result.payload.sourceMode || "",
+        fetchedItemCount: Number(result.payload.fetchedItemCount || 0),
+        seed: Boolean(result.payload.seed),
+        partial: Boolean(result.payload.partial),
       });
     }
 

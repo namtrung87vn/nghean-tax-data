@@ -35,4 +35,9 @@ export const config = {
   requestRetries: num("REQUEST_RETRIES", 1),
   maxNewsPages: num("MAX_NEWS_PAGES", 10),
   maxDocPages: num("MAX_DOC_PAGES", 65),
+  readerEnabled: String(process.env.READER_ENABLED || "true").toLowerCase() !== "false",
+  readerTimeoutMs: num("READER_TIMEOUT_MS", 90000),
+  readerDelayMs: num("READER_DELAY_MS", 3500),
+  maxReaderNewsPages: num("MAX_READER_NEWS_PAGES", 15),
+  maxReaderDocPages: num("MAX_READER_DOC_PAGES", 30),
 };

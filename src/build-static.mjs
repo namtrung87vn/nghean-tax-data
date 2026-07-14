@@ -40,6 +40,9 @@ for (const file of files) {
     updatedAt: data.updatedAt || null,
     lastAttemptAt: data.lastAttemptAt || null,
     sourceUrl: data.sourceUrl || "",
+    sourceMode: data.sourceMode || "",
+    fetchedItemCount: Number(data.fetchedItemCount || 0),
+    partial: Boolean(data.partial),
     lastError: data.lastError || "",
   };
 }
@@ -58,7 +61,8 @@ const required = [
   "videos",
 ];
 const requiredOk = required.every((name) => datasets[name]?.itemCount > 0);
-const degraded = Object.values(datasets).some((item) => item.stale || !item.ok);
+const degraded = Object.values(datasets).some((item) => item.stale || item.partial || !item.ok);
+const liveDatasets = Object.values(datasets).filter((item) => item.ok && !item.stale && !item.seed && item.fetchedItemCount > 0).length;
 const generatedAt = new Date().toISOString();
 
 const health = {
@@ -67,6 +71,7 @@ const health = {
   service: "nghean-tax-github-pages",
   generatedAt,
   sourceHost: "nghean.gdt.gov.vn",
+  liveDatasets,
   requiredDatasets: required,
   datasets,
 };
@@ -78,12 +83,14 @@ await fs.writeFile(path.join(docsDir, ".nojekyll"), "", "utf8");
 
 const rows = Object.entries(datasets)
   .map(([name, item]) => {
-    const status = item.itemCount > 0 ? (item.stale ? "Dữ liệu dự phòng" : "Đang hoạt động") : "Chưa có dữ liệu";
-    const cls = item.itemCount > 0 ? (item.stale ? "warn" : "ok") : "bad";
+    const status = item.itemCount > 0 ? (item.seed ? "Dữ liệu seed" : item.stale || item.partial ? "Dữ liệu một phần/dự phòng" : "Đã tải live") : "Chưa có dữ liệu";
+    const cls = item.itemCount > 0 ? (item.seed || item.stale || item.partial ? "warn" : "ok") : "bad";
     return `<tr>
       <td><a href="data/${encodeURIComponent(name)}.json">${esc(name)}</a></td>
       <td class="num">${item.itemCount}</td>
+      <td class="num">${item.fetchedItemCount || 0}</td>
       <td><span class="badge ${cls}">${esc(status)}</span></td>
+      <td>${esc(item.sourceMode || "—")}</td>
       <td>${esc(item.updatedAt || "—")}</td>
       <td class="message">${esc(item.lastError || "")}</td>
     </tr>`;
@@ -105,11 +112,12 @@ const html = `<!doctype html>
     <section class="head">
       <span class="status">${requiredOk ? "HỆ THỐNG CÓ DỮ LIỆU" : "HỆ THỐNG THIẾU DỮ LIỆU"}</span>
       <h1>Dữ liệu công khai Thuế Nghệ An</h1>
-      <p>Trang này do GitHub Actions cập nhật tự động. Khi nguồn Thuế lỗi, hệ thống giữ lại bản hợp lệ gần nhất.</p>
+      <p>Trang này do GitHub Actions cập nhật tự động. Trạng thái <b>Đã tải live</b> mới xác nhận nguồn vừa được lấy thành công; seed/dự phòng không được xem là đã lấy đủ.</p>
+      <p><b>Số bộ dữ liệu live:</b> ${liveDatasets}/${Object.keys(datasets).length}</p>
       <p><b>Tạo lúc:</b> ${esc(generatedAt)} · <a href="health.json">Mở health.json</a></p>
     </section>
     <table>
-      <thead><tr><th>Bộ dữ liệu</th><th>Số mục</th><th>Trạng thái</th><th>Cập nhật</th><th>Lỗi gần nhất</th></tr></thead>
+      <thead><tr><th>Bộ dữ liệu</th><th>Tổng lưu</th><th>Vừa lấy</th><th>Trạng thái</th><th>Nguồn</th><th>Cập nhật</th><th>Lỗi gần nhất</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
   </main>
