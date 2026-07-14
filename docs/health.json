@@ -2,7 +2,7 @@
   "ok": true,
   "degraded": true,
   "service": "nghean-tax-github-pages",
-  "generatedAt": "2026-07-14T07:10:38.173Z",
+  "generatedAt": "2026-07-14T04:47:56.538Z",
   "sourceHost": "nghean.gdt.gov.vn",
   "liveDatasets": 0,
   "requiredDatasets": [
@@ -25,7 +25,7 @@
       "seed": true,
       "itemCount": 10,
       "updatedAt": "2026-07-14T02:49:27.000Z",
-      "lastAttemptAt": "2026-07-14T07:10:38.135Z",
+      "lastAttemptAt": "2026-07-14T02:49:27.000Z",
       "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -33,7 +33,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: http://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: fetch failed | /wps/portal/Home/dnrrvt: http://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt: fetch failed | Reader: Reader chỉ lấy được 0 dòng DNRRVT."
+      "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép."
     },
     "docs-huongdan": {
       "ok": true,
@@ -41,7 +41,7 @@
       "seed": true,
       "itemCount": 7,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T06:57:45.514Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -49,7 +49,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO39F80IE3NQ7HJ2692: fetch failed | Reader: Reader không trả văn bản."
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
     },
     "docs-khac": {
       "ok": true,
@@ -57,7 +57,7 @@
       "seed": true,
       "itemCount": 19,
       "updatedAt": "2026-07-14T02:49:27.000Z",
-      "lastAttemptAt": "2026-07-14T06:58:31.995Z",
+      "lastAttemptAt": "2026-07-14T02:49:27.000Z",
       "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -65,7 +65,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed | Reader: Reader không trả văn bản."
+      "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép."
     },
     "docs-nganh": {
       "ok": true,
@@ -73,7 +73,7 @@
       "seed": true,
       "itemCount": 2,
       "updatedAt": "2026-07-14T02:49:27.000Z",
-      "lastAttemptAt": "2026-07-14T07:00:08.454Z",
+      "lastAttemptAt": "2026-07-14T02:49:27.000Z",
       "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -81,7 +81,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611510D2: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611518V5: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611518V5: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJHE00IHBC611518V5: fetch failed | Reader: Reader không trả văn bản."
+      "lastError": "Hai mục hiện hành được khởi tạo từ chỉ mục chính thức; collector sẽ lấy toàn bộ danh sách khi nguồn phản hồi."
     },
     "dvc": {
       "ok": true,
@@ -89,7 +89,7 @@
       "seed": true,
       "itemCount": 13,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T07:09:01.676Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -97,7 +97,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "/wps/portal: http://nghean.gdt.gov.vn/wps/portal: fetch failed | https://nghean.gdt.gov.vn/wps/portal: fetch failed | /wps/portal/nghean: http://nghean.gdt.gov.vn/wps/portal/nghean: fetch failed | https://nghean.gdt.gov.vn/wps/portal/nghean: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3AM00I1935RNOCEO2: fetch failed"
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
     },
     "news-kinhte": {
       "ok": true,
@@ -105,7 +105,7 @@
       "seed": true,
       "itemCount": 5,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T06:55:22.574Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -113,7 +113,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
+      "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách."
     },
     "news-thongbao": {
       "ok": true,
@@ -121,7 +121,7 @@
       "seed": true,
       "itemCount": 5,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T06:56:59.035Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -129,7 +129,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
+      "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách."
     },
     "news-thue": {
       "ok": true,
@@ -137,7 +137,7 @@
       "seed": true,
       "itemCount": 4,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T06:53:46.106Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -145,7 +145,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
+      "lastError": "Dữ liệu khởi tạo chỉ từ trang chủ, không trộn tin cũ. Hãy chạy workflow V4 bằng Chromium để thay bằng toàn bộ trang danh sách."
     },
     "tthc-phananh": {
       "ok": true,
@@ -153,7 +153,7 @@
       "seed": true,
       "itemCount": 1,
       "updatedAt": "2026-07-14T02:49:27.000Z",
-      "lastAttemptAt": "2026-07-14T07:04:43.826Z",
+      "lastAttemptAt": "2026-07-14T02:49:27.000Z",
       "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -161,7 +161,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: fetch failed | /wps/portal/Home/tthc/phananh: http://nghean.gdt.gov.vn/wps/portal/Home/tthc/phananh: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/tthc/phananh: fetch failed | /wps/portal/home/tthc/phananh: http://nghean.gdt.gov.vn/wps/portal/home/tthc/phananh: fetch failed | https://nghean.gdt.gov.vn/wps/portal/home/tthc/phananh: fetch failed"
+      "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép."
     },
     "tthc": {
       "ok": true,
@@ -169,7 +169,7 @@
       "seed": true,
       "itemCount": 6,
       "updatedAt": "2026-07-14T02:49:27.000Z",
-      "lastAttemptAt": "2026-07-14T07:02:34.900Z",
+      "lastAttemptAt": "2026-07-14T02:49:27.000Z",
       "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -177,7 +177,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: Chưa cài Playwright. Trên GitHub Actions cần chạy: npm install --no-save --no-package-lock playwright@1.61.1 && npx playwright install chromium --with-deps | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: fetch failed | /wps/portal/Home/tthc: http://nghean.gdt.gov.vn/wps/portal/Home/tthc: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/tthc: fetch failed | /wps/portal/home/tthc: http://nghean.gdt.gov.vn/wps/portal/home/tthc: fetch failed | https://nghean.gdt.gov.vn/wps/portal/home/tthc: fetch failed | Reader: Reader chỉ lấy được 0 TTHC."
+      "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép."
     },
     "videos": {
       "ok": true,
@@ -185,7 +185,7 @@
       "seed": true,
       "itemCount": 4,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-07-14T07:06:52.752Z",
+      "lastAttemptAt": null,
       "sourceUrl": "",
       "sourceMode": "",
       "fetchedItemCount": 0,
@@ -193,7 +193,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: http://nghean.gdt.gov.vn/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: fetch failed | https://nghean.gdt.gov.vn/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: fetch failed | /wps/portal: http://nghean.gdt.gov.vn/wps/portal: fetch failed | https://nghean.gdt.gov.vn/wps/portal: fetch failed"
+      "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công."
     }
   }
 }
