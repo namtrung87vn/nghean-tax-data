@@ -1,12 +1,149 @@
 {
-  "ok": false,
+  "ok": true,
   "dataset": "docs-khac",
-  "updatedAt": null,
-  "sourceUpdatedAt": null,
-  "lastAttemptAt": "2026-07-14T02:12:38.698Z",
+  "updatedAt": "2026-07-14T02:49:27.000Z",
+  "sourceUpdatedAt": "2026-07-14T02:49:27.000Z",
+  "lastAttemptAt": "2026-07-14T02:49:27.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed",
-  "items": [],
-  "itemCount": 0
+  "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép.",
+  "sourceStatus": 200,
+  "itemCount": 19,
+  "previousItemCount": 0,
+  "items": [
+    {
+      "tab": "khac",
+      "title": "Công văn số 2010/TCT-TVQT của Tổng cục thuế ngày 30/05/2014 v/v Hướng dẫn thực hiện một số nội dung Thông tư số 39/2014/TT-BTC",
+      "date": "30/05/2014",
+      "code": "Công văn số 2010 /TCT-TVQT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_gdt/ac3f19a6-86ce-405a-9363-5900f1f2fbc9"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 19/2014/QĐ-UBND của UBND tỉnh Nghệ An ngày 12/03/2014 Quyết định ban hành bảng giá tối thiểu tính lệ phí trước bạ đối với xe ô tô, xe môtô, xe gắn máy và tàu, thuyền trên địa bàn tỉnh Nghệ An",
+      "date": "13/03/2014",
+      "code": "19/2014/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/6a1ee19c-b16d-42fb-b959-62823d42af9b"
+    },
+    {
+      "tab": "khac",
+      "title": "Công văn của Bộ Tài chính số 18228/BTC-CST ngày 31/12/2013 V/v triển khai thực hiện Nghị quyết số 712/2013/UBTVQH13",
+      "date": "31/12/2013",
+      "code": "Công văn số 18228 /BTC-CST",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/Hoai_a/447dec81-d1a5-4ab9-85f0-5cc3d9ec4d66"
+    },
+    {
+      "tab": "khac",
+      "title": "Chỉ thị của Bộ tài chính số 04/CT-BTC ngày 06 tháng 11 năm 2013 về việc tăng cường công tác thu và thực hiện tiết kiệm chi NSNN trong các tháng cuối năm 2013",
+      "date": "06/11/2013",
+      "code": "Chỉ thị số 04/CT-BTC",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/Hoai_a/cca96b56-503d-471f-8d55-10386b3be8f7"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 38/2013/QĐ-UBND ngày 31/7/2013 của UBND tỉnh Nghệ An về việc ban hành Quyết định Về việc sửa đổi, bổ sung Bảng giá tối thiểu tính lệ phí trước bạ đối với xe ôtô, xe hai bánh gắn máy, tàu, thuyền trên địa bàn tỉnh Nghệ An",
+      "date": "31/07/2013",
+      "code": "Số 38/2013/QĐ-UBND ngày 31/7/2013",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/0f57499c-b431-41dd-8ef4-1df7ce033521"
+    },
+    {
+      "tab": "khac",
+      "title": "Công văn của Bộ tài chính số 8355/BTC-TCT ngày 28 tháng 6 năm 2013 v/v triển khai thực hiện một số quy định có hiệu lực từ ngày 1/7/2013 tại Luật sửa đổi, bổ sung một số điều của Luật Quản lý thuế",
+      "date": "28/06/2013",
+      "code": "Công văn số 8355/BTC-TCT",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/Hoai_a/ac9cd419-f856-4f61-888f-1906f700755f"
+    },
+    {
+      "tab": "khac",
+      "title": "Công văn của Bộ tài chính số 8336/BTC-CST ngày 28 tháng 6 năm 2013 v/v triển khai thực hiện một số quy định có hiệu lực từ ngày 1/7/2013 tại Luật sửa đổi, bổ sung một số điều của Luật thuế TNDN và Luật sửa đổi, bổ sung một số điều của Luật thuế GTGT",
+      "date": "28/06/2013",
+      "code": "Công văn 8336/BTC-CST",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/Hoai_a/3a39c7a9-fc19-42b5-ab31-0271e1204c44"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 29/2013/QĐ-UBND ngày 06/6/2013 của UBND tỉnh Nghệ An về việc sửa đổi, bổ sung bảng giá tối thiểu tính lệ phí trước bạ đối với xe ô tô, xe hai bánh gắn máy, tàu, thuyền trên địa bàn tỉnh Nghệ An",
+      "date": "06/06/2013",
+      "code": "29/2013/QD-UBND ngày 06/6/2013",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/ac5bb4a3-67f5-4b90-bcf9-276a465b7f78"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định 23/2013/QĐ-UBND ngày 22 tháng 4 năm 2013 của UBND tỉnh Nghệ An Quyết định Ban hành bảng giá tối thiểu tài nguyên, thiên nhiên để tính thuế tài nguyên trên địa bàn tỉnh Nghệ An",
+      "date": "22/04/2013",
+      "code": "Quyết định 23/2013/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/e27ee612-1aed-4e4e-9e2b-8998d41b3cd2"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 20/2013/QĐ-UBND ngày 29/3/2013 của UBND tỉnh Ban hành Bảng giá tối thiểu tính lệ phí trước bạ đối với xe ôtô, xe hai bánh gắn máy, tàu, thuyền trên địa bàn tỉnh Nghệ An",
+      "date": "29/03/2013",
+      "code": "Quyết định 20/2013/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/10aee3b3-bbb0-4dae-bd25-65e46a6147ea"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 11/2013/QĐ-UBND ngày 31 tháng 1 năm 2013 của UBND tỉnh Nghệ An Quyết định ban hành bảng giá tối thiểu tài nguyên thiên nhiên để tính thuế tài nguyên trên địa bàn tỉnh Nghệ An",
+      "date": "31/01/2013",
+      "code": "Quyết định số 11/2013/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/6cbdbe26-8dbf-4d82-85d6-904854fb3453"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 82/2012/QĐ-UBND ngày 21/11/2012 của UBND tỉnh Nghệ An về việc sửa đổi, bổ sung Bảng giá tối thiểu tính Lệ phí trước bạ đối với xe ô tô, xe mô tô, xe gắn máy, tàu, thuyền trên địa bàn tỉnh Nghệ An.",
+      "date": "21/11/2012",
+      "code": "82/2012/QĐ-UBND ngày 21/11/2012",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/1183fa74-805e-4e5c-a141-a5f8d878c5d0"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 55/2012/QĐ-UBND ngày 09/8/2012 của UBND tỉnh Nghệ An về việc sửa đổi Bảng giá để tính thuế Tài nguyên trên địa bàn Nghệ An.",
+      "date": "09/08/2012",
+      "code": "Quyết định số 55/2012/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/Thang%208/524e44ff-b30b-43e4-869e-03669d376498"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 53/2012/QĐ-UBND ngày 08/8/2012 của UBND tỉnh Nghệ An về việc sửa đổi, bổ sung Bảng giá tối thiểu tính Lệ phí trước bạ đối với xe ô tô, xe mô tô, xe hai bánh gắn máy, tàu, thuyền trên địa bàn tỉnh Nghệ An.",
+      "date": "08/08/2012",
+      "code": "Quyết định số 53/2012/QĐ-UBND ngày 08/8/2012",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/Thang%208/28e29c2a-972f-4f06-8cbd-81370939af77"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 42/2012/QĐ-UBND ngày 15/6/2012 quy định về doanh thu tối thiểu và tỷ lệ phần trăm (%) chi phí tiêu hao năng lượng tối đa so với doanh thu để làm cơ sở xác định số thuế phải nộp đối với xe ô tô điện bốn bánh phục vụ khách du lịch tại thị xã Cửa Lò.",
+      "date": "15/06/2012",
+      "code": "Quyết định số 42/2012/QĐ-UBND ngày 15/6/2012",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/de15d8bc-88f3-4f69-a646-03088e787742"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định số 41/2012/QĐ-UBND ngày 15/6/2012 quy định về doanh thu tối thiểu và tỷ lệ phần trăm (%) chi phí tiêu hao nhiên liệu tối đa so với doanh thu của của từng loại xe ô tô, máy thi công để làm cơ sở xác định số thuế phải nộp.",
+      "date": "15/06/2012",
+      "code": "Quyết định số 41/2012/QĐ-UBND ngày 15/6/2012",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/234cd706-03af-4f19-af18-e1adb2ef0ed4"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định Quy định mức giá và công suất sử dụng buồng ngủ tối thiểu để làm cơ sở xác định số thuế phải nộp đối với hoạt động kinh doanh khách sạn, nhà nghỉ trên địa bàn thành phố Vinh, thị xã Thái Hoà và các huyện thuộc tỉnh Nghệ An.",
+      "date": "20/04/2012",
+      "code": "26/2012/QĐ-UBND",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/Nam%202012/Thang%204/dc17bee1-441c-4d5f-af95-f75831069438"
+    },
+    {
+      "tab": "khac",
+      "title": "Quyết định về việc sửa đổi Bảng giá tối thiểu tài nguyên thiên nhiên để tính thuế Tài nguyên trên địa bàn tỉnh Nghệ An",
+      "date": "12/03/2011",
+      "code": "Quyết định số 15/2011/QĐ-UBND ngày 12/3/2011",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/doc_other/13ce2daf-0f07-486a-86a4-65809e7f1c63"
+    },
+    {
+      "tab": "khac",
+      "title": "Thông tư số 228/2009/TT-BTC ngày 07/12/2009 của Bộ Tài chính hướng dẫn chế độ trích lập và sử dụng các khoản dự phòng giảm giá hàng tồn kho, tổn thất các khoản đầu tư tài chính, nợ phải thu khó đòi và bảo hành sản phẩm, hàng hóa, công trình xây lắp tại doanh nghiệp",
+      "date": "07/12/2009",
+      "code": "Thông tư số 228/2009/TT-BTC",
+      "viewUrl": "https://nghean.gdt.gov.vn/wps/portal?1dmy&mapping=documents/detail&urile=wcm%3apath%3a/NgheAn/site/docsystem/otherdocument/Hoai_a/6487fa79-7a57-41ff-a5ff-df65f795f169"
+    }
+  ],
+  "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0"
 }

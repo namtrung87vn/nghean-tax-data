@@ -169,7 +169,11 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
       const tab = ["thue", "kinhte", "thongbao"].includes(tabRaw) ? tabRaw : "thue";
       const result = await githubReadDataset(base, `news-${tab}`, ctx);
       if (pathname === "/list") return githubCorsJson(result.items);
-      const paged = githubPaginate(result.items, url.searchParams.get("page"), 10);
+      const paged = githubPaginate(
+        result.items,
+        url.searchParams.get("page"),
+        githubSafeInt(url.searchParams.get("pageSize"), 5, 1, 50)
+      );
       return githubCorsJson({
         tab,
         ...paged,
@@ -184,7 +188,11 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
       const tabRaw = String(url.searchParams.get("tab") || "huongdan").toLowerCase();
       const tab = ["huongdan", "khac", "nganh"].includes(tabRaw) ? tabRaw : "huongdan";
       const result = await githubReadDataset(base, `docs-${tab}`, ctx);
-      const paged = githubPaginate(result.items, url.searchParams.get("page"), 10);
+      const paged = githubPaginate(
+        result.items,
+        url.searchParams.get("page"),
+        githubSafeInt(url.searchParams.get("pageSize"), 8, 1, 50)
+      );
       return githubCorsJson({
         tab,
         ...paged,
@@ -226,7 +234,11 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
 
     if (pathname === "/videos") {
       const result = await githubReadDataset(base, "videos", ctx);
-      const paged = githubPaginate(result.items, url.searchParams.get("page"), 10);
+      const paged = githubPaginate(
+        result.items,
+        url.searchParams.get("page"),
+        githubSafeInt(url.searchParams.get("pageSize"), 8, 1, 50)
+      );
       return githubCorsJson({
         tab: "videos",
         ...paged,
@@ -254,7 +266,11 @@ async function handleGithubPagesDataRoute(request, env, ctx) {
 
     if (pathname === "/dnrrvt") {
       const result = await githubReadDataset(base, "dnrrvt", ctx);
-      const paged = githubPaginate(result.items, url.searchParams.get("page"), 10);
+      const paged = githubPaginate(
+        result.items,
+        url.searchParams.get("page"),
+        githubSafeInt(url.searchParams.get("pageSize"), 8, 1, 50)
+      );
       return githubCorsJson({
         tab: "dnrrvt",
         ...paged,

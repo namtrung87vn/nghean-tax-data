@@ -49,6 +49,11 @@ const required = [
   "news-kinhte",
   "news-thongbao",
   "docs-huongdan",
+  "docs-khac",
+  "docs-nganh",
+  "tthc",
+  "tthc-phananh",
+  "dnrrvt",
   "dvc",
   "videos",
 ];

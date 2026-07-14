@@ -3,12 +3,14 @@ import { fetchFromCandidates, fetchTextDetailed } from "./fetcher.mjs";
 import {
   extractFeedbackHtml,
   findViewAllUrl,
+  findViewAllUrls,
   parseDnrrvt,
   parseDocuments,
   parseDvc,
   parseMaxPage,
   parseNews,
   parsePageLinks,
+  parsePaginationUrls,
   parseSearchFormAction,
   parseTthc,
   parseVideos,
@@ -65,24 +67,56 @@ async function firstWorking(paths, options = {}) {
   throw new Error(errors.join(" | "));
 }
 
+async function crawlPagedGet(first, parseItems, maxPages = 10) {
+  const queue = [{ url: first.url, text: first.text, cookie: first.cookie || "" }];
+  const queued = new Set([first.url]);
+  const visited = new Set();
+  let items = [];
+  let cookie = first.cookie || "";
+
+  while (queue.length && visited.size < maxPages) {
+    const current = queue.shift();
+    if (!current?.url || visited.has(current.url)) continue;
+    visited.add(current.url);
+
+    let text = current.text;
+    let finalUrl = current.url;
+    if (typeof text !== "string") {
+      const page = await fetchTextDetailed(current.url, {
+        retries: 1,
+        timeoutMs: config.requestTimeoutMs,
+        cookie,
+        headers: { referer: first.url },
+      });
+      text = page.text;
+      finalUrl = page.url || current.url;
+      cookie = page.cookie || cookie;
+    }
+
+    items.push(...parseItems(text, finalUrl));
+    const links = parsePaginationUrls(text, finalUrl, maxPages * 3);
+    for (const link of links) {
+      if (!queued.has(link) && !visited.has(link) && queued.size < maxPages * 4) {
+        queued.add(link);
+        queue.push({ url: link });
+      }
+    }
+  }
+
+  return items;
+}
+
 export async function collectNewsTab(tab) {
   const cfg = NEWS[tab];
   if (!cfg) throw new Error(`Tab tin không hợp lệ: ${tab}`);
   const dataset = `news-${tab}`;
   try {
     const first = await firstWorking(cfg.paths);
-    let items = parseNews(first.text, first.url, tab, cfg.marker);
-    const links = parsePageLinks(first.text, first.url, config.maxNewsPages);
-
-    for (const [, pageUrl] of [...links.entries()].sort((a, b) => a[0] - b[0])) {
-      try {
-        const page = await fetchTextDetailed(pageUrl, { retries: 1, timeoutMs: config.requestTimeoutMs });
-        items.push(...parseNews(page.text, page.url, tab, cfg.marker));
-      } catch (error) {
-        console.warn(`[collector] ${dataset} bỏ qua một trang:`, error.message);
-      }
-    }
-
+    let items = await crawlPagedGet(
+      first,
+      (text, baseUrl) => parseNews(text, baseUrl, tab, cfg.marker),
+      config.maxNewsPages
+    );
     items = uniqueBy(items, (x) => x.url);
     await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
     console.log(`[collector] ${dataset}: ${items.length} mục`);
@@ -185,16 +219,23 @@ export async function collectTthc() {
   try {
     const first = await firstWorking(paths);
     let items = parseTthc(first.text, first.url);
-    const viewAll = findViewAllUrl(first.text, first.url);
-    if (viewAll) {
+    const viewAllUrls = findViewAllUrls(first.text, first.url);
+
+    for (const viewAll of viewAllUrls) {
       try {
-        const all = await fetchTextDetailed(viewAll, { retries: 1 });
-        const parsed = parseTthc(all.text, all.url);
-        if (parsed.length >= items.length) items = parsed;
+        const all = await fetchTextDetailed(viewAll, { retries: 1, cookie: first.cookie, headers: { referer: first.url } });
+        const crawled = await crawlPagedGet(
+          all,
+          (text, baseUrl) => parseTthc(text, baseUrl),
+          40
+        );
+        items.push(...crawled);
       } catch (error) {
         console.warn("[collector] tthc link xem toàn bộ lỗi:", error.message);
       }
     }
+
+    items = uniqueBy(items, (x) => x.link || `${x.group}|${x.stt}|${x.title}`);
     await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
     console.log(`[collector] ${dataset}: ${items.length} mục`);
     return items;
@@ -280,16 +321,11 @@ export async function collectDnrrvt() {
   ];
   try {
     const first = await firstWorking(paths);
-    let items = parseDnrrvt(first.text, first.url);
-    const links = parsePageLinks(first.text, first.url, 100);
-    for (const [, pageUrl] of [...links.entries()].sort((a, b) => a[0] - b[0])) {
-      try {
-        const page = await fetchTextDetailed(pageUrl, { retries: 1, cookie: first.cookie, headers: { referer: first.url } });
-        items.push(...parseDnrrvt(page.text, page.url));
-      } catch (error) {
-        console.warn("[collector] dnrrvt bỏ qua một trang:", error.message);
-      }
-    }
+    let items = await crawlPagedGet(
+      first,
+      (text, baseUrl) => parseDnrrvt(text, baseUrl),
+      100
+    );
     items = uniqueBy(items, (x) => `${x.soQd}|${x.ngayQd}|${x.coQuan}`);
     await saveSuccess(dataset, items, { sourceUrl: first.url, sourceStatus: first.status });
     console.log(`[collector] ${dataset}: ${items.length} mục`);

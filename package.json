@@ -1,6 +1,6 @@
 {
   "name": "nghean-tax-github-pages",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "description": "Thu thập dữ liệu Thuế Nghệ An bằng GitHub Actions và phát JSON qua GitHub Pages",

@@ -98,49 +98,98 @@ function parseCellLink(cell, baseUrl) {
   };
 }
 
-export function parseTthc(html, baseUrl) {
-  const tables = html.match(/<table\b[\s\S]*?<\/table>/gi) || [];
-  const table = tables.find((x) => /ta_border/i.test(x) && /Cơ quan thực hiện|VBQĐ|QĐCB|Tên thủ tục/i.test(stripTags(x)))
-    || tables.find((x) => /ta_border/i.test(x))
-    || "";
-  if (!table) return [];
-  const rows = table.match(/<tr\b[\s\S]*?<\/tr>/gi) || [];
-  const items = [];
-  for (const row of rows) {
-    if (/<th\b/i.test(row)) continue;
-    const cells = [...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((x) => x[1]);
-    if (cells.length < 5) continue;
-    const stt = stripTags(cells[0]);
-    if (!/^\d+$/.test(stt)) continue;
-    const a = cells[1].match(/<a\b[^>]*href\s*=\s*(['"])(.*?)\1[^>]*>([\s\S]*?)<\/a>/i);
-    const title = stripTags(a?.[3] || cells[1]);
-    if (!title) continue;
-    const vbqd = parseCellLink(cells[3], baseUrl);
-    const qdcb = parseCellLink(cells[4], baseUrl);
-    items.push({
-      id: `tthc-${stt}-${items.length + 1}`,
-      stt,
-      title,
-      link: a?.[2] ? absoluteUrl(baseUrl, a[2]) : "",
-      agency: stripTags(cells[2]) || "-",
-      vbqdText: vbqd.text,
-      vbqdUrl: vbqd.url,
-      qdcbText: qdcb.text,
-      qdcbUrl: qdcb.url,
-    });
+function parseLinks(cell, baseUrl) {
+  const out = [];
+  const re = /<a\b[^>]*href\s*=\s*(["'])(.*?)\1[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(cell || ""))) {
+    const text = stripTags(m[3]);
+    const url = absoluteUrl(baseUrl, m[2]);
+    if (text || url) out.push({ text: text || "Tải văn bản", url });
   }
-  return uniqueBy(items, (x) => x.link || `${x.stt}|${x.title}`);
+  return uniqueBy(out, (x) => `${x.text}|${x.url}`);
 }
 
-export function findViewAllUrl(html, baseUrl) {
+export function parseTthc(html, baseUrl) {
+  const tables = html.match(/<table\b[\s\S]*?<\/table>/gi) || [];
+  const items = [];
+  let runningIndex = 0;
+
+  for (const table of tables) {
+    const plain = stripTags(table);
+    if (!/ta_border/i.test(table) || !/Tên thủ tục hành chính|Cơ quan thực hiện/i.test(plain)) continue;
+
+    const tableIndex = html.indexOf(table);
+    const before = html.slice(Math.max(0, tableIndex - 3000), tableIndex);
+    const headings = [...before.matchAll(/<h3\b[^>]*>([\s\S]*?)<\/h3>/gi)];
+    const group = stripTags(headings.at(-1)?.[1] || "") || "Thủ tục hành chính";
+    const rows = table.match(/<tr\b[\s\S]*?<\/tr>/gi) || [];
+
+    for (const row of rows) {
+      if (/<th\b/i.test(row)) continue;
+      const cells = [...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((x) => x[1]);
+      if (cells.length < 5) continue;
+      const stt = stripTags(cells[0]);
+      if (!/^\d+$/.test(stt)) continue;
+      const a = cells[1].match(/<a\b[^>]*href\s*=\s*(["'])(.*?)\1[^>]*>([\s\S]*?)<\/a>/i);
+      const title = stripTags(a?.[3] || cells[1]);
+      if (!title) continue;
+
+      const vbqdDocs = parseLinks(cells[3], baseUrl);
+      const qdcbDocs = parseLinks(cells[4], baseUrl);
+      runningIndex += 1;
+      items.push({
+        id: `tthc-${runningIndex}`,
+        stt,
+        group,
+        title,
+        link: a?.[2] ? absoluteUrl(baseUrl, a[2]) : "",
+        agency: stripTags(cells[2]) || "-",
+        vbqdDocs,
+        qdcbDocs,
+        vbqdText: vbqdDocs.map((x) => x.text).join(", ") || "-",
+        vbqdUrl: vbqdDocs[0]?.url || "",
+        qdcbText: qdcbDocs.map((x) => x.text).join(", ") || "-",
+        qdcbUrl: qdcbDocs[0]?.url || "",
+      });
+    }
+  }
+
+  return uniqueBy(items, (x) => x.link || `${x.group}|${x.stt}|${x.title}`);
+}
+
+export function findViewAllUrls(html, baseUrl) {
+  const out = [];
   const anchors = html.match(/<a\b[^>]*>[\s\S]*?<\/a>/gi) || [];
   for (const tag of anchors) {
     const text = stripTags(tag).toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
     if (!text.includes("xem") || !text.includes("toan bo") || (!text.includes("danh sach") && !text.includes("thu tuc"))) continue;
     const href = attr(tag, "href");
-    if (href) return absoluteUrl(baseUrl, href);
+    if (href) out.push(absoluteUrl(baseUrl, href));
   }
-  return "";
+  return uniqueBy(out, (x) => x);
+}
+
+export function findViewAllUrl(html, baseUrl) {
+  return findViewAllUrls(html, baseUrl)[0] || "";
+}
+
+export function parsePaginationUrls(html, baseUrl, maxItems = 100) {
+  const out = [];
+  const anchors = html.match(/<a\b[^>]*>[\s\S]*?<\/a>/gi) || [];
+  for (const tag of anchors) {
+    const id = attr(tag, "id");
+    const title = attr(tag, "title");
+    const text = stripTags(tag);
+    const isPager = /(?:linkToPage_\d+|_nextPage|_lastPage)/i.test(id)
+      || /link to (?:page|next page|last page)/i.test(title)
+      || (/^\d+$/.test(text) && /class\s*=\s*(["'])[^"']*page/i.test(contextAround(html, html.indexOf(tag), 500)));
+    if (!isPager) continue;
+    const href = attr(tag, "href");
+    if (href) out.push(absoluteUrl(baseUrl, href));
+    if (out.length >= maxItems) break;
+  }
+  return uniqueBy(out, (x) => x);
 }
 
 export function extractFeedbackHtml(html, baseUrl) {

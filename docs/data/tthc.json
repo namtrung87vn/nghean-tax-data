@@ -1,12 +1,205 @@
 {
-  "ok": false,
+  "ok": true,
   "dataset": "tthc",
-  "updatedAt": null,
-  "sourceUpdatedAt": null,
-  "lastAttemptAt": "2026-07-14T02:16:13.562Z",
+  "updatedAt": "2026-07-14T02:49:27.000Z",
+  "sourceUpdatedAt": "2026-07-14T02:49:27.000Z",
+  "lastAttemptAt": "2026-07-14T02:49:27.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1: fetch failed | /wps/portal/Home/tthc: http://nghean.gdt.gov.vn/wps/portal/Home/tthc: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/tthc: fetch failed | /wps/portal/home/tthc: http://nghean.gdt.gov.vn/wps/portal/home/tthc: fetch failed | https://nghean.gdt.gov.vn/wps/portal/home/tthc: fetch failed",
-  "items": [],
-  "itemCount": 0
+  "lastError": "Dữ liệu khởi tạo từ file HTML đã cung cấp; GitHub Actions sẽ thay bằng dữ liệu mới khi nguồn cho phép.",
+  "sourceStatus": 200,
+  "itemCount": 6,
+  "previousItemCount": 0,
+  "items": [
+    {
+      "id": "tthc-1",
+      "stt": "1",
+      "group": "Thủ tục hành chính",
+      "title": "Khai thuế thu nhập doanh nghiệp đối với hoạt động chuyển nhượng bất động sản, khai thuế thu nhập doanh nghiệp từ hoạt động bán toàn bộ Công ty TNHH một thành viên do tổ chức làm chủ sở hữu dưới hình thức chuyển nhượng vốn có gắn với bất động sản theo lần phát sinh",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path:/gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_cucthue/01bb0829-56d3-4a27-b143-d2bda4d49167",
+      "agency": "Thuế tỉnh, thành phố/ Thuế cơ sở",
+      "vbqdDocs": [
+        {
+          "text": "94/2025/TT-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/4925f232-cfc3-4403-b3b9-293913a5d0aa"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "4008/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/67b2c4c2-e6d8-4c46-89d5-248169b5e61e"
+        }
+      ],
+      "vbqdText": "94/2025/TT-BTC",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/4925f232-cfc3-4403-b3b9-293913a5d0aa",
+      "qdcbText": "4008/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/67b2c4c2-e6d8-4c46-89d5-248169b5e61e"
+    },
+    {
+      "id": "tthc-2",
+      "stt": "2",
+      "group": "Thủ tục hành chính",
+      "title": "Khai thuế thu nhập doanh nghiệp đối với thu nhập từ chuyển nhượng quyền lợi tham gia hợp đồng dầu khí",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path:/gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_cucthue/7c0ce05c-d120-4481-ae1a-62d4a2eea8a0",
+      "agency": "Thuế tỉnh, thành phố",
+      "vbqdDocs": [
+        {
+          "text": "94/2025/TT-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/4925f232-cfc3-4403-b3b9-293913a5d0aa"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "4008/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/67b2c4c2-e6d8-4c46-89d5-248169b5e61e"
+        }
+      ],
+      "vbqdText": "94/2025/TT-BTC",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/4925f232-cfc3-4403-b3b9-293913a5d0aa",
+      "qdcbText": "4008/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/67b2c4c2-e6d8-4c46-89d5-248169b5e61e"
+    },
+    {
+      "id": "tthc-3",
+      "stt": "3",
+      "group": "Thủ tục hành chính",
+      "title": "Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân, người phụ thuộc",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path:/gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_cucthue/0b936287-fd68-445e-a510-46894e187bbf",
+      "agency": "Thuế tỉnh, thành phố/ Thuế Cơ sở",
+      "vbqdDocs": [
+        {
+          "text": "66.16/2026/NQ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/a4b40587-7cd4-45c4-b07c-f46314f623a8"
+        },
+        {
+          "text": "373/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/97522be2-7320-49d1-8e91-eb25eaa0ad76"
+        },
+        {
+          "text": "126/2020/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575"
+        },
+        {
+          "text": "118/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/cdbc07d9-ac38-4679-9ea2-4b4e6d5fc2e4"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "1109/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/f80fad35-662b-4981-9f49-2c0d72e29273"
+        },
+        {
+          "text": "1109/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/7be54afe-23a0-4d23-bb29-0b9f12d312b8"
+        },
+        {
+          "text": "4472/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/4b58c9cb-c6c9-4318-b151-103abf5d3841"
+        }
+      ],
+      "vbqdText": "66.16/2026/NQ-CP, 373/2025/NĐ-CP, 126/2020/NĐ-CP, 118/2025/NĐ-CP",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/a4b40587-7cd4-45c4-b07c-f46314f623a8",
+      "qdcbText": "1109/QĐ-BTC, 1109/QĐ-BTC, 4472/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/f80fad35-662b-4981-9f49-2c0d72e29273"
+    },
+    {
+      "id": "tthc-4",
+      "stt": "1",
+      "group": "Thủ tục hành chính Thuế cơ sở",
+      "title": "Đăng ký thuế để cấp mã số thuế nộp thay đối với người nộp thuế là doanh nghiệp, tổ chức, cá nhân khấu trừ nộp thay cho nhà thầu, nhà thầu phụ nước ngoài; tổ chức hợp tác kinh doanh với cá nhân, tổ chức được giao quản lý hợp đồng hợp tác kinh doanh với tổ chức nhưng không thành lập pháp nhân riêng (nếu có nhu cầu cấp mã số thuế riêng cho hợp đồng hợp tác kinh doanh); Ngân hàng thương mại, tổ chức cung ứng dịch vụ trung gian thanh toán hoặc tổ chức, cá nhân được nhà cung cấp ở nước ngoài ủy quyền có trách nhiệm khấu trừ và nộp thuế thay cho nhà cung cấp ở nước ngoài; Tổ chức, cá nhân được cơ quan thuế ủy nhiệm thu",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path://gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_chicuc/b3f19512-4c0a-4256-9384-c4503108d08d",
+      "agency": "Thuế tỉnh, thành phố/ Thuế Cơ sở",
+      "vbqdDocs": [
+        {
+          "text": "126/2020/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575"
+        },
+        {
+          "text": "118/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/cdbc07d9-ac38-4679-9ea2-4b4e6d5fc2e4"
+        },
+        {
+          "text": "86/2024/TT-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/fcaed4ba-c17a-49e8-bd1d-70a83936f436"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "4472/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/4b58c9cb-c6c9-4318-b151-103abf5d3841"
+        }
+      ],
+      "vbqdText": "126/2020/NĐ-CP, 118/2025/NĐ-CP, 86/2024/TT-BTC",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575",
+      "qdcbText": "4472/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/4b58c9cb-c6c9-4318-b151-103abf5d3841"
+    },
+    {
+      "id": "tthc-5",
+      "stt": "2",
+      "group": "Thủ tục hành chính Thuế cơ sở",
+      "title": "Chấm dứt hiệu lực mã số thuế",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path://gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_chicuc/03879285-0770-4062-883d-f860cccd4861",
+      "agency": "Thuế Cơ sở",
+      "vbqdDocs": [
+        {
+          "text": "126/2020/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575"
+        },
+        {
+          "text": "118/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/cdbc07d9-ac38-4679-9ea2-4b4e6d5fc2e4"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "4472/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/4b58c9cb-c6c9-4318-b151-103abf5d3841"
+        }
+      ],
+      "vbqdText": "126/2020/NĐ-CP, 118/2025/NĐ-CP",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575",
+      "qdcbText": "4472/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/4b58c9cb-c6c9-4318-b151-103abf5d3841"
+    },
+    {
+      "id": "tthc-6",
+      "stt": "3",
+      "group": "Thủ tục hành chính Thuế cơ sở",
+      "title": "Khai thuế TNCN đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản",
+      "link": "https://nghean.gdt.gov.vn/wps/portal/tthc/detail?1dmy&current=true&urile=wcm:path://gdt+content/sa_gdt/cctthc/tthchh/sa_tthc_chicuc/8a412200-615a-4cbc-a83e-491220c76dab",
+      "agency": "Thuế Cơ sở",
+      "vbqdDocs": [
+        {
+          "text": "373/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/97522be2-7320-49d1-8e91-eb25eaa0ad76"
+        },
+        {
+          "text": "126/2020/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/42dc49ff-ff2a-4eb9-a412-6197f7f83575"
+        },
+        {
+          "text": "118/2025/NĐ-CP",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/cdbc07d9-ac38-4679-9ea2-4b4e6d5fc2e4"
+        },
+        {
+          "text": "40/2025/TT-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/8547a7ef-0f90-4f96-a428-4f551fe566fc"
+        }
+      ],
+      "qdcbDocs": [
+        {
+          "text": "216/QĐ-BTC",
+          "url": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/29795a4c-a4d9-4546-88c8-c1a1c7f103ec"
+        }
+      ],
+      "vbqdText": "373/2025/NĐ-CP, 126/2020/NĐ-CP, 118/2025/NĐ-CP, 40/2025/TT-BTC",
+      "vbqdUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_vbqd/97522be2-7320-49d1-8e91-eb25eaa0ad76",
+      "qdcbText": "216/QĐ-BTC",
+      "qdcbUrl": "https://nghean.gdt.gov.vn/wps/portal/documents/detail?1dmy&current=true&urile=wcm:path:GDT%20Content/sa_gdt/cctthc/tthchh/sa_tthc_vanban/sa_tthc_vb_qdcb/29795a4c-a4d9-4546-88c8-c1a1c7f103ec"
+    }
+  ],
+  "sourceUrl": "https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJ8800IHMB7OA4E7E1",
+  "note": "File HTML chứa 2 nhóm với 6 mục xem trước; collector đã được nâng cấp để theo cả hai liên kết Xem toàn bộ danh sách và các trang tiếp theo."
 }

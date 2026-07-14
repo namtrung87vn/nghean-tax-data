@@ -31,3 +31,7 @@ Zalo Mini App
 8. Deploy Worker, rồi kiểm tra `/health` và `/news?tab=thue&page=1`.
 
 Xem hướng dẫn đầy đủ trong `HUONG_DAN_TRIEN_KHAI.md`.
+
+## Cập nhật V2 ngày 14/07/2026
+
+Bản V2 bổ sung phân trang nhiều trang nguồn, dữ liệu TTHC/Văn bản khác/Văn bản ngành/Doanh nghiệp rủi ro và hỗ trợ Mini App tải thêm khi cuộn. Xem `UPDATE_GUIDE_2026-07-14.md`.

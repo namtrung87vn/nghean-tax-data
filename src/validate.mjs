@@ -10,6 +10,11 @@ const requiredFiles = [
   "data/news-kinhte.json",
   "data/news-thongbao.json",
   "data/docs-huongdan.json",
+  "data/docs-khac.json",
+  "data/docs-nganh.json",
+  "data/tthc.json",
+  "data/tthc-phananh.json",
+  "data/dnrrvt.json",
   "data/dvc.json",
   "data/videos.json",
 ];
