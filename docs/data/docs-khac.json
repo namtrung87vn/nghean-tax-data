@@ -3,10 +3,10 @@
   "dataset": "docs-khac",
   "updatedAt": null,
   "sourceUpdatedAt": null,
-  "lastAttemptAt": null,
+  "lastAttemptAt": "2026-07-14T02:12:38.698Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "lastError": "/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed",
   "items": [],
   "itemCount": 0
 }

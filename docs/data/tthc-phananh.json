@@ -3,10 +3,10 @@
   "dataset": "tthc-phananh",
   "updatedAt": null,
   "sourceUpdatedAt": null,
-  "lastAttemptAt": null,
+  "lastAttemptAt": "2026-07-14T02:18:22.481Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "lastError": "/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_QOHUBB1A088P60A15IU4CO0031: fetch failed | /wps/portal/Home/tthc/phananh: http://nghean.gdt.gov.vn/wps/portal/Home/tthc/phananh: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/tthc/phananh: fetch failed | /wps/portal/home/tthc/phananh: http://nghean.gdt.gov.vn/wps/portal/home/tthc/phananh: fetch failed | https://nghean.gdt.gov.vn/wps/portal/home/tthc/phananh: fetch failed",
   "items": [],
   "itemCount": 0
 }

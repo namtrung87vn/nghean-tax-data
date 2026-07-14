@@ -3,10 +3,10 @@
   "dataset": "dnrrvt",
   "updatedAt": null,
   "sourceUpdatedAt": null,
-  "lastAttemptAt": null,
+  "lastAttemptAt": "2026-07-14T02:24:06.264Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "lastError": "/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: http://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt?1dmy&current=true&urile=wcm:path:/nghean/site/sa-dnrrcvt: fetch failed | /wps/portal/Home/dnrrvt: http://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt: fetch failed | https://nghean.gdt.gov.vn/wps/portal/Home/dnrrvt: fetch failed",
   "items": [],
   "itemCount": 0
 }

@@ -5,7 +5,7 @@
   "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
   "stale": true,
   "seed": true,
-  "lastError": "Dữ liệu khởi tạo từ bản HTML Thuế Nghệ An đã lưu. GitHub Actions sẽ tự thay bằng dữ liệu mới khi kết nối nguồn thành công.",
+  "lastError": "/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: http://nghean.gdt.gov.vn/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: fetch failed | https://nghean.gdt.gov.vn/wps/portal/video?1dmy&current=true&urile=wcm:path:/nghean/site/video: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJOAE0I1MJ5KSF00A3: fetch failed | /wps/portal: http://nghean.gdt.gov.vn/wps/portal: fetch failed | https://nghean.gdt.gov.vn/wps/portal: fetch failed",
   "items": [
     {
       "title": "Video tổng kết công tác xây dựng Đảng",
@@ -37,5 +37,5 @@
     }
   ],
   "itemCount": 4,
-  "lastAttemptAt": null
+  "lastAttemptAt": "2026-07-14T02:20:31.403Z"
 }
