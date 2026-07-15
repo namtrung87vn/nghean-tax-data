@@ -3,7 +3,7 @@
   "dataset": "docs-khac",
   "updatedAt": "2026-07-14T02:49:27.000Z",
   "sourceUpdatedAt": "2026-07-14T02:49:27.000Z",
-  "lastAttemptAt": "2026-07-15T09:07:37.497Z",
+  "lastAttemptAt": "2026-07-15T14:42:48.113Z",
   "stale": true,
   "seed": true,
   "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSO3VHF0I1AMGLAN38M0: fetch failed",
