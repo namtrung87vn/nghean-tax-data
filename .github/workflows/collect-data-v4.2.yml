@@ -11,22 +11,27 @@ on:
         options:
           - full
           - news
+
   schedule:
+    # GitHub Actions dùng UTC.
+    # Tin tức: phút 07 và 37 mỗi giờ.
     - cron: "7,37 * * * *"
+    # Toàn bộ dữ liệu: phút 19 mỗi 6 giờ.
     - cron: "19 */6 * * *"
 
 permissions:
   contents: write
 
+# Chỉ cho phép một lượt cập nhật dữ liệu chạy tại một thời điểm trong repository.
 concurrency:
   group: nghean-tax-data-update
   cancel-in-progress: false
 
 jobs:
   update-data:
-    name: Thu thập bằng Chromium và lưu dữ liệu
+    name: Thu thập và lưu dữ liệu
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 90
 
     steps:
       - name: Lấy mã nguồn
@@ -34,29 +39,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Cài Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-
-      - name: Cài thư viện dự án, gồm Playwright
-        run: npm ci --include=dev
-
-      - name: Xác nhận Playwright nằm trong dự án
+      # Nếu workflow phải chờ trong queue thì SHA lúc trigger có thể đã cũ.
+      # Đồng bộ lại main trước khi bắt đầu thu thập để hạn chế conflict khi push.
+      - name: Đồng bộ nhánh main mới nhất
         shell: bash
         run: |
-          npm ls playwright
-          node -e "import('playwright').then(() => console.log('Playwright module: OK')).catch((e) => { console.error(e); process.exit(1); })"
-
-      - name: Cài Chromium và thư viện hệ điều hành
-        run: ./node_modules/.bin/playwright install --with-deps chromium
-
-      - name: Kiểm tra Chromium
-        shell: bash
-        run: |
-          ./node_modules/.bin/playwright --version
-          node -e "import('playwright').then(async ({ chromium }) => { const b = await chromium.launch({ headless: true, args: ['--no-sandbox'] }); console.log('Chromium launch: OK'); await b.close(); }).catch((e) => { console.error(e); process.exit(1); })"
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Xác định chế độ cập nhật
         shell: bash
@@ -68,55 +57,82 @@ jobs:
           else
             MODE="news"
           fi
+
           echo "MODE=$MODE" >> "$GITHUB_ENV"
           echo "Chế độ cập nhật: $MODE"
 
-      - name: Cập nhật tin tức bằng trình duyệt thật
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Cài thư viện dự án
+        run: npm ci --include=dev
+
+      # nghean.gdt.gov.vn đang timeout từ GitHub-hosted runner.
+      # Project hiện đã có sẵn Reader fallback trong src/reader-fallback.mjs,
+      # vì vậy với tin tức ta bỏ Chromium để không mất nhiều phút chờ timeout,
+      # thử HTTP trực tiếp nhanh rồi chuyển sang Reader.
+      - name: Cập nhật tin tức
         if: env.MODE == 'news'
         run: npm run collect:news
         env:
-          BROWSER_ENABLED: "true"
-          BROWSER_TIMEOUT_MS: "90000"
-          BROWSER_SETTLE_MS: "2500"
-          MAX_BROWSER_NEWS_PAGES: "40"
-          CACHE_IMAGES: "true"
-          MAX_CACHED_IMAGES: "160"
-          REQUEST_TIMEOUT_MS: "25000"
-          REQUEST_RETRIES: "1"
-          MAX_NEWS_PAGES: "20"
-          READER_ENABLED: "false"
+          BROWSER_ENABLED: "false"
+          CACHE_IMAGES: "false"
 
-      - name: Cập nhật toàn bộ dữ liệu bằng trình duyệt thật
+          REQUEST_TIMEOUT_MS: "8000"
+          REQUEST_RETRIES: "0"
+          MAX_NEWS_PAGES: "10"
+
+          READER_ENABLED: "true"
+          READER_TIMEOUT_MS: "75000"
+          READER_DELAY_MS: "3500"
+          MAX_READER_NEWS_PAGES: "15"
+
+      # Full cũng bật Reader fallback để các bộ dữ liệu quan trọng vẫn có đường dự phòng
+      # khi website nguồn không nhận kết nối trực tiếp từ GitHub Actions.
+      - name: Cập nhật toàn bộ dữ liệu
         if: env.MODE == 'full'
         run: npm run collect:full
         env:
-          BROWSER_ENABLED: "true"
-          BROWSER_TIMEOUT_MS: "90000"
-          BROWSER_SETTLE_MS: "2500"
-          MAX_BROWSER_NEWS_PAGES: "40"
-          MAX_BROWSER_DOC_PAGES: "100"
-          CACHE_IMAGES: "true"
-          MAX_CACHED_IMAGES: "160"
-          REQUEST_TIMEOUT_MS: "25000"
-          REQUEST_RETRIES: "1"
-          MAX_NEWS_PAGES: "20"
-          MAX_DOC_PAGES: "100"
-          READER_ENABLED: "false"
+          BROWSER_ENABLED: "false"
+          CACHE_IMAGES: "false"
+
+          REQUEST_TIMEOUT_MS: "8000"
+          REQUEST_RETRIES: "0"
+          MAX_NEWS_PAGES: "10"
+          MAX_DOC_PAGES: "40"
+
+          READER_ENABLED: "true"
+          READER_TIMEOUT_MS: "75000"
+          READER_DELAY_MS: "3500"
+          MAX_READER_NEWS_PAGES: "15"
+          MAX_READER_DOC_PAGES: "40"
 
       - name: Kiểm tra JSON
         run: npm run validate
+
+      # Kiểm tra trước khi commit.
+      # Nếu dữ liệu mới vẫn là seed/stale/partial thì workflow đỏ và KHÔNG đẩy
+      # dữ liệu lỗi lên GitHub Pages.
+      - name: Xác nhận dữ liệu live đạt yêu cầu
+        run: npm run assert:refresh
 
       - name: Ghi báo cáo vào Summary
         if: always()
         shell: bash
         run: npm run report >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Lưu JSON, thumbnail và chẩn đoán vào repository
-        if: always()
+      - name: Lưu dữ liệu vào repository
+        if: success()
         shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "nghean-tax-data-bot"
           git config user.email "actions@users.noreply.github.com"
+
           git add docs
 
           if git diff --cached --quiet; then
@@ -124,10 +140,30 @@ jobs:
             exit 0
           fi
 
-          git commit -m "data: cập nhật bằng Chromium ($MODE)"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git commit -m "data: cập nhật dữ liệu ($MODE)"
 
-      - name: Xác nhận dữ liệu live đúng trang danh sách
-        if: always()
-        run: npm run assert:refresh
+          # Nếu main thay đổi trong lúc job đang chạy, rebase và thử push lại.
+          # -X theirs trong quá trình rebase ưu tiên dữ liệu vừa thu thập của job này
+          # ở các file docs bị xung đột.
+          for attempt in 1 2 3; do
+            echo "Lần push $attempt/3"
+            git fetch origin main
+
+            if ! git rebase -X theirs origin/main; then
+              echo "Rebase không thể tự xử lý xung đột."
+              git status --short || true
+              git rebase --abort || true
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Đã push dữ liệu thành công."
+              exit 0
+            fi
+
+            echo "Main vừa thay đổi, chờ rồi thử lại..."
+            sleep $((attempt * 3))
+          done
+
+          echo "Không push được sau 3 lần thử."
+          exit 1
