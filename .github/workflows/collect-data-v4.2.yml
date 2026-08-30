@@ -1,4 +1,4 @@
-name: Cập nhật dữ liệu Thuế Nghệ An V4.2
+name: Cập nhật dữ liệu Thuế Nghệ An V4.2 - Windows Local
 
 on:
   workflow_dispatch:
@@ -6,14 +6,17 @@ on:
       mode:
         description: "Loại dữ liệu cần cập nhật"
         required: true
-        default: "full"
+        default: "news"
         type: choice
         options:
-          - full
           - news
+          - full
 
   schedule:
+    # GitHub Actions dùng UTC.
+    # Tin tức: phút 07 và 37 mỗi giờ.
     - cron: "7,37 * * * *"
+    # Toàn bộ dữ liệu: phút 19 mỗi 6 giờ.
     - cron: "19 */6 * * *"
 
 permissions:
@@ -25,8 +28,8 @@ concurrency:
 
 jobs:
   update-data:
-    name: Thu thập và lưu dữ liệu
-    runs-on: ubuntu-latest
+    name: Thu thập trên máy Windows tại Việt Nam
+    runs-on: [self-hosted, Windows, X64]
     timeout-minutes: 90
 
     steps:
@@ -34,25 +37,29 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          clean: true
 
-      - name: Đồng bộ nhánh main mới nhất
-        shell: bash
+      - name: Đồng bộ main mới nhất
+        shell: pwsh
         run: |
           git fetch origin main
           git reset --hard origin/main
 
       - name: Xác định chế độ cập nhật
-        shell: bash
+        shell: pwsh
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            MODE="${{ inputs.mode }}"
-          elif [[ "${{ github.event_name }}" == "schedule" && "${{ github.event.schedule }}" == "19 */6 * * *" ]]; then
-            MODE="full"
-          else
-            MODE="news"
-          fi
-          echo "MODE=$MODE" >> "$GITHUB_ENV"
-          echo "Chế độ cập nhật: $MODE"
+          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+            $mode = "${{ inputs.mode }}"
+          }
+          elseif ("${{ github.event_name }}" -eq "schedule" -and "${{ github.event.schedule }}" -eq "19 */6 * * *") {
+            $mode = "full"
+          }
+          else {
+            $mode = "news"
+          }
+
+          "MODE=$mode" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          Write-Host "Chế độ cập nhật: $mode"
 
       - name: Cài Node.js
         uses: actions/setup-node@v4
@@ -61,91 +68,150 @@ jobs:
           cache: npm
 
       - name: Cài thư viện dự án
+        shell: pwsh
         run: npm ci --include=dev
 
-      # Thử nguồn chính trước. Hiện nghean.gdt.gov.vn thường timeout từ GitHub runner,
-      # nên không dùng Chromium để tránh chờ rất lâu.
-      - name: Cập nhật tin tức từ nguồn Thuế
+      - name: Tìm Chrome trên máy Windows
+        shell: pwsh
+        run: |
+          $candidates = @(
+            "$env:ProgramFiles\Google\Chrome\Application\chrome.exe",
+            "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe",
+            "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe"
+          )
+
+          $chrome = $candidates |
+            Where-Object { $_ -and (Test-Path $_) } |
+            Select-Object -First 1
+
+          if ($chrome) {
+            Write-Host "Dùng Chrome: $chrome"
+            "PLAYWRIGHT_EXECUTABLE_PATH=$chrome" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          }
+          else {
+            Write-Host "Không tìm thấy Chrome hệ thống. Cài Chromium của Playwright..."
+            npx playwright install chromium
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+
+      - name: Kiểm tra Playwright
+        shell: pwsh
+        run: |
+          npx playwright --version
+          node -e "import('playwright').then(async ({chromium})=>{const p=process.env.PLAYWRIGHT_EXECUTABLE_PATH; const b=await chromium.launch({headless:true,...(p?{executablePath:p}:{})}); console.log('Chromium/Chrome launch: OK'); await b.close();}).catch(e=>{console.error(e);process.exit(1)})"
+
+      - name: Cập nhật tin tức chính thức
         if: env.MODE == 'news'
-        run: npm run collect:news
+        shell: pwsh
         env:
-          BROWSER_ENABLED: "false"
-          CACHE_IMAGES: "false"
-          REQUEST_TIMEOUT_MS: "8000"
+          BROWSER_ENABLED: "true"
+          BROWSER_TIMEOUT_MS: "90000"
+          BROWSER_SETTLE_MS: "2500"
+          BROWSER_RETRY_DELAY_MS: "1500"
+          MAX_BROWSER_NEWS_PAGES: "20"
+
+          # Không dùng RSS/Google/Bing/Reader cho mục Tin tức.
+          READER_ENABLED: "false"
+
+          # Direct fetch chỉ là dự phòng; nguồn chính là Chrome/Playwright.
+          REQUEST_TIMEOUT_MS: "15000"
           REQUEST_RETRIES: "0"
           MAX_NEWS_PAGES: "10"
-          READER_ENABLED: "true"
-          READER_TIMEOUT_MS: "75000"
-          READER_DELAY_MS: "2500"
-          MAX_READER_NEWS_PAGES: "15"
 
-      - name: Cập nhật toàn bộ dữ liệu từ nguồn Thuế
+          # Bật cache ảnh; nếu nguồn không trả thumbnail hợp lệ thì Mini App dùng icon mặc định.
+          CACHE_IMAGES: "true"
+          MAX_CACHED_IMAGES: "120"
+        run: |
+          npm run collect:news
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          node src/finalize-official-news.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          npm run build:static
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Cập nhật toàn bộ dữ liệu chính thức
         if: env.MODE == 'full'
-        run: npm run collect:full
+        shell: pwsh
         env:
-          BROWSER_ENABLED: "false"
-          CACHE_IMAGES: "false"
-          REQUEST_TIMEOUT_MS: "8000"
+          BROWSER_ENABLED: "true"
+          BROWSER_TIMEOUT_MS: "90000"
+          BROWSER_SETTLE_MS: "2500"
+          BROWSER_RETRY_DELAY_MS: "1500"
+          MAX_BROWSER_NEWS_PAGES: "20"
+          MAX_BROWSER_DOC_PAGES: "80"
+
+          READER_ENABLED: "false"
+
+          REQUEST_TIMEOUT_MS: "15000"
           REQUEST_RETRIES: "0"
           MAX_NEWS_PAGES: "10"
-          MAX_DOC_PAGES: "40"
-          READER_ENABLED: "true"
-          READER_TIMEOUT_MS: "75000"
-          READER_DELAY_MS: "2500"
-          MAX_READER_NEWS_PAGES: "15"
-          MAX_READER_DOC_PAGES: "40"
+          MAX_DOC_PAGES: "65"
 
-      # Nếu 3 bộ tin vẫn stale/seed/thiếu dữ liệu thì lấy tin mới từ RSS tìm kiếm.
-      # Bước này chỉ thay bộ tin bị lỗi; bộ nào nguồn chính lấy tốt thì giữ nguyên.
-      - name: Dự phòng RSS cho tin tức
-        run: node src/refresh-news-rss.mjs
+          CACHE_IMAGES: "true"
+          MAX_CACHED_IMAGES: "120"
+        run: |
+          npm run collect:full
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          node src/finalize-official-news.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          npm run build:static
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Kiểm tra JSON
+        shell: pwsh
         run: npm run validate
 
-      - name: Xác nhận dữ liệu live đạt yêu cầu
+      - name: Xác nhận dữ liệu live chính thức
+        shell: pwsh
         run: npm run assert:refresh
 
       - name: Ghi báo cáo vào Summary
         if: always()
-        shell: bash
-        run: npm run report >> "$GITHUB_STEP_SUMMARY"
+        shell: pwsh
+        run: npm run report | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
 
       - name: Lưu dữ liệu vào repository
         if: success()
-        shell: bash
+        shell: pwsh
         run: |
-          set -euo pipefail
-
           git config user.name "nghean-tax-data-bot"
           git config user.email "actions@users.noreply.github.com"
 
           git add docs
 
-          if git diff --cached --quiet; then
-            echo "Không có thay đổi dữ liệu."
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "Không có thay đổi dữ liệu."
             exit 0
-          fi
+          }
 
-          git commit -m "data: cập nhật dữ liệu ($MODE)"
+          git commit -m "data: cập nhật dữ liệu chính thức ($env:MODE)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-          for attempt in 1 2 3; do
-            echo "Lần push $attempt/3"
+          for ($attempt = 1; $attempt -le 3; $attempt++) {
+            Write-Host "Lần push $attempt/3"
             git fetch origin main
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-            if ! git rebase -X theirs origin/main; then
-              git status --short || true
-              git rebase --abort || true
+            git rebase -X theirs origin/main
+            if ($LASTEXITCODE -ne 0) {
+              git status --short
+              git rebase --abort
               exit 1
-            fi
+            }
 
-            if git push origin HEAD:main; then
-              echo "Đã push dữ liệu thành công."
+            git push origin HEAD:main
+            if ($LASTEXITCODE -eq 0) {
+              Write-Host "Đã push dữ liệu thành công."
               exit 0
-            fi
+            }
 
-            sleep $((attempt * 3))
-          done
+            Start-Sleep -Seconds ($attempt * 3)
+          }
 
-          echo "Không push được sau 3 lần thử."
+          Write-Error "Không push được sau 3 lần thử."
           exit 1
