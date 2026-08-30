@@ -19,6 +19,7 @@ const minimum = {
 };
 
 const bad = [];
+
 for (const name of critical) {
   let data = {};
   try {
@@ -32,19 +33,34 @@ for (const name of critical) {
   const count = items.length;
   const min = minimum[name] || 1;
   const diag = data.diagnostics?.browser || {};
+  const rssFallback = data.sourceMode === "news-rss-fallback";
 
-  if (!data.ok || data.seed || data.stale || data.partial || Number(data.fetchedItemCount || 0) < min || count < min) {
+  if (
+    !data.ok ||
+    data.seed ||
+    data.stale ||
+    data.partial ||
+    Number(data.fetchedItemCount || 0) < min ||
+    count < min
+  ) {
     bad.push(
-      `${name}: tổng ${count}, vừa lấy ${data.fetchedItemCount || 0}, tối thiểu ${min}, seed=${Boolean(data.seed)}, stale=${Boolean(data.stale)}, partial=${Boolean(data.partial)}`
+      `${name}: tổng ${count}, vừa lấy ${data.fetchedItemCount || 0}, tối thiểu ${min}, seed=${Boolean(data.seed)}, stale=${Boolean(data.stale)}, partial=${Boolean(data.partial)}, source=${data.sourceMode || "-"}`
     );
     continue;
   }
 
   if (name.startsWith("news-")) {
-    const images = items.filter((item) => item.imagePath || item.imageUrl || item.thumb || item.thumbUrl).length;
-    if (images < Math.min(3, count)) {
-      bad.push(`${name}: chỉ ${images}/${count} tin có thumbnail`);
+    // RSS tìm kiếm không phải lúc nào cũng cung cấp thumbnail.
+    // Không vì thiếu ảnh mà chặn cập nhật nội dung mới.
+    if (!rssFallback) {
+      const images = items.filter(
+        (item) => item.imagePath || item.imageUrl || item.thumb || item.thumbUrl
+      ).length;
+      if (images < Math.min(3, count)) {
+        bad.push(`${name}: chỉ ${images}/${count} tin có thumbnail`);
+      }
     }
+
     if (data.sourceMode === "browser" && diag.firstPageValidated === false) {
       bad.push(`${name}: Chromium không xác nhận trang danh sách thật`);
     }
@@ -54,7 +70,8 @@ for (const name of critical) {
 if (bad.length) {
   console.error("Cập nhật chưa đạt yêu cầu live đầy đủ:");
   for (const line of bad) console.error(`- ${line}`);
-  console.error("Dữ liệu cũ vẫn được giữ; workflow đỏ để tránh hiểu nhầm là đã lấy đủ.");
+  console.error("Workflow đỏ để tránh đẩy dữ liệu không đạt yêu cầu.");
   process.exit(1);
 }
-console.log("Tất cả bộ dữ liệu quan trọng đã được tải live từ đúng trang danh sách.");
+
+console.log("Tất cả bộ dữ liệu quan trọng đạt yêu cầu.");
