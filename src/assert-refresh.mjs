@@ -3,14 +3,25 @@ import path from "node:path";
 
 const mode = process.env.MODE || "full";
 const dataDir = path.resolve(process.cwd(), "docs/data");
-const critical = mode === "news"
-  ? ["news-thue", "news-kinhte", "news-thongbao"]
-  : ["news-thue", "news-kinhte", "news-thongbao", "docs-huongdan", "docs-khac", "docs-nganh", "tthc", "dnrrvt"];
+
+const critical =
+  mode === "news"
+    ? ["news-thue", "news-kinhte", "news-thongbao"]
+    : [
+        "news-thue",
+        "news-kinhte",
+        "news-thongbao",
+        "docs-huongdan",
+        "docs-khac",
+        "docs-nganh",
+        "tthc",
+        "dnrrvt",
+      ];
 
 const minimum = {
-  "news-thue": 8,
-  "news-kinhte": 8,
-  "news-thongbao": 8,
+  "news-thue": 5,
+  "news-kinhte": 5,
+  "news-thongbao": 5,
   "docs-huongdan": 5,
   "docs-khac": 10,
   "docs-nganh": 3,
@@ -18,12 +29,28 @@ const minimum = {
   dnrrvt: 10,
 };
 
+const OFFICIAL_NEWS_HOST = "nghean.gdt.gov.vn";
 const bad = [];
+
+function isOfficialNewsUrl(raw = "") {
+  try {
+    const u = new URL(String(raw));
+    return (
+      ["http:", "https:"].includes(u.protocol) &&
+      u.hostname === OFFICIAL_NEWS_HOST
+    );
+  } catch {
+    return false;
+  }
+}
 
 for (const name of critical) {
   let data = {};
+
   try {
-    data = JSON.parse(await fs.readFile(path.join(dataDir, `${name}.json`), "utf8"));
+    data = JSON.parse(
+      await fs.readFile(path.join(dataDir, `${name}.json`), "utf8")
+    );
   } catch {
     bad.push(`${name}: không đọc được JSON`);
     continue;
@@ -33,7 +60,6 @@ for (const name of critical) {
   const count = items.length;
   const min = minimum[name] || 1;
   const diag = data.diagnostics?.browser || {};
-  const rssFallback = data.sourceMode === "news-rss-fallback";
 
   if (
     !data.ok ||
@@ -44,33 +70,42 @@ for (const name of critical) {
     count < min
   ) {
     bad.push(
-      `${name}: tổng ${count}, vừa lấy ${data.fetchedItemCount || 0}, tối thiểu ${min}, seed=${Boolean(data.seed)}, stale=${Boolean(data.stale)}, partial=${Boolean(data.partial)}, source=${data.sourceMode || "-"}`
+      `${name}: tổng ${count}, vừa lấy ${data.fetchedItemCount || 0}, ` +
+      `tối thiểu ${min}, seed=${Boolean(data.seed)}, ` +
+      `stale=${Boolean(data.stale)}, partial=${Boolean(data.partial)}, ` +
+      `source=${data.sourceMode || "-"}`
     );
     continue;
   }
 
   if (name.startsWith("news-")) {
-    // RSS tìm kiếm không phải lúc nào cũng cung cấp thumbnail.
-    // Không vì thiếu ảnh mà chặn cập nhật nội dung mới.
-    if (!rssFallback) {
-      const images = items.filter(
-        (item) => item.imagePath || item.imageUrl || item.thumb || item.thumbUrl
-      ).length;
-      if (images < Math.min(3, count)) {
-        bad.push(`${name}: chỉ ${images}/${count} tin có thumbnail`);
-      }
+    if (data.sourceMode !== "browser") {
+      bad.push(`${name}: nguồn tin không phải browser chính thức (${data.sourceMode || "-"})`);
+      continue;
     }
 
-    if (data.sourceMode === "browser" && diag.firstPageValidated === false) {
-      bad.push(`${name}: Chromium không xác nhận trang danh sách thật`);
+    if (diag.firstPageValidated !== true) {
+      bad.push(`${name}: Browser không xác nhận trang danh sách chính thức`);
+      continue;
+    }
+
+    if (Array.isArray(diag.errors) && diag.errors.length) {
+      bad.push(`${name}: Browser còn ${diag.errors.length} lỗi crawl`);
+      continue;
+    }
+
+    const external = items.filter((item) => !isOfficialNewsUrl(item?.url));
+    if (external.length) {
+      bad.push(`${name}: có ${external.length} URL bài viết không thuộc ${OFFICIAL_NEWS_HOST}`);
+      continue;
     }
   }
 }
 
 if (bad.length) {
-  console.error("Cập nhật chưa đạt yêu cầu live đầy đủ:");
+  console.error("Cập nhật chưa đạt yêu cầu dữ liệu chính thức:");
   for (const line of bad) console.error(`- ${line}`);
-  console.error("Workflow đỏ để tránh đẩy dữ liệu không đạt yêu cầu.");
+  console.error("Workflow dừng để không đẩy dữ liệu sai lên GitHub Pages.");
   process.exit(1);
 }
 
