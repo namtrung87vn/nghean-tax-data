@@ -40,13 +40,13 @@ jobs:
           clean: true
 
       - name: Đồng bộ main mới nhất
-        shell: pwsh
+        shell: powershell
         run: |
           git fetch origin main
           git reset --hard origin/main
 
       - name: Xác định chế độ cập nhật
-        shell: pwsh
+        shell: powershell
         run: |
           if ("${{ github.event_name }}" -eq "workflow_dispatch") {
             $mode = "${{ inputs.mode }}"
@@ -68,11 +68,11 @@ jobs:
           cache: npm
 
       - name: Cài thư viện dự án
-        shell: pwsh
+        shell: powershell
         run: npm ci --include=dev
 
       - name: Tìm Chrome trên máy Windows
-        shell: pwsh
+        shell: powershell
         run: |
           $candidates = @(
             "$env:ProgramFiles\Google\Chrome\Application\chrome.exe",
@@ -95,14 +95,14 @@ jobs:
           }
 
       - name: Kiểm tra Playwright
-        shell: pwsh
+        shell: powershell
         run: |
           npx playwright --version
           node -e "import('playwright').then(async ({chromium})=>{const p=process.env.PLAYWRIGHT_EXECUTABLE_PATH; const b=await chromium.launch({headless:true,...(p?{executablePath:p}:{})}); console.log('Chromium/Chrome launch: OK'); await b.close();}).catch(e=>{console.error(e);process.exit(1)})"
 
       - name: Cập nhật tin tức chính thức
         if: env.MODE == 'news'
-        shell: pwsh
+        shell: powershell
         env:
           BROWSER_ENABLED: "true"
           BROWSER_TIMEOUT_MS: "90000"
@@ -133,7 +133,7 @@ jobs:
 
       - name: Cập nhật toàn bộ dữ liệu chính thức
         if: env.MODE == 'full'
-        shell: pwsh
+        shell: powershell
         env:
           BROWSER_ENABLED: "true"
           BROWSER_TIMEOUT_MS: "90000"
@@ -162,21 +162,21 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Kiểm tra JSON
-        shell: pwsh
+        shell: powershell
         run: npm run validate
 
       - name: Xác nhận dữ liệu live chính thức
-        shell: pwsh
+        shell: powershell
         run: npm run assert:refresh
 
       - name: Ghi báo cáo vào Summary
         if: always()
-        shell: pwsh
+        shell: powershell
         run: npm run report | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
 
       - name: Lưu dữ liệu vào repository
         if: success()
-        shell: pwsh
+        shell: powershell
         run: |
           git config user.name "nghean-tax-data-bot"
           git config user.email "actions@users.noreply.github.com"
