@@ -2,7 +2,7 @@
   "ok": true,
   "degraded": true,
   "service": "nghean-tax-github-pages",
-  "generatedAt": "2026-08-30T12:12:08.508Z",
+  "generatedAt": "2026-08-30T13:50:12.760Z",
   "sourceHost": "nghean.gdt.gov.vn",
   "liveDatasets": 0,
   "requiredDatasets": [
@@ -105,7 +105,7 @@
       "seed": true,
       "itemCount": 5,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-08-30T12:04:36.801Z",
+      "lastAttemptAt": "2026-08-30T13:49:33.217Z",
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -113,7 +113,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed"
+      "lastError": "Browser: Browser fallback đang tắt. | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4 | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4 | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
     },
     "news-thongbao": {
       "ok": true,
@@ -121,7 +121,7 @@
       "seed": true,
       "itemCount": 5,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-08-30T12:12:07.966Z",
+      "lastAttemptAt": "2026-08-30T13:50:12.723Z",
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -129,7 +129,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed"
+      "lastError": "Browser: Browser fallback đang tắt. | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3 | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3 | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
     },
     "news-thue": {
       "ok": true,
@@ -137,7 +137,7 @@
       "seed": true,
       "itemCount": 4,
       "updatedAt": "2026-07-09T15:15:00.000Z",
-      "lastAttemptAt": "2026-08-30T11:57:05.641Z",
+      "lastAttemptAt": "2026-08-30T13:48:53.710Z",
       "sourceUrl": "",
       "sourceMode": "seed-homepage-only",
       "fetchedItemCount": 0,
@@ -145,7 +145,7 @@
       "firstPageItemCount": 0,
       "visitedPages": 0,
       "imageCount": 0,
-      "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed"
+      "lastError": "Browser: Browser fallback đang tắt. | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: Timeout 8000ms tại http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021 | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: Timeout 8000ms tại https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021 | Reader: Reader chỉ lấy được 0 tin, không đủ xác nhận trang danh sách."
     },
     "tthc-phananh": {
       "ok": true,

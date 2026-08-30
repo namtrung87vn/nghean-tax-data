@@ -1,45 +1,603 @@
 {
   "ok": true,
-  "dataset": "news-thue",
-  "updatedAt": "2026-07-09T15:15:00.000Z",
-  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
-  "stale": true,
-  "seed": true,
-  "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/cucthue: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G92021: fetch failed",
+  "updatedAt": "2026-08-30T13:50:13.451Z",
+  "sourceUpdatedAt": "2026-08-30T13:50:13.451Z",
+  "lastAttemptAt": "2026-08-30T13:50:13.451Z",
+  "stale": false,
+  "partial": false,
+  "seed": false,
+  "lastError": "",
+  "sourceMode": "news-rss-fallback",
+  "sourceUrl": "https://news.google.com/rss/search?q=%22Thu%E1%BA%BF%20t%E1%BB%89nh%20Ngh%E1%BB%87%20An%22&hl=vi&gl=VN&ceid=VN:vi",
+  "sourceStatus": 200,
+  "fetchedItemCount": 58,
+  "diagnostics": {
+    "fallback": "Google News RSS / Bing News RSS",
+    "reason": "Nguồn nghean.gdt.gov.vn không truy cập ổn định từ GitHub-hosted runner."
+  },
+  "itemCount": 58,
+  "previousItemCount": 4,
   "items": [
     {
       "tab": "thue",
-      "title": "THUẾ CƠ SỞ 5 TỈNH NGHỆ AN TỔ CHỨC HỘI NGHỊ SƠ KẾT CÔNG TÁC THUẾ 6 THÁNG ĐẦU NĂM, TRIỂN KHAI NHIỆM VỤ 6 THÁNG CUỐI NĂM 2026",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2F6b745b47-5dbb-40cd-83c5-13daeab8c10d",
-      "date": "02/07/2026",
-      "imageUrl": ""
+      "title": "Thuế tỉnh Nghệ An quyết tâm hoàn thành chiến dịch “làm sạch mã số thuế - tháo gỡ điểm nghẽn trong kinh doanh”",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUlZSSEVHX2VJV0JvLTlRcGEtN3pkZXVId3ZCZHdSVkhEa3pmWnpGdmJqNDFaMTIwbmtFWjMxaklOTjN6QjI3ZzQ5VnAwOE03eXpxZGRTczdkaDhUTU0zRWpISnJFdGFYZGV1dWhUR2wySERLMlpoM29IbkJFT0tTaGVRUW90THpOTEV5VndSWTNxc2M4bWlKdGZKZFRIQm9UcWdESG8xbXlaZFV0T2xqV3NYRTRpZjdVU2RwdTBmMmNJX0FYNmZYMVlWN2MwZVV5TFhGOHd4cXQ5aHg1RUxlc291ejY?oc=5",
+      "date": "28/08/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An quyết tâm hoàn thành chiến dịch “làm sạch mã số thuế - tháo gỡ điểm nghẽn trong kinh doanh” &nbsp;&nbsp; Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publisher": "Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publishedAt": "2026-08-28T06:14:15.000Z"
     },
     {
       "tab": "thue",
-      "title": "THUẾ TỈNH NGHỆ AN TỔ CHỨC LỄ CHÀO CỜ THÁNG 6 NĂM 2026",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2Fd44949ce-6df5-44c2-af88-1f70f47d1fa1",
-      "date": "01/06/2026",
-      "imageUrl": ""
+      "title": "CNA: Quyết định cưỡng chế thi hành của Cục Thuế tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQTZoSzFUWDRGLVFMMlRnU00zeVoyNWVvLXNyZmpfX1lUamxPU0hfUFRvdWRnR3l0M2FtbTV5Qzc0RTFNME44dzZJQmNneDdwR1JZYWlZNDdEaU1FWFJhUUxJdXhWX29zYmJrSk1JeG04UVhtWjRqZ0FiSVAyQURLSHlJNE85WElPaUFpdmZwY3BGTzNhcHNOSUdVLUU2dFlHVG51MWt3OA?oc=5",
+      "date": "14/08/2026",
+      "imageUrl": "",
+      "summary": "CNA: Quyết định cưỡng chế thi hành của Cục Thuế tỉnh Nghệ An &nbsp;&nbsp; Vietstock",
+      "publisher": "Vietstock",
+      "publishedAt": "2026-08-14T07:00:00.000Z"
     },
     {
       "tab": "thue",
-      "title": "THUẾ TỈNH NGHỆ AN VÀ THANH TRA TỈNH NGHỆ AN TĂNG CƯỜNG PHỐI HỢP TRONG CÔNG TÁC QUẢN LÝ THUẾ",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2F9df8b637-caa3-404c-a2fe-6cf4f446fb52",
+      "title": "Nghệ An đẩy mạnh quản trị thuế thông minh, nâng hiệu quả chống thất thu",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeXR6VXo5OW5LQmIzSzZfdEJqNlJvTmtYM0U5TUIybFd6OUJLZTBfQVkxeDRIQ0ZMM2pFMVBXS1NkUnRFMzk5RVRRbHg3TENqM0N0TjVuTWlRakdQVElwNlRIWl9zS3VEbFNlZmdIQ0JuUUFxWFMwSzlubUgwX0pQdUlpa2poYnJaRFdWTkkwTEJPYmJCRWRZVmJVa3l4SEJIWmpzbmpUWQ?oc=5",
+      "date": "11/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An đẩy mạnh quản trị thuế thông minh, nâng hiệu quả chống thất thu &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2026-08-11T12:19:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An làm sạch mã số thuế cho hơn 14.700 người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOFZZamFTS1NkaVRUYy04bXpLX2tuOEZmWEU1WWFlWFByVXNJWW9iT20wUUxiajBOVFdlYUpNeU9aTFhWTVV0cWFCRU5GbE4xUGlmSUVnbGJ5UXNpQWRTYkdGZnBfMTV6WEZETlZqU3lmb1MxRmNNZkkzVm9DM1J6S3BHOWdGYUZsS1k3QjR3eHJJRTN0bU0yWlh4cTNGTFhzQ2Qwc3ItVFA?oc=5",
+      "date": "11/08/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An làm sạch mã số thuế cho hơn 14.700 người nộp thuế &nbsp;&nbsp; Cổng thông tin đài tiếng nói Việt Nam",
+      "publisher": "Cổng thông tin đài tiếng nói Việt Nam",
+      "publishedAt": "2026-08-11T03:18:46.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An ứng dụng “quản trị thuế thông minh” và trí tuệ nhân tạo vào chống gian lận thuế",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcnRkMkN2bkMwaDY5ZkEtMzdWalhVZHBsYVQxR3R6QlowWWlsYWhrUFZPUFg1a09nSGE1eTRRYUQ4ckx5ZUhFanBnSWlhY0lWcjA4cWpmdHFBZFFtUHQteUZlbDdKSi10bFpHUXN1cVR6YWdXUEthenY4aEZ3Sk91REpSeWRkUXNuU29VT0xSbWtNbGpjWThHZEhDYlFZWktPR3BtWUtoVEZaVm1uQ2w1eE8yUnFoOU1xLXJRZFZQWVJkQnB4S04tUWdUZ1lmaEF0c1Nmdm9pMDk?oc=5",
+      "date": "07/08/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An ứng dụng “quản trị thuế thông minh” và trí tuệ nhân tạo vào chống gian lận thuế &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-08-07T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "7 tháng, Thuế tỉnh Nghệ An thu ngân sách đạt 18.818 tỷ đồng - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQXM0b2J4MEs0TGlrb0VKTW11QU1KN1ZYdTJ2MmxvYzZCMVpsY0dVaUFOSmk0WU8tWHFRN0UtVGNGZmp4QjZ3Q1pOekdtM0FCUlpBeHdKM3JxZjdwSTdZQzF0bGZMeXFQRGxzcWprNm1XV0d1TllWc3pXUUFZcmpkRmJCTUR6RUt5YV9veWxMamQydHBZNDV0R3BzRlBBMUs4bi1SZjdVWkt3bFhSSTFBVy01S3o?oc=5",
+      "date": "06/08/2026",
+      "imageUrl": "",
+      "summary": "7 tháng, Thuế tỉnh Nghệ An thu ngân sách đạt 18.818 tỷ đồng &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-08-06T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An tăng tốc làm sạch hơn 82.000 mã số thuế, minh bạch dữ liệu người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVzVMNFBfc2RGZHY3c2pqaVlXTFpQVVBDREZ3dXJ6ckZUaWVWRlhVNzI2SldHMndFZFplZkhjNjJCUjFoMFNzT1dqOVprMnVBb1RhOUZOaC10eDMzLVNqbURueG1Vckdxd2lRT2pqYTFRNXhtanBmeVNPbVNLa2xlQVAxd0psVEY1Uy1ISEFJdTdiYVAwQW1hYUNRX2xVRHBnWTh5X1E4d1B0dGRvWTVwVHdwdDl6NUtraGc?oc=5",
+      "date": "03/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An tăng tốc làm sạch hơn 82.000 mã số thuế, minh bạch dữ liệu người nộp thuế &nbsp;&nbsp; VOV.VN",
+      "publisher": "VOV.VN",
+      "publishedAt": "2026-08-03T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An đồng hành cùng doanh nghiệp triển khai chính sách mới",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeE5MbWNfbTM1WFI1SzZFRWE2bHAyREpjYmJEZ0RlV05pYzQxOXZfaWhSNnVIZjJneUdaN3Q1aHZCY1I0WVRVY3Zoa3AxSk5OSm1FTDFoMF9VOTg1OU9LRzl5bExfZFVOYk9DZWwwcy1JdDliMjR6NjZXQXRGTWgxUkF1VVFiUmVhMTFsb0NNR3dHRktnVkZNRmZSR1h2UTkwVHc?oc=5",
+      "date": "21/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An đồng hành cùng doanh nghiệp triển khai chính sách mới &nbsp;&nbsp; bnews.vn",
+      "publisher": "bnews.vn",
+      "publishedAt": "2026-07-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An tăng cường tuyên truyền, phổ biến các chính sách thuế mới cho cộng đồng doanh nghiệp",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPNHFocG9QZjB6cFRualJKNnFCaTJLdnlOTkRUb0I3MUxDRVZHV0NMQ2htZ0ZHR0t6R2FycGROZ0tEWk0zN3pFdkgyNERXYlhNNTFHTGpWcmhQbHp6OW9zMzBaTE11Ml8tQVlfd1haTTNhdGIyTWZMM2s2a2p1Q1RJV1NpZnB0UTlKX21ObVNEY2VZeDZGVWhkNDNkb3ZqYy1pNTBiNDVDTTd3c3UxdGE0QjRyUVJwc1FtVjNxWHZBU3lDRUZOUFk1TS05OVp5Wk9KU2JlR0pVTmFLeVl3bTZ0SVhicnFwb2hMcUoyMFVEZG5ZOXRvRUFaa1B5d0RFVk8ydEFCUkFBN1hTdVJuM0phR1hhQnVsdFNwUGJybGU3TWhjR2o1ZHk2SGRWamQ?oc=5",
+      "date": "19/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An tăng cường tuyên truyền, phổ biến các chính sách thuế mới cho cộng đồng doanh nghiệp &nbsp;&nbsp; Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publisher": "Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publishedAt": "2026-07-19T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An đối thoại với hơn 1.000 doanh nghiệp về chính sách thuế mới",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNVdQUmZ5akhoRV9mQ3U5SGpEdVhUTmRGQ0F5QlpXa3BRbXd1WkZGMGV0TGRCQTdjeFZGZzFfSG1qR25ZQ2wxQVdBVllWVlg1U2tqaUdVM3ZvZXlldmdqY1VVbVVrRS1wS184elFrcEVrTjNLalVYdUpZQVVXZUV1akxQZHZoUDRiWVY5ZWx4dGtGX2xYTTBacjBkSWY5MmF3WGw1T3BQS2xWbEhjazZtSHZ3?oc=5",
+      "date": "17/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An đối thoại với hơn 1.000 doanh nghiệp về chính sách thuế mới &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-17T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế cơ sở 8 tỉnh Nghệ An: Khi số thu được chắt chiu từ những sạp hàng nhỏ - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZVBHakNhbzdKM0lfN1oxYXRUZ3VabmlnN0NPMElwTTlINkFFRy1SeVlwVmlpdXpXb1RQa2lqUlh5RmtBRk1oMVhOVzBRcUlOakZqdGJKcG1hMkRkX0o1amNReEV5OWZiTVJXQk1oOG9OYThIS09QOHhXT2wyNVNLaXByX2FuOE5rTU0tc25sRjhlSDdtWHFDeTUtVUlEd3NQTDY3a1RXcHNpbUxLTHVFT01weVJqekU1UWlmaXlxTnRXNkcwY2VCdg?oc=5",
+      "date": "16/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế cơ sở 8 tỉnh Nghệ An: Khi số thu được chắt chiu từ những sạp hàng nhỏ &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-07-16T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An kích hoạt ứng dụng \"Quản trị thuế thông minh 360°\", thúc đẩy chuyển đổi số ngành Thuế",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRlNYMEk5VS1nR3doQzAxUm9CSnhnWkRXcjJpNG5qUVYxZVNFQWMwR193Y3k4VmJNcTZBSmlld1RhUGFWdTJXdU5SeElpa0FlLVBLdS1LLXpsSno5ZkdIcWxUY0cya3lSZ2ZtYXFzb1ppelZiZTBTaXUwNjkzR2ZXOXBLUFUzYVltNUVrVDBmODhHb1ZLcVBFc0hZcE9Cbk5JR1F1eTJidDJob3ZDdzdBUFY1ZzhjM0QwYmd2dU95dE1XNWtzSGJ5S19ORXJwUWNCZEE?oc=5",
+      "date": "13/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An kích hoạt ứng dụng \"Quản trị thuế thông minh 360°\", thúc đẩy chuyển đổi số ngành Thuế &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-07-13T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "VIDEO: 6 tháng đầu năm, Thuế tỉnh Nghệ An thu ngân sách đạt trên 16.300 tỷ đồng - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdEdmTTVtUXRVbzFwNENwWFlBMHhEbi1ROE52XzN5RlQzdXRWZnJjOXJyaXFPRjVkSVMzNElrUVJfRThZVENyd3FQQnZwV2hFYVlHSmJXRzZQMFRxQ0FXMjBaYzFXRC1udUlaa19JWVZpSnlvY2NiUXZQQTJXLWZkekY3SVk1anFRZW9ibGNqRDBxb3hxR3RPVkhCVUJibVhnQjRzVjV6ZEJpeVlQQTFGeFhtUGxCdjBHa3VmZUJKZFVlZUZsdUZCcWdET1U?oc=5",
+      "date": "13/07/2026",
+      "imageUrl": "",
+      "summary": "VIDEO: 6 tháng đầu năm, Thuế tỉnh Nghệ An thu ngân sách đạt trên 16.300 tỷ đồng &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-07-13T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An triển khai ứng dụng Quản trị thuế thông minh 360° - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTk5UVlp1SEs5MFZaTjBLVzFyX2s0WWZ4ZGNKVzNhakUwWm5BTW1vMjZuVDhYbmUzUHJrcnJKekhHallOQ0dtd3ZYTmpvaWYzSWtzUVJjU1p6Y1lMOE90RldETFRMVTlGdXlXZm44dU54YVlaZExrb3ZUSFpXbEdRdlp1Q3pTMk9kQ3BhSkV5ZVJwWVp2UTcycE1ac1IwOWN0WTlPSmtaODRRbnZoajNqcUxmS3ZsSmxJMmExZ0tZSQ?oc=5",
+      "date": "13/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An triển khai ứng dụng Quản trị thuế thông minh 360° &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-07-13T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An thu ngân sách đạt 76% dự toán",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQk5qeE4tekhJXzhRNkJfcGpkcmhWMUZyci1RS1dwTXNNN0dUQlQ4Wi1ySWFCc3U4TlJpemdiY1pyRDJncUdKMUl5QWktSmJpa2pKOHY3YVpFaGUtcWNFb3U2Mm5qLTF2RUZNSEVLcHNyT2o0UUx0Wmo5ZVFwUi03X1YxcHBvS1lXNXNKQ3pqOXNoT09lMkJJ?oc=5",
+      "date": "12/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An thu ngân sách đạt 76% dự toán &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-07-12T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An tăng cường quản lý thuế, tạo nguồn thu bền vững từ doanh nghiệp FDI",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONlRZS1pJZzE5ZWNhcXB0N0lVTFhDRk5Sem9JU1Q2QnhqdXZuVmRVX1Y4TlZ6V1ZRbk1hTlNVdEo2ZEVsZURKQXRFUUdJRFhjVWxISWVRckhDbEdyYTZLTzlya2tVTktCQVIwakRPTm5wSXJXc19raHBSbmk0cm9YRFdrOG9hVDdZeklpdlRReVlqM3FyVWhPME8xQno5T0JpdVpIM25QRTdyb2Q4X3phUEpjeDJLQTA?oc=5",
+      "date": "12/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An tăng cường quản lý thuế, tạo nguồn thu bền vững từ doanh nghiệp FDI &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2026-07-12T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An: Đòn bẩy chuyển đổi số giúp thu ngân sách tăng 26,2% so với cùng kỳ - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNLUhncEh1Y2Z5WFdzaUFzQTU2S1FjNkVHbVJXVTUzeHhBSzRwSEIzSjR3ZVdqd2NwSFRKcEc3NXpzUTdCWjM5SFBLaVloUmRXcVlra1hFOUNGbHFVb0g1VjZtMkVZSWRqNExKOWs1dVlvcXphaHdsWmtkNldxUE1xRjdLVUdZdnNCT1JFM01rMjNYREVpN0FYUlJRZDZTMnhPcGdiVndZMkFZUDBKVUo0VHpjd2R4Z1BPS3F4S3NpT2lpa0Y1Y2h5RGhXUDJBWmhHSTI3RGp3?oc=5",
+      "date": "11/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An: Đòn bẩy chuyển đổi số giúp thu ngân sách tăng 26,2% so với cùng kỳ &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-07-11T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế Nghệ An triển khai nhiệm vụ thu ngân sách cuối năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNXZlTk5QYWp4X1pGd1VEcEdReWwweU5IcUFGYlNhQjBtcUs1UzZvc0Y3WE9YaU9aNjBDci1vMW1Id2dNUzYxRWFlUFZ4Nmgtc0FhbHlPY3NwNnRvQTJicGU2SFB3M0pkcnA0ZEJrbFF5dEc0ZFVsamNUQWR4MVFkTFFWcFNVV3BtUFpSZGhsc1R6N1pWRkFqSWk0bHNfMU5wNXJTcF9tcmdCZkd0YTFYd0RfZlpHdHpmYXVkVHdZejlGSHB2cDh1ZGctN05tXzdnZUwyQQ?oc=5",
+      "date": "10/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế Nghệ An triển khai nhiệm vụ thu ngân sách cuối năm 2026 &nbsp;&nbsp; Đài Phát thanh truyền hình Nghệ An",
+      "publisher": "Đài Phát thanh truyền hình Nghệ An",
+      "publishedAt": "2026-07-10T14:19:20.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An tăng tốc chuyển đổi số, quyết tâm hoàn thành nhiệm vụ thu ngân sách năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWnVocVFFc1ZxS0I1YkdZNkFSS3EtNDVFRDhsMEhsVWlJUHNOMXRoTzgxbTN4UnVwQllMbTBNYjlYUnNaX0FMbXpXd2hoWFg5SmgyTGpjbmMyNnhMT3RkOG5VTVMzRnlrbXJoV056X0JFeC1lSHNGOGVwWjVvNk85TzVweV9DX0JvVlJONWZQTm5JR2tXbDM5b2MzRXl2c1pVZWVVRUVKRnh6akxBNDhxbnBfaHlUSzR6aVZyMjVKSC1XOHMzVmZZ?oc=5",
+      "date": "10/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An tăng tốc chuyển đổi số, quyết tâm hoàn thành nhiệm vụ thu ngân sách năm 2026 &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-10T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An đẩy mạnh chuyển đổi số và tư duy kiến tạo, tạo nguồn thu bền vững cho ngân sách - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWWMzRl9JLTFvVjZQWHpINUU1NUdXc1l3d0RTMzNQbURyME1jNksxNWFuekRYYkNuY2NLYXdyckhsdTJMN1lCZDhLWEp6a0lFbzFmQ0xqTmY5NHRSMUVpdzFBeTlRWW1iNWQ5a3JMR0pGSm5WWEJzOWc5cnVfVjl3NUlMVjlYMnEtT0oxSFRnbUl4WjRoaEVScnRwZHRraGlRUDlBZERuYV9zS3NYT0hZZ19rOXNXNUM5SmxlUXMyejFxMDdvSUQwLURrVUdDZTR6eFV5cDkwWnpiQUFPVm1xYlVwem81bkk?oc=5",
+      "date": "01/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An đẩy mạnh chuyển đổi số và tư duy kiến tạo, tạo nguồn thu bền vững cho ngân sách &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-07-01T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An thu ngân sách 5 tháng đạt trên 13 nghìn tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNm4ycE0yN0VfMU9BTThGSzd5QTBqWGI2cDB1d2ltOVdYSzZuQm9FUUhZanV1eG50OXdhS0hYbjZXNm5FQmJ4aTdPUFFhcUpWUTFUUzF2cW9Ia3U4NXBfZy02WUdoa3BOY2N2M0hyNE1WUWJnbHhmVVJ4Z1l6dWxxeDlYOE1FSnF2TEVFbWRkS0RNN00yZ250QWExOWFXckM5Q24xSDhNaWYzc0Yzbk1kTA?oc=5",
+      "date": "02/06/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An thu ngân sách 5 tháng đạt trên 13 nghìn tỷ đồng &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-06-02T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An phối hợp với Thanh tra tỉnh tăng cường công tác quản lý thuế",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTjk4V3RObGpwOTFNeHRvbUpUci14MDVNdi12TnNGb0cxVjJ6MDBUMWY4Z1JwUDZMMk5QMWNvakxZT0QxZXh3ai1kRk1JVXJ0OFlWZ21PNG85dkhjRVlKTE9IdWxtcE8yRXFNUmotOVN3TmcxbWVyZXF6azlJRGw5QnJjRFNGbGJ5eG9ydHk2WXJHYXJ1WklRQkQxWGU3Q01udEJLYlNGZ2syNjJiUVRwQU8tcW9iTnZiSWNXaXlUOWVnR2s?oc=5",
+      "date": "29/05/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An phối hợp với Thanh tra tỉnh tăng cường công tác quản lý thuế &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-05-29T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An phối hợp cùng cơ quan thanh tra tăng cường quản lý thuế",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcHppOVYxQjRJaGFFbnZvSWU3cXNGWVd3V1hsZjByZDB3ZThWbGU4THhRcmZTRjc4TlBvWGQ0RWtad2tnRkFfSkx0LV9NQko5YzRQWDNSSDU5RklJNmNDTmROdWFVdHV1YnY3X19tY2VSMnNsTnFLa1RNcXFJQWY5NWJOaklOR2Z5U0V1WWEzTV9BRXNleVl2V0pmbGExN0p1UVp6T3IxbDVja1IzN2phcm9HTGx3ZGJxZC13?oc=5",
+      "date": "29/05/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An phối hợp cùng cơ quan thanh tra tăng cường quản lý thuế &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-05-29T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thanh tra tỉnh và Thuế tỉnh Nghệ An ký kết quy chế phối hợp",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNa3NyVWN3Y1FKTDFhSEMxeUVUSDhVODl3R1lZdkl3NVdNTk40NGhEMk5UeDZQaXJ6V0FUcWNZQmVSWEpCRFVWNl9YdXNmZm5BdXhQZkYyOEs0WU1UYktoVUdjOFdRc0hDcmE4SjgxY1NsVU1xSmFoRGlURGYwTDI0T21LUVBEY1hFdmh1dWlYWVRnWEZhNVc5WWF3?oc=5",
       "date": "21/05/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Thanh tra tỉnh và Thuế tỉnh Nghệ An ký kết quy chế phối hợp &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-05-21T07:00:00.000Z"
     },
     {
       "tab": "thue",
-      "title": "THUẾ TỈNH NGHỆ AN: THÀNH KÍNH TRI ÂN BÁC, TỰ HÀO TIẾP BƯỚC TRUYỀN THỐNG QUÊ HƯƠNG",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fcucthue%2Fca17b239-be1f-4361-a3b1-3c129dd7bdd4",
+      "title": "Thanh tra và Thuế tỉnh Nghệ An phối hợp quản lý thuế qua hoạt động thanh tra",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMm1KNjZVYWN1bDVQTHJ1Q1FkVktXMGNHUXZLN05tUFNxSVRWQTZUakdXODVYRU45akJsV3VSSU9tQ3RiNmRqaXF2TXVPemxPUnQtSm9MQ0ZmTTFsX2FsVW5pVGRaVFpCM09hV3dsaWFTbEk0T0JUUWhlM2hlaGhNdGs3Ymx2LXduSnYzLWhlMDlaR0gySlplOHBqRWYtUVdUcVc0SjZFckREeEI4c0hFbGRwSXBLX2MtUXpybl8tX1dWMEdPLTFDVW1ZQlFsREtyT0tHSU1FeGk?oc=5",
+      "date": "21/05/2026",
+      "imageUrl": "",
+      "summary": "Thanh tra và Thuế tỉnh Nghệ An phối hợp quản lý thuế qua hoạt động thanh tra &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2026-05-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An: Cần quản lý nguồn thu dựa trên nền tảng dữ liệu và quản trị rủi ro - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQ21ITGo3V3VWQ1BGUTA2eUYtcllCeWE2MGhod1g0SmxvY0E1QXFCWjR0WDFib0wzTUtHckpaNnViNGZIWEoxU1RMaVYxclU3VV9ETi1mZC1sWk9kTFg5d3RrN2R2b0lVVFBlc0x3STVyUG5pbnJUSW9CbHVKSVdrZWFkemhBWV9tYjlTa18xaWJlWW5aOXZ3cldhS1BRdHBFNENkWUtnR2d2Rl9uT2xHeC16SXBSdTdzX29zZ0YzYWFCTVltZmQzR0ZBamhweVJaeFd1eWNGdw?oc=5",
       "date": "18/05/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An: Cần quản lý nguồn thu dựa trên nền tảng dữ liệu và quản trị rủi ro &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-05-18T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An thu ngân sách 4 tháng đạt 11.000 tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeWVLeHAxMjZ1YTIybVZvTVlkSC13cHp1cVNUOUNydHpLN0hxQWZTQkhPWFphQnR4OWpqMktQaWpOLUppVGR0bUhKcGhSWEtIOUdUZXVpaEg4d2s4bjZBekRVMktYOWg2UFNoYWx1TFl0UWtKUDhadldIWklWOUNLX19Tdl9HdG5Scnl3OEhWN0dPN0s3eVR4ckRaVDltR1o0MmY1SHJR?oc=5",
+      "date": "14/05/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An thu ngân sách 4 tháng đạt 11.000 tỷ đồng &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-05-14T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An: Công khai danh sách 1.188 cá nhân, doanh nghiệp nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU284ZVc4bk5MZ1JqRWk1M1pmWktuVlVlV1AwWXFjRHlTRlE3akZxVlNkNDQ0S3BTOVdWR2hZd1ByV0IyY3BrUGt6YnlVY2N1MldDU2VsWkxORUpIVF9semFQWnVxVEdhcGxlZC1kUndTeWxnLVhUemJHZXJCdTNZSXI2b0luTTU4dzd3cm1hQTFOUndJTnU0TWtUbw?oc=5",
+      "date": "21/04/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công khai danh sách 1.188 cá nhân, doanh nghiệp nợ thuế &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2026-04-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An công khai danh sách hàng chục doanh nghiệp nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYTVNbXlaOFdEVEVlLUpfV0FYaVlSdUg5QlVSbS1hcEl2aG94TmIyWEV4c2lQT25rLUVVbldVQmkyTC0yMFpUdEhiS0NWdS1LRXJGSWFoRWxzOEgxYnRSNVdNazQtTXNFVXV0NFVza1FmSTJtaFhLRkFlZDJRQXZmaHA4Q3lqTnJUeEpScE93?oc=5",
+      "date": "21/04/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An công khai danh sách hàng chục doanh nghiệp nợ thuế &nbsp;&nbsp; Báo Đại Đoàn Kết",
+      "publisher": "Báo Đại Đoàn Kết",
+      "publishedAt": "2026-04-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thông tin Chính phủ. . ⏰ LƯU Ý QUAN TRỌNG 📌 ………. 💥 Hộ, cá nhân kinh doanh nhớ giùm 2 mốc thời gian này, tuyệt đối đừng quên: - 20/04/2026 - 04/05/2026 🎥 Thông tin chi tiết xin xem trong sản phẩm truyền thông do Thuế tỉnh Nghệ An sản xuất",
+      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOODIyRGNSVGVEOG1ZdWdVeTNSaDJmNndHYU1maS1uTDVtZGJ6VHlYLVVLakVqQjVBLVJkek5uZDd1V2VxY0JhVnY5eDQ0UE40S1E5T2dNczBoeEVIODB2NUtFUHVLRUozdGJtNDBaMGNpTGpZTnNvYWJPUlpxd2dERERkdkhJb0c1d1NGblcwRXZVNDFjU1BKZlQ1cWNGbEkzOUkxaHN3R1R1bTFaRDA4UV9OQ2Vhbjg0eFd1dWhJM0JQcUJxTDJUakw4bExzdzUxWERjN3RNWHpzX25Oei02dVRpRHdiaXZFOTgwSXdRMUt1X3hyT3FId1BIU1BKWTJFdjNNTVBvYmtrU1N5MEtTSGZxT3JabU1reGRhX0pRVlRaZjh5V2dCM05QakpQWnpsci0xdFZPQ3RrN1hRVU40YVRpa1hHSXpPR0s4STFJZzlPVl94VWpuSGtObmVqejg?oc=5",
+      "date": "15/04/2026",
+      "imageUrl": "",
+      "summary": "Thông tin Chính phủ. . ⏰ LƯU Ý QUAN TRỌNG 📌 ………. 💥 Hộ, cá nhân kinh doanh nhớ giùm 2 mốc thời gian này, tuyệt đối đừng quên: - 20/04/2026 - 04/05/2026 🎥 Thông tin chi tiết xin xem trong sản phẩm truyền thông do Thuế tỉnh Nghệ An sản xuất &nbsp;&nbsp; facebook.com",
+      "publisher": "facebook.com",
+      "publishedAt": "2026-04-15T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "💥 ĐỪNG QUÊN \"VỀ BỜ\"! 📌 Hạn nộp báo cáo tài chính và quyết toán thuế 2025 - LÀ HÔM NAY! ⌚️Bà con lưu ý, còn một ít tiếng nữa thôi! --- 🤳 Sản phẩm truyền thông của Thuế tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOa2huMW83bTFBSWN5OTdkT0RBLUptSkJlTzZTbDc5dC1wWTdjZVQzQTZrYWpBSWYyRHQzWHZkaTZhQmZqMDU1MGJQOWM5VENfR2JsS2VTUHhtcHBpNDdYeFd1WUxyeFlmYUJUNFJFakpGdUZ2RTlyYTFXM2pVNGJ2WjBUMXgxaFdIa3JxR1F4Y2RKZms1c1hZalVYaEdwTEdreGd2dzByLU9QNl9IWnROd1F6RjlVVUVrd0dzcThGOS1aaUYyVjExQ0QwcWptYTNwODJzOEZadjdyVTd4Qkg1MTN5MWw1MmhDWFQ2N19tSVFzQVluS0JpWFY4c3BuYkpTUEZvcUh6MVQ3M0Q1blliVmRxaHRiR1AzQ055V0lUbF9leFUxZmZFTHJ3eWViNkx2ZmVMZzFIVGdINUlyc1B6M0Y4T20zOUlHZjMzeEs2dnVFSU1RbG02U0tEMU1vWl9lMzJzaGVsS2tSV0hPYTk1bmdMcmlHZkxFWTIxeE11aw?oc=5",
+      "date": "31/03/2026",
+      "imageUrl": "",
+      "summary": "💥 ĐỪNG QUÊN \"VỀ BỜ\"! 📌 Hạn nộp báo cáo tài chính và quyết toán thuế 2025 - LÀ HÔM NAY! ⌚️Bà con lưu ý, còn một ít tiếng nữa thôi! --- 🤳 Sản phẩm truyền thông của Thuế tỉnh Nghệ An &nbsp;&nbsp; facebook.com",
+      "publisher": "facebook.com",
+      "publishedAt": "2026-03-31T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An sẵn sàng triển khai kế hoạch cao điểm 30 ngày đêm cầm tay, chỉ việc hỗ trợ hộ kinh doanh kê khai thuế",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNTW5PY1dHQ0hoZlRIeHpXdFpMbTEtWjh4b2l0ZnVsNHFMY2U0ZGxGdHZELTdLNUJCdFlaWm9fREszbzYwUWkyV1dLSzlyY3dqT2E5ZHc3cFlTM0JrTzhnc3Z3X1preDZCME0taEh1Slc4dTAwTkpHYkFOakIyU3ZpYUJ3WUZJMlpKemtOa190b2pkTnZ0ZWxLY2tmS3lOaXJ1T1lvbWdVQUtaMFJTWGVPOVlLcXJpOFdqUk5jdzFpZm5lSTNra290bzRVeklKdXd5OTU5VGZfN0V2ak83Z01ibkluSFp0NlNzUm83LUVyV015VFdVUEE?oc=5",
+      "date": "16/03/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An sẵn sàng triển khai kế hoạch cao điểm 30 ngày đêm cầm tay, chỉ việc hỗ trợ hộ kinh doanh kê khai thuế &nbsp;&nbsp; Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publisher": "Tạp chí Doanh nghiệp & Kinh tế xanh",
+      "publishedAt": "2026-03-16T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An triển khai chiến dịch 30 ngày \"cầm tay chỉ việc\" hỗ trợ hộ kinh doanh kê khai thuế - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMTk0SkJROERmTXVjeGRVOFRWZTlXd3R6UkJPbUt5Yjcza0ZULTZMaFBxRXVnSldFUGxNVzlMT0V5MUI3bGwxOHNSR1Q0T0wta1h0X0gyNk9lMFFuMFo5aVBselNpdEVkdVJ2aElQSjc2MGJydTc0ZVRKVzB5NGZIZ3U5TmVXZll0LXQxNnVDZGJpWUFIbll6bWZ1ZWloSWF5Zi1Lb1FfQW9lSkVDUzFadzBaVHdSRmJRMlRidWVDRG1yay01bG1DbHhTQTZoREdobGF6eDJJWmRtZlp6d1p5U1JHUUk2WUh3akE?oc=5",
+      "date": "13/03/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An triển khai chiến dịch 30 ngày \"cầm tay chỉ việc\" hỗ trợ hộ kinh doanh kê khai thuế &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-03-13T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "VNPT NGHỆ AN ĐỒNG HÀNH CÙNG NGÀNH THUẾ TẠI NGHỆ AN TRIỂN KHAI CHIẾN DỊCH 30 NGÀY ĐÊM",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZzVBRE94dzFIYVY1ejFVcGVjb1YyWUtLWXA5bnc1SzJac0t2LXJtSnQtS2kta2lMaHM1aTdXVURfZExZTWh3U19jZndWX0JtLUctaXBVTFdldWppSEVYbVhBaEhteTRYUjZQTUZFaW9BdjB0MTBicE9xQllWaXRFQjNiMkVSWDVpWTlqUE9zcGZKMHRJUVF6NjNOSXVPWFVUZHd6YUpGMDc1ZTBaX25XN214TVpQb0s0cFRuNzB3?oc=5",
+      "date": "07/02/2026",
+      "imageUrl": "",
+      "summary": "VNPT NGHỆ AN ĐỒNG HÀNH CÙNG NGÀNH THUẾ TẠI NGHỆ AN TRIỂN KHAI CHIẾN DỊCH 30 NGÀY ĐÊM &nbsp;&nbsp; VNPT",
+      "publisher": "VNPT",
+      "publishedAt": "2026-02-07T20:01:06.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An ra mắt ứng dụng Zalo Mini App hỗ trợ người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSm9pWlBDU2lrUklGSU1XZnBRaU9IeFpXVkJIWWRZVWpVRGxGaGRzX3JPcy1zcVpxelQxMU5LYzY1cWtjTTdjWUl4ZU1OcTZKR0NsTFNYNzc1Y195OFYzVmljU1pXWHRwdFBhZVlUa2xFUm1uUlJFZkhLaFZDakw2VGFtUHZlUG1MLWxxTXllZGlQcU8zR1RFZm9zR0puck5ibkprN1NmYTdTemZqRFhfVDZXTURGQQ?oc=5",
+      "date": "08/01/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An ra mắt ứng dụng Zalo Mini App hỗ trợ người nộp thuế &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-01-08T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An thu ngân sách hơn 27.000 tỷ đồng trong năm 2025 - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV1hmc0JPbUg1aHJFMWtndnFxTGczajhuc1ozMWh3LVRKeklZLXN4MzdfbXBzNHl1ZlpmWU1vRkpYUHZ6WnRBNkRzY3ZmVGxoSjc2S1R4d2YzSm9wTkpHcWxrd01fbHRzVWVxUWJXSWFCbE1WNGpTUk5raE1La2J2Ny1CaDlvTHN0QmZtVldKN3FmZnc1VkNvbWhucDR2LXg1anVhNDcyaW9Zd1piYW1FTW9YcjkxejhVVk51ZA?oc=5",
+      "date": "08/01/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An thu ngân sách hơn 27.000 tỷ đồng trong năm 2025 &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-01-08T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An tổng kết công tác năm 2025, triển khai nhiệm vụ năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNODVVbWszbmMzYmZLa091Uk43ZllpaGJZYkVjRC1SWGY2VVhmUmZRMXVwYThULW4wWGdPXzJWR0prNHUxUlc4dHgtbEJFUjZ0T25PS3NSVlNSR0U1TTlHYmVmNDlDY2hWUUR3UVpKbHprcU5VUGtxdDFvbnRIeWltYVcwNWs5cEU5eFp2Q3U5RHRvbnF6SnpURVRqemY0ODNwSnVvY2xPbVFDMXJR?oc=5",
+      "date": "07/01/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An tổng kết công tác năm 2025, triển khai nhiệm vụ năm 2026 &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-01-07T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Các địa phương tích cực chuyển sang kê khai thuế, Nghệ An 'về đích' sớm",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON2tUSE9ucDRfeEwyNXBLdXNIYVBBUkVDS1d3RUxfeElNSUtXMDE5OGJJQUh0LUpFbDJYOGxwVFJtYjh3cTFZM3RrSnA5WW5QM2JZbFBKbFBsZmxkZVVZQkUxemhiZC14d0VVNU9wdUVCVDZpQ0MwTV9OTWpTdzFRY2lmMzU2Mk9yVVI5ZWMxLXhhMF9MQWhYQ0UyQnlhMVJPZzlBWHNpZFpJcEZKU0twZUwxalY?oc=5",
+      "date": "09/12/2025",
+      "imageUrl": "",
+      "summary": "Các địa phương tích cực chuyển sang kê khai thuế, Nghệ An 'về đích' sớm &nbsp;&nbsp; baochinhphu.vn",
+      "publisher": "baochinhphu.vn",
+      "publishedAt": "2025-12-09T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An: Dấu ấn từ chiến dịch 30 ngày đêm chuyển đổi mô hình quản lý thuế",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVnkyWnZBR3dSMzNqT0JfYlN6Tm1UNXdOckQwaElod0NBclVDeWhaYmJPYUVraHBtbUZLczV4WVR2S19OdmJDdUNPZFVHaWtDNW10ajd6NHdXaTVZRHVnM2VoT3BraGdjZ1dhekN1bTNES0w5UVlMazIxdzBFRTZqNHpuQVFfRjgtWEFNVHdzZnVnUmZNdUl1c0h6MDlVQWY0ZlY2WjRzQzhsM1E?oc=5",
+      "date": "01/12/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An: Dấu ấn từ chiến dịch 30 ngày đêm chuyển đổi mô hình quản lý thuế &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-12-01T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An điều động 38 công chức tăng cường về các thuế cơ sở",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWFFrcTBXY21PNzVBcThhLW4yeGI4NnVKcVhCbVd2SEVLbTFaSm1fcWxVb2gwLTFzS2lpWkZiRDQwTWR4dGhOYUxqQjFRNnNiRExFVjNNX1d0QnFQYWltVjdkMW5TeUYtWEJ2a1dDMDl0R3RaeHNCNlYzU1g0RXdjNVhwMTdpRVczN2IwS0ZoZHpsMlMwUTlRR1BYc1A1aXV4TUZxSFpLTQ?oc=5",
+      "date": "26/11/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An điều động 38 công chức tăng cường về các thuế cơ sở &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-11-26T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế Nghệ An quyết liệt điều động công chức về cơ sở để nâng tầm hiệu quả quản lý",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdllqal9FM0cyNURGbllJNHdQM0N6a0RMejVZdXBSMXg0MllpMkZxSFF4VExORGxQa1lGQ3Naa3Q5TEZtdW5fLXpkTndqSmtjaGhBZExUWVY3SndnaGZFWTVOb0JGaGpUQ25iSm9RV0p2SW5BX1MyOTd4MFRUZnlyT255RGZQNWRCeUExUGFaUlVNWk9IWF9aUl8zRWRWMG1PZWlzWEhlZFRrUEc0Q0ZINGJYUlhjYkVtUmdRQlhVaDNITmx6YlhJaWlNM3ppNzBfQXUtMng4NzQyLW1sakRLRElTbEpVU1N1N1BNbw?oc=5",
+      "date": "26/11/2025",
+      "imageUrl": "",
+      "summary": "Thuế Nghệ An quyết liệt điều động công chức về cơ sở để nâng tầm hiệu quả quản lý &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2025-11-26T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An ký kết thoả thuận hợp tác toàn diện với 4 Chi nhánh BIDV tại Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaElNbXIxd3NjN29weC0waDdUcjVNbS1qaDZfTDRpN2Q4c0s3NXgzX1Y3NEVSMDlPQThPNHNNclVMQl9BeVd3UTFCZDBOb0FoR241dXlxWDl3SzYzeWVPX2pSSmtVMUFILUFSRHVtWGF2cXJfM1lKWnhKYzd5YUdWbnFxT3pFREJRUXJjYjdYZS1sMk1rTU5acFRxTGZIOTRpNXlQN2hvaUdnaVQ5MnFuLXhRU3JSRXpEZGdERVlR?oc=5",
+      "date": "19/11/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An ký kết thoả thuận hợp tác toàn diện với 4 Chi nhánh BIDV tại Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-11-19T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Ngành Thuế Nghệ An bứt phá trong chuyển đổi số, phục vụ người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTN2Z24wbC1DajEzSUF3WjFXU3RGU2pOSXJBN2c1YlhTMjF3aTR3dTh6dFRvcmVtdGRuS1lETzViV1V6elI3a2pjZTYyOHhJaG5od2d0UXFFUllnbEF3TzZmY2dpWXFGVmlsZXFIUHU1Q1FHS0RXbXR0djNBWE5jdTNOYk8zMS0yTHo1T0tEYlZQbzl2ekI3QUZvMWc1VFFFenMtMmQ5VQ?oc=5",
+      "date": "17/11/2025",
+      "imageUrl": "",
+      "summary": "Ngành Thuế Nghệ An bứt phá trong chuyển đổi số, phục vụ người nộp thuế &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-11-17T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Hỗ trợ cài đặt phần mềm giúp hộ kinh doanh chuyển đổi chính sách kê khai thuế mới ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUlFubXZCWUJOTnpmYmZTZTlxbFl5M1JRS1hydGRzem40em1Va1ZjOUVFTFdTRFpFaGRxcFpPR01maFBNSHk5aF9YQV9lYjh6V2taUFR1VEpmSWpqT2d4NU5GWkVKQWhBRWNPT2U1a2J6YlpnWlBwdm5FeXRGRnVkRlVXd0UzM3VMMnB4bDVYSi1EWG5oWkNfcUthc1FCdHpFVy04alIyMUdZN184YTRzVVFNMlJfaXBJZzM1YTJuREFNUS1Y?oc=5",
+      "date": "14/11/2025",
+      "imageUrl": "",
+      "summary": "Hỗ trợ cài đặt phần mềm giúp hộ kinh doanh chuyển đổi chính sách kê khai thuế mới ở Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-11-14T08:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An tăng tốc hỗ trợ người dân chuyển đổi phương pháp kê khai thuế",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU0I4QnlYeHNlSkVTM2JhY0M2V1BsX0s3eWJZeTNUMTVpWUFWMlRZYldJZ0xtOWhLNWg0TVluMkpySmwtS2hCVlp1bXo0NzJKYjM1ZmQwelV0SEM4NFREYW9ISlAwRERZaWRydlBhVkw2eDJMUnN1Y1ZQM0s1blMxQloxN2hEcEhKZnMyb3VYZTl0SnBGN3Bkb3FVaWoxZXlEaTdkLVRQSQ?oc=5",
+      "date": "02/11/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An tăng tốc hỗ trợ người dân chuyển đổi phương pháp kê khai thuế &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-11-02T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An phát động chiến dịch 30 ngày đêm chuyển đổi mô hình quản lý thuế đối với hộ kinh doanh",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOXzlyeFMxeXRCejhfejhuSE1aT2I1aThNQ3NBMFItVVpGRkFHYjY2bUV2QUdGalBaWGZISktMWEVSYWVHQnM3UEVlbW5qWFZqb2JEdlQ3a1drbEk5STRTN01NX1FfVnRQTjRiTlZXS2NyTEVlaVplZThEM1Y1ZEs1TFZRbnhTWGYxcGZHMXp6NTdwMFNvdVpVRXJXdE43T2UzZ2VDOXVKTmwzV2hxN0x5N0Iydzd1RXNOSmdPVmo1TVdQalBySXZqUA?oc=5",
+      "date": "31/10/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An phát động chiến dịch 30 ngày đêm chuyển đổi mô hình quản lý thuế đối với hộ kinh doanh &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-10-31T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Phấn đấu 100% hộ kinh doanh Nghệ An nộp thuế theo phương pháp kê khai",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNXYtZXVWa252bVZLX2QwRG45WnNYYnFrQXFsNjlrcGx6NkRRWFVtR191YVlFWWtqYWYzRkh5eTlqaTNYcmg5dlAyZkJ5ODVWWU9DM0wwdTlIVGNvNmV6Ti1tZnAyU1lKbFVhRkhTcXZQYVZRUDZNaDVsWnhMajNEUDJkZ1RvbnZKLUtHNUVUQ0JQTWk1TDNWZzdKdGpEN2NzckRMbm9vWUw2MVJYaXFMRnV1YTNsX1REZGh6QWdBdnYxc2JLaGg3NmM4S1d4U3RqXzNLVGxLZy1kVGdJVWtUekpWMGhCYi1Wd3FBNQ?oc=5",
+      "date": "14/10/2025",
+      "imageUrl": "",
+      "summary": "Phấn đấu 100% hộ kinh doanh Nghệ An nộp thuế theo phương pháp kê khai &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-10-14T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An triển khai chiến dịch 30 ngày đêm chuyển hộ kinh doanh nộp thuế khoán sang kê khai - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPX3Uxdk9CcEoyd0w3eXYxU1pRanh3WmZpRkRiUmJsZl81eXljcnRVZjFrWDJhSHJtQzZUcU9TeTI3X2ZhSGJsSXB2elM5UVNSWFhRRTNweEtqSGpxd0Z3RmlEdHpaX0VPRDNrV0ZxWGtWX3lLakFaaHA3dF82ZFk3c3lxaURnTXdidXhTN1lFU1otSWZSX3NLS2l5SUZiZUV2MVhrYl9zUkFFMnlWcHVtZEY2blgtcURtdW41eXlPcGlBblFXbkxybTEzWkVyc2p0M2U4dnMtUmdtS0tqdjRoYkdNTUY4cDdYZURn?oc=5",
+      "date": "14/10/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An triển khai chiến dịch 30 ngày đêm chuyển hộ kinh doanh nộp thuế khoán sang kê khai &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2025-10-14T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An: Đồng hành cùng doanh nghiệp, sẵn sàng bước vào kỷ nguyên chuyển đổi số",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQOGU2M011VE02Yl9TcThnWXBaMWN6RGlVazFJUVFBNGFndEN6cjF3NHVGQldZcGdCdnRROGRsMHNVODVoTHp5MV9Yc0tfOFZVcmRHWGtLdnQ0V3NsUVlEN2ZpN3ZDaV90ckhOT1RjcXpDZm9QWFl2ZHdTMXFMRE56anBwd29WM0dCNmliaW93Vk9Tc25WS3pESm5JOE5zcnA4akZPQzJUbEtvYktjdEZ2cWNzdjR3Ym1tRTVkRjE5eUV1ZEttZDZickV4N3NOUQ?oc=5",
+      "date": "04/10/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An: Đồng hành cùng doanh nghiệp, sẵn sàng bước vào kỷ nguyên chuyển đổi số &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2025-10-04T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Ngành Thuế Nghệ An góp phần tạo đà vững vàng cho nhiệm kỳ mới",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWUo1ZzJ6emxUQk4zQmhvUUs2Tk5OS1V6aElTMFRnR3NkN3RTS0tHbXNmcTRSc1gyZXZjNUhuNU5HYTBoNldnZTdMYmtGZzZMdzFHbVVOZExmUVI4UUNFdWppTWpyZ1I1MU5pUWNQNXJIaFBkZG1KNGZMUmc0Y1hMQzZQa0QtNmlielVsVzFkeG9JMVowTkFwenJ0eUQ?oc=5",
+      "date": "29/09/2025",
+      "imageUrl": "",
+      "summary": "Ngành Thuế Nghệ An góp phần tạo đà vững vàng cho nhiệm kỳ mới &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-09-29T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Một \"đại gia\" ở Nghệ An nợ thuế trên một nghìn tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWjhLcHpGclZDNEo0Ym9OSnBtaEJNS1pwbVJoWjZING4wVTdoSGR1ZUFJQXQ3dnQtZXlFS3Vxc2I4TmVYOG93ejlqS1VBZi1FWnZZT0UzaDdZT3IyMU5ISzhLNVFEbWh1UVpFYm15ZElXU09DcVRaRU1tc0RWaTd6MzQwOA?oc=5",
+      "date": "26/09/2025",
+      "imageUrl": "",
+      "summary": "Một \"đại gia\" ở Nghệ An nợ thuế trên một nghìn tỷ đồng &nbsp;&nbsp; VnEconomy",
+      "publisher": "VnEconomy",
+      "publishedAt": "2025-09-26T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế tỉnh Nghệ An công khai thông tin 58 doanh nghiệp nợ thuế lớn",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQODdxNWowMktwQ21yX3hZODZHNjF5UkZfcFQ5ME9sbHRLVU5waGVmOUdYTUFLc1BLYUdlWGZJeWd3eVhfT2JCTWtxblhScXYzbmVLSWYyVTVTM29PUzI5OGJRdmlaSzhHcVFVTXhOVUJ3OUNLVkVGWFMzOWhGc0dRb1R4TEtyM1FwTFlqMzhmNkdPZ3NmdnlLZXQzQ0dxdWVIcHRPLTJVU1pnN044TFc0Wg?oc=5",
+      "date": "22/09/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An công khai thông tin 58 doanh nghiệp nợ thuế lớn &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2025-09-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Nghệ An công khai 58 doanh nghiệp nợ thuế hơn 1.258 tỉ đồng",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNejF1SjBWc2tESzViNi1QRk9iX0hNU2tlZktBNUk1WlFtSUZPakd0ODhnRFRzYmdVQXVXOC0xbWJ1TzJ6ZG8xMzZadVdfTTU3a1NSNkpfWG5oQ0k0Mllja1ZZdzBXT2lVdGlRTW1xVTRnY0xNb1ZjeFMyMk9sLTZHMkgxM1ZKT3NReml6UTFxd180RnFPQlUwcFVXTUFKOG1sRlE?oc=5",
+      "date": "22/09/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An công khai 58 doanh nghiệp nợ thuế hơn 1.258 tỉ đồng &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2025-09-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Ngành Thuế tỉnh Nghệ An kỷ niệm 80 năm ngày truyền thống",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUNnOWd0MHFpYU03bm5oUkVBUG5iYzBnTzVvQXZlZ052Q252N0I5dzN5dTA2NjNZQmlxa3hMWnEtdjdjTjdxelNyVm1rc3d3eVNUNFRuS0ZlTHFGRnV3V2RmRTFwYWx5Qk1GcmdKcUdITkV1ZHNzWGFqQjZ2blg2U0J3VVdVdUlkZnBYZWtMVVlLYm5DYXc?oc=5",
+      "date": "10/09/2025",
+      "imageUrl": "",
+      "summary": "Ngành Thuế tỉnh Nghệ An kỷ niệm 80 năm ngày truyền thống &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-09-10T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Ngành Thuế Nghệ An xây dựng và khẳng định vai trò trụ cột tài chính địa phương",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNdF9Fd3VERzBXeUpGRDJlSGRjVGVfSkE5Y1BZVi1HRE9TNVRUVmxxbVNIeWhqZF9LZm93WTBNYTFUdE1BNU5SY3NfX2otQi10ZlpfV0Vqa0FyY2xNU0lNM2FWUkJaZGE3TS1CSG1yWF9DeFhyY05CbDB1cmhXR1kyZllWdEhlZnFBUjljczhBdkJHWEp4ZVc3WEYwSWtLc2g5M2JCY25rQmlqTzYyOUE2ZFRRSW53Njk5b0tyS0NpUFlXYjRyZ2pIbTVweUl4ZWNITkVLOURfT2w4NDh4cEFSQ3JPeW0zenpn?oc=5",
+      "date": "10/09/2025",
+      "imageUrl": "",
+      "summary": "Ngành Thuế Nghệ An xây dựng và khẳng định vai trò trụ cột tài chính địa phương &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2025-09-10T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Danh sách 13 doanh nghiệp nợ thuế hàng đầu ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX1NFaEtONG56RF9LdlRtVzJ5d3ZnMGROejNONGNDQTlBY2I4bVMwdnl4ZkNGckdsZGVwSXcwY0ZjYkhJMnA1Sm9lMXQ3SHcyZlQyXzNnTjJCU3RxUm9QWTNKX0c3NXlxODV1dUx3Z3NpNVotTFRKTGJjN2c1MnJwb3pNZHpmYnBIX0IyUjd3RVBOeTlIM1NwUWRR?oc=5",
+      "date": "07/09/2025",
+      "imageUrl": "",
+      "summary": "Danh sách 13 doanh nghiệp nợ thuế hàng đầu ở Nghệ An &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2025-09-07T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Thuế Nghệ An công khai điện thoại tiếp nhận phản ánh, hỗ trợ người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQalQ2eGhIV0s1STMxVXdGTlcwa3FsTS1PeGlCZFItWFYzUmlmazFPeG5mdFdMYnl5QzVDUHRCUFRFSEotSjVyVU5Sck1udmVtSmpORUlobEgtZm81ZWh5NVN4eHJ5UVp2ZEpEUzNxMVd4ZWQ2bzZuQ0lYeGUtUnZfTHR4WmRUUWpiWmZ4UVNqdmZWajdDMmNzbk8td0plSm9aNV9TUXM1NW85R25Jd3dvSHNzZzdVZw?oc=5",
+      "date": "16/07/2025",
+      "imageUrl": "",
+      "summary": "Thuế Nghệ An công khai điện thoại tiếp nhận phản ánh, hỗ trợ người nộp thuế &nbsp;&nbsp; VOV2.VN",
+      "publisher": "VOV2.VN",
+      "publishedAt": "2025-07-16T07:00:00.000Z"
+    },
+    {
+      "tab": "thue",
+      "title": "Ông Nguyễn Bằng Thắng giữ chức Trưởng Thuế tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcVFxWW02eVRFYUo5aW5MbmxxNmxHVHVtTnhNdXBxR3RJZ3hRQVBwWkN4NUw0dkxQaVpmRk9JMThNWk1RTE00UFhydUFVTUFBM2tTWjd0eXlqM0pZRkJOX1BONVdFSkx1WGh2ZjA2WEZoNWtWWmIzQlRPV3RUVzViSGpuc1RjVk1nRXZKNGFLNzRWTTk5WElFTzhKT1ZzZw?oc=5",
+      "date": "02/07/2025",
+      "imageUrl": "",
+      "summary": "Ông Nguyễn Bằng Thắng giữ chức Trưởng Thuế tỉnh Nghệ An &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2025-07-02T07:00:00.000Z"
     }
   ],
-  "lastAttemptAt": "2026-08-30T11:57:05.641Z",
-  "itemCount": 4,
-  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng.",
-  "fetchedItemCount": 0,
-  "partial": true,
-  "sourceMode": "seed-homepage-only"
+  "dataset": "news-thue"
 }

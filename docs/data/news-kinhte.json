@@ -1,51 +1,623 @@
 {
   "ok": true,
-  "dataset": "news-kinhte",
-  "updatedAt": "2026-07-09T15:15:00.000Z",
-  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
-  "stale": true,
-  "seed": true,
-  "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920A4: fetch failed",
+  "updatedAt": "2026-08-30T13:50:13.862Z",
+  "sourceUpdatedAt": "2026-08-30T13:50:13.862Z",
+  "lastAttemptAt": "2026-08-30T13:50:13.862Z",
+  "stale": false,
+  "partial": false,
+  "seed": false,
+  "lastError": "",
+  "sourceMode": "news-rss-fallback",
+  "sourceUrl": "https://news.google.com/rss/search?q=%22Ngh%E1%BB%87%20An%22%20%22kinh%20t%E1%BA%BF%22&hl=vi&gl=VN&ceid=VN:vi",
+  "sourceStatus": 200,
+  "fetchedItemCount": 60,
+  "diagnostics": {
+    "fallback": "Google News RSS / Bing News RSS",
+    "reason": "Nguồn nghean.gdt.gov.vn không truy cập ổn định từ GitHub-hosted runner."
+  },
+  "itemCount": 60,
+  "previousItemCount": 5,
   "items": [
     {
       "tab": "kinhte",
-      "title": "Chính phủ kéo dài thời hạn ưu đãi thuế xăng dầu đến 30/9",
-      "url": "https://nghean.gdt.gov.vn/wps/portal/news/detail?1dmy&current=true&urile=wcm:path:/nghean/site/news/economy/e95ca020-f2b9-4f23-ac5f-9cf2f57fcb08",
+      "title": "Bế mạc Giải Thể thao truyền thống Khu kinh tế Đông Nam và các khu công nghiệp tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOclNwc2pzd1V2N3ctVzlzcDZNdVhGeXpIdTlmREg0UW9BemZrZ2FXdXZ2anJyNHFWMFJpT1NOdnF2eHpyMldMNl8wMm5jYzBEQjBXNFoyZmYySVhXQURKbGIzTEdTZ3kydUh4eThjd3hqajNkblRteVJfZ20wdi1NUURCTDk2TjlINm5xZlF3c29tWHBVVkFMR1VDdzl5YkpMTHJQdE02dmVZQkNEamRrd01ETWRtQ09vU1drUno4WFVjT2M?oc=5",
+      "date": "29/08/2026",
+      "imageUrl": "",
+      "summary": "Bế mạc Giải Thể thao truyền thống Khu kinh tế Đông Nam và các khu công nghiệp tỉnh Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-08-29T01:36:01.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Công nhân Nghệ An sôi nổi tranh tài tại ngày hội thể thao truyền thống",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVBhWU1GeTVnS1VOX1JrQlpGRHlpUkZTR1ctRkhfQkw5VnR1eV9LVnl5czkxR3ppMkNwQmVDVVhJdHQ1RjlPd09SVGpZTkJpUm9qMmFKX1lTdEdFallzSll0RjZsWElWdDI5Y0ZDWU5HRXlTY0VPM2JCRVFSMDV0dnV4V3JkbjNKM2t6ZS12ZTFSRTFWRVhPYWRVeUFRWHd2NHJrTDM5bWh6YXUwa2pTSjJlOXg?oc=5",
+      "date": "28/08/2026",
+      "imageUrl": "",
+      "summary": "Công nhân Nghệ An sôi nổi tranh tài tại ngày hội thể thao truyền thống &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2026-08-28T14:58:22.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "UBND tỉnh Nghệ An triển khai nhiệm vụ, thảo luận các giải pháp phát triển kinh tế - xã hội năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQ3NlaExxM2d0ZnlBT0NWSlJpbENzaHJ3YjFYVG9rXzR0d0R6bE84TUFEQnVBUmtlSGlXcnhOUklJa2FjeU8yLWxlU3I0R3Q1TngtdVZfYzRQU2tya0lPXzd6T1l5TkJZUHduUi1vWHROSlpHUHI2T2R1T2FxV0UxOG5Edks0bXE3RWExa3A3azk3alZLRlN4aVhQeVhJUGNBTm5xRWRHaGFMY2FpS2gzajJEU2ZsY2ZEek1Cck1oZFRZeklDSWRHVUMyOTZEOUxqVFVXaTBwRXlZUms4SEIzeg?oc=5",
+      "date": "18/08/2026",
+      "imageUrl": "",
+      "summary": "UBND tỉnh Nghệ An triển khai nhiệm vụ, thảo luận các giải pháp phát triển kinh tế - xã hội năm 2026 &nbsp;&nbsp; dcs.vn",
+      "publisher": "dcs.vn",
+      "publishedAt": "2026-08-18T17:00:05.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Sáp nhập đơn vị hành chính với phát triển kinh tế - xã hội và đảm bảo quốc phòng, an ninh, trật tự, an toàn xã hội - thực tiễn và bài học kinh nghiệm tại Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNS2xzOGFVekpkUGVfNDhNakNhdVNqWlFmYWlTOEFDblFGa1N4amNDakRQRVFIeFhxdTRqQkUwOTE3UFJvUUx3RHpJMG5mQ19zZk1JUzc2UHd5VVhZSVRUSGZjeGNESzI4dXpxem16ckpjUjZkSDhudERESWNHUFNXMTJEbDRXdloyWll3NjJ6Si1vRG1ydmQ5OU9neW1lTi1nWGxBdTY5OE5LRHBzX25lYnVFaUFlSHBSdUV1NlhkLUJycktLbE9HRFU2Sjh6bTRtMnMxX3NEXzNVTHhhd1VEM1gxRmVVaUM0YXpEdkQ4UjVxNlhhUjhYaVpldGkwNktuT3Y5UGhVVzR0MUZZYjRMSmRrX1BQQTl6?oc=5",
+      "date": "17/08/2026",
+      "imageUrl": "",
+      "summary": "Sáp nhập đơn vị hành chính với phát triển kinh tế - xã hội và đảm bảo quốc phòng, an ninh, trật tự, an toàn xã hội - thực tiễn và bài học kinh nghiệm tại Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-08-17T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Định hình cấu trúc mới cho kinh tế biển",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNN2JCaHIwa2dqVllIS1Zka3dwaXV1cGgtZEUzcEhFaFBjcWVnSkFRQmwzbGhUSkZMdWhzYkh0RXVnUTR2TjdZZE5tSGhiUGtWTjhkcUljeW5uWTJWdE52ZFZUNTNOYTUwUTNkZ0JScUdUQ0hqR2Y0VUFTc2Y3T3BQdWhjTEVwckJGS2c?oc=5",
+      "date": "15/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Định hình cấu trúc mới cho kinh tế biển &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-08-15T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Động lực mới từ Khu kinh tế Đông Nam Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9kZ2tsNE0taldXU3JvOUxIalQyeHlBM2xkd19qOXlseEwxVDdzQTVkYzA2MlRKdURTUklFQWtoS0RnUVlyVXhZX29ZUDlaYzdEeVZkQmYweDZqZUxRVzAta3lNWXl2dFdhanVKZFRaYkNhRHRxNkE?oc=5",
+      "date": "15/08/2026",
+      "imageUrl": "",
+      "summary": "Động lực mới từ Khu kinh tế Đông Nam Nghệ An &nbsp;&nbsp; Vietnam.vn",
+      "publisher": "Vietnam.vn",
+      "publishedAt": "2026-08-15T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Phát triển kinh tế gắn liền với bảo vệ quyền con người",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPalk1akFEdW44OE5fN1Z5QXVaOE9pRFZZN2dZMzhwNFJnMFN4MXU4dVVPNUNtN1hKNnVkQ1NlWHR5M2lCemNERGFvdHU0bE1jWVhkcW9paEo4bktjc191MVFJN1YtdnRQS1BIc2NJbE05YTFHZkgtNF9MNEdxNE53ZGFxbnhsajZ2c3NpVkZBVkpIR0xNRTBHUnBEZ1RCY2ktZkhZ?oc=5",
+      "date": "15/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Phát triển kinh tế gắn liền với bảo vệ quyền con người &nbsp;&nbsp; kinhtemoitruong.vn",
+      "publisher": "kinhtemoitruong.vn",
+      "publishedAt": "2026-08-15T02:41:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An tìm hướng phát triển dược liệu thành ngành kinh tế xanh, bền vững",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVHNyMzJvQXdqb2xsV0UyZFBqNUxnXzNzSlVqT0puNUo5eEp0dXF2eHNlSnhrZ2J6ZTBMSVFRNzNPdVQwZ2xDdTE3RUFZQkU1OGI4V1paZTlwYl9DdlgzYkVTVlJfLTNUYW1zOThJQ0R0X2FvcnIyMkVXM2RPbzRIZUNRVUZUSWJVYzVQRU9BR2xWZXhiVnNlbEJqc3dEZ194TnJRNEUtS2JIbGtzZ2c?oc=5",
+      "date": "13/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An tìm hướng phát triển dược liệu thành ngành kinh tế xanh, bền vững &nbsp;&nbsp; moitruong.net.vn",
+      "publisher": "moitruong.net.vn",
+      "publishedAt": "2026-08-13T09:07:01.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Bảo đảm quyền con người gắn với phát triển kinh tế - xã hội",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN2xSZXVmQmdaSFM0RldlMmFNNkRwTVJQb2Y4LUhqTlFPMms0RlBHdGJzc3k3NGZxV3kycWVtY0tNTmJNVmJ2TWMwaWNNeXhMY3I1U19xQUsxR3hPdlEyZzl1dnJhRmdQWVVsaEJHM25tcXZ6b2Y0RGh4azZ4UXdTd0czNm5Tc01lYjdJS2ZtTWoxUWZsb0dBVnVEckN2T3pIeS1ydDRvdkRlT2JY?oc=5",
+      "date": "13/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Bảo đảm quyền con người gắn với phát triển kinh tế - xã hội &nbsp;&nbsp; Báo Quân đội nhân dân",
+      "publisher": "Báo Quân đội nhân dân",
+      "publishedAt": "2026-08-13T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Xây dựng miền Tây Nghệ An trở thành vùng phát triển bền vững, có tốc độ tăng trưởng kinh tế ổn định",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPa3FRNDlrbmZnaVNBVTBzbG5nQzNRQ1k5cmFfX1ROaFdkUzhTN2dJSUxlNERQdC1JU0lSQmVqZE5PbDV3c0dVUFQ1XzVrTDc3WnhEZkxsMVJkY0pHaldYZmU2ZWdYaC14aUtSUGNFYVJoVnlZOUh6RjlETlZMUDl5OE9IVG9MREFWMmJhX3hZcHhOdDR0SzdIa3lIbnRzRVk3eEEtSTZ1TU41ZnlUNnJYdjhPLTQwWEtEbGRsM0pNSVUyT1Y5NUdSMnVUYnhXTTlBTEE?oc=5",
+      "date": "11/08/2026",
+      "imageUrl": "",
+      "summary": "Xây dựng miền Tây Nghệ An trở thành vùng phát triển bền vững, có tốc độ tăng trưởng kinh tế ổn định &nbsp;&nbsp; VTV.vn",
+      "publisher": "VTV.vn",
+      "publishedAt": "2026-08-11T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Doanh nghiệp tăng hơn 30% qua Tổng điều tra kinh tế 2026",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOd1dLSF91c2FkRkV5b0p1aEVlS2I3NGJya3pfNlZOdFJybWIwaHFjSF9FTkZHRHRCYzVQQnFEM3ZqV2JlbjlPVUJPNGJFTkNId3BTRTFxSGxlS1A1RVhnOFozX2VzNktFeW82eUpBY1ZTRzNZVDZqMmFXaktqcGx2ZmJoTWhZLWNpZENmdDRkcFM0OFByQnlwX0tWOHhyQjA?oc=5",
+      "date": "05/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Doanh nghiệp tăng hơn 30% qua Tổng điều tra kinh tế 2026 &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-08-05T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An chủ động triển khai công tác ngoại giao kinh tế phục vụ phát triển",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMGFyX1V0b2tHSERjUFB5WlNSb0FqUjFKc0p3Q1lKZDJCaDBLWlU2anB6SEVUYWpzZDg3UTZ4bVcxNlFvbFYyaS1BVkt0SVp6dmJ5LV9kTUVvMFl2VXpLSzd0VEpSeTVTQVFmenRsZHhZRVRpczVBOVJLM0RsWktMWnpIYWx1QTU1WUJ6SjJlRFJtNklLSnJGRVc1MmJEMW1Ea1k3SjNsNEwxMDZrSkE?oc=5",
+      "date": "04/08/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An chủ động triển khai công tác ngoại giao kinh tế phục vụ phát triển &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-08-04T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An hút hơn 84.000 tỷ đồng vốn đầu tư sau 7 tháng, gấp 5 lần cùng kỳ",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORFlTTmhDWk1Eb1lRcXhXcVl6YVJoeFB5ZzF3M0VXTTVWMFJiZjVrRExGNGtUcnNJRU9YUzVBYzhGNzNzZnNvMWFsdEdaRmRQeUtCQ2hBRlgwZnpyZDlSUXZPZzFROFNpaHd5T3BTdDhvc2Q3aHhLU09DQmRyWnRTX3VoSXZMd2Z1ZjdFQlJaTzVZZ1NlV1ltc3dPcw?oc=5",
+      "date": "31/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An hút hơn 84.000 tỷ đồng vốn đầu tư sau 7 tháng, gấp 5 lần cùng kỳ &nbsp;&nbsp; VnEconomy",
+      "publisher": "VnEconomy",
+      "publishedAt": "2026-07-31T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Điều chỉnh quy hoạch tỉnh Nghệ An: Hiện thực hóa khát vọng phát triển",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQenpYbUkyVm55YU9SX182Y0Nzck1IMGNpUDR5ME5yeWdGYUg5TFpjMktWM1NGeXl6Mi0zOTJVNmtWaEtiS3NzaHVsd0hzTS1Sek1YS19valVRdjYxaXNJSldkOHF4NC1QdlZJWTNVdW93WWNXeldjeVVhZzE4Z0FQV2t2cWhNaE9hTkcwUFVwUjl6MGpTTUx4R0FvMVVobE1tbEZ0MGN6VjV6LWFveDRZNVE2T2hJOE5MeVFTcVQ4R3ZjQmo0S1Z6NGNUcExPREk1?oc=5",
+      "date": "31/07/2026",
+      "imageUrl": "",
+      "summary": "Điều chỉnh quy hoạch tỉnh Nghệ An: Hiện thực hóa khát vọng phát triển &nbsp;&nbsp; Đài Phát thanh truyền hình Nghệ An",
+      "publisher": "Đài Phát thanh truyền hình Nghệ An",
+      "publishedAt": "2026-07-31T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An công bố điều chỉnh quy hoạch, đón 110.450 tỷ đồng đăng ký đầu tư",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMXdlaUN2SkhORWp1ZC1XekIwMThVWENHZThyS3c0UUpmWk51aVVrQ3hYek9MRzR2WE9pa2tGaUhWNHlia1l3cXBJWGFNWUJPZnExWjVfVk02VnYtS19IZVdsdDRwQmlfVE9mQ1c1SkdoLUZkVlBOeUwzc0FBemFhRWlrQ3FwREpTcE1oQVZHcTlrSG9VY0U1R1ZKWDdHN1o2OGk3U01nMWJsd24xaDBDb2dNRjFEMkk5NkJ2Q1prLTZVbjA?oc=5",
+      "date": "31/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An công bố điều chỉnh quy hoạch, đón 110.450 tỷ đồng đăng ký đầu tư &nbsp;&nbsp; Báo Dân trí",
+      "publisher": "Báo Dân trí",
+      "publishedAt": "2026-07-31T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Phương hướng tổ chức không gian phát triển kinh tế - xã hội tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLU9TbGdjUWltWEt4UGZGVWVkYjNkOENYUXIwTHZjeUVHZ21tbnhFOUVWWUlGODRKdWczV0VPc0VITkZaMTJTZ2FqNS1PcDFlbGhEblVpV01BbWVfSFRtWUFNX21FeFRiekIzMWtLUnBNVEMyTm9yY2M2Ymg2Q3AwMS1RNUpweTA2TVBnUU1qMnBJUTMxWmNSMDNjaElXTTZBVkpPNFZzeng?oc=5",
+      "date": "29/07/2026",
+      "imageUrl": "",
+      "summary": "Phương hướng tổ chức không gian phát triển kinh tế - xã hội tỉnh Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-29T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Công nhân Nghệ An tranh tài tại Giải thể thao truyền thống khu kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZWhYcGJxWW1Bcm9zZ29wUXBVV3VPMVNsSlpVNVMxTk1xM1lJdE5QcHBfanlyWlNSZ2dwVTUyZlVXcUwzWkRUUGdyQlNQQnhIZ0ZBZG9TX0U2dk8wV2tTYng4WHZIVXdIZ1RDcXdhdnZpVy01dVM0cVlZcnVWcXVyWjNOR3Z4ZFYzb3BwbDhnUElIRENkUDdLYWp3MmlWd2kwOTNXOGhYSDhEeXM0RVJycA?oc=5",
+      "date": "24/07/2026",
+      "imageUrl": "",
+      "summary": "Công nhân Nghệ An tranh tài tại Giải thể thao truyền thống khu kinh tế &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2026-07-24T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Triệt xóa đường dây núp bóng phòng khám để \"vẽ bệnh\", lừa dối khách hàng thu lợi hàng chục tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPRlp2eE5wRGtPYVdVZE9Ydk9CN2k2MmRISXYzNThpejVSNnMzcGZhcWRQQUJUR3AtWHF3Z2R0dGRFVWgwMERNVEFDUDQ5UzZpOEoxa0lnaVRjaWNvN2JIZHVWZ29HY3Jqa0Vpc0pmOWFoM2xyNDBZSjNuLWxUQW82NzJfR19fZjhSRnJORG1DMEt0MWlUQlFmTFlrR2JzeEhydUR2b2JVMFhFT0ZJd1RUaUZXNlljWEY0TENOWVNjR1htNnBlMG92ZTRWdkl1d00zc2xBZ3dVMW5UNVQx?oc=5",
+      "date": "23/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Triệt xóa đường dây núp bóng phòng khám để \"vẽ bệnh\", lừa dối khách hàng thu lợi hàng chục tỷ đồng &nbsp;&nbsp; Pháp Luật Plus",
+      "publisher": "Pháp Luật Plus",
+      "publishedAt": "2026-07-23T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Công an Nghệ An triệt phá đường dây “vẽ bệnh” tại phòng khám, thu lợi hàng chục tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPYmNUdWYzT2syenk5Y3hfT1ptd3VMVU0zVDBzS1l5dDNud1RuYV9DWjdZWENzRHFmZjBJQmRkVzNLYnpvd1VYOTNWeDN0YkpSaFR2S2J6Y2hvSEc4cTJoVTljUk5Nd0ZSSW5TMXBhdDUtVzNLdU9OS3Z4TkJVWHZaRzlDZUlqWWQtWHpMY1VUbTdEN2V0YnB6TGpIRkoweXNodDl3QWRPME15Rk51R3JxYnB5VmI4eG0ycWpuZWZXcU9MQzBQTXlDdUlCbw?oc=5",
+      "date": "23/07/2026",
+      "imageUrl": "",
+      "summary": "Công an Nghệ An triệt phá đường dây “vẽ bệnh” tại phòng khám, thu lợi hàng chục tỷ đồng &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-07-23T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An ưu tiên vốn đầu tư hạ tầng, tạo đà tăng trưởng 2 con số",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNnVaMTdCV2Z4cF9KZFoyelFfTVlSZFRoQWVvUlFMQzVtX29CdmZ6Uy14cHZBWUtqUkVtQlJoMnc2S3RqNlI3ODhIc3hnR1AtbjN4UTQ4MkRZSUJTb1dXT1ZWb283bzgxdDN6cDhJbk9NYkhfVFQtZERoWFRoaXFUZkZCcTlveUxSbEhrdFcyNUNtNVJFd0RlZlZjdEZCUQ?oc=5",
+      "date": "18/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An ưu tiên vốn đầu tư hạ tầng, tạo đà tăng trưởng 2 con số &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-18T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Kinh tế vận hành tích cực, GRDP 6 tháng đầu năm đạt mức tăng cao nhất trong 14 năm qua",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOai1YVV8xbTRoRVo5dXlaWkZpSVVQbWg3Ri1kYUM1QUJXbVlmQ2cwX1EyY0VSdC1CZG5ZV2pRVWlvQ21YczNWRThKdlFSSnJEU3RRQ1d0Y25JMHJSbXNEMGNYdGpJTERYcFVRNGI0TnhLZ1NHalNfWEM3WlNZeTBjS1c2dEhNLWR6cEZoTGRrNFNVQnJPU21fZnZVVDlkMTdmSlp4Wk96OHZtNjFLcS1vZ01KUnJwQ052Tnc?oc=5",
+      "date": "14/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Kinh tế vận hành tích cực, GRDP 6 tháng đầu năm đạt mức tăng cao nhất trong 14 năm qua &nbsp;&nbsp; VnEconomy",
+      "publisher": "VnEconomy",
+      "publishedAt": "2026-07-14T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Kinh tế Nghệ An, chuyển dịch cơ cấu và áp lực tái cấu trúc",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVUhGOXl6czNPWjNDQmRfZk9KSmZ2eDQ4amlMN1lTMFZZQ2tNNDZUN0FTY1dPa0ctX1lSaHFfNENQbGpka1JCM2FZUUNFbjJBY0JkOEJfN09DTnNhcnhOQVp0aWthVVg0TVpGc2JMbVdpSEx3RVZTdHR0YXFvU2Q2aTFQdy1SUjJPaFBEbjJuU3BFYlJpMmdJ?oc=5",
+      "date": "11/07/2026",
+      "imageUrl": "",
+      "summary": "Kinh tế Nghệ An, chuyển dịch cơ cấu và áp lực tái cấu trúc &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-11T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An với dư địa tăng tốc phát triển kinh tế có vốn đầu tư nước ngoài",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdkZzcktyRk8wazBvRkFod0h3djFpX3R4Z0NLRHhlTW5CcU43MS1hUzhObGdmNEhDLVdnNXlrQldGZkRaY3JEWEw4WDlaZlgzbDFSbXo5dzl3bDIyR3VVWFdaQXpyeU5NQ3l3bFNKQXJESlRqSDlCdUN5bEo3aHNvTElreTdZSWlIal9TdndHTy0tM1pBZW9MUklHbXNzV3R4V1ZUVXF5REVEUQ?oc=5",
+      "date": "11/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An với dư địa tăng tốc phát triển kinh tế có vốn đầu tư nước ngoài &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-11T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An quyết tâm đưa dược liệu trở thành ngành kinh tế quan trọng",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYmctYWl6bDhzaGVGMGtYWE9EdEZEQm5Yb3BRN0tYbWt2a1VPWjhBZmtjTDNLZDRNcjJzMzk5RG1PV3hTV3lTZWlDbmxLWmp3LXljeks1R0VCUV96Q0dpWVYweTlfV0NrOGRGWm5kN1prZWVVbTZ1LXdEbzBTc29oWXZobmxLcUJLN01lR1FDSUEtWXlPWDY4OGt5MHZHMmM1aG5v?oc=5",
+      "date": "10/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An quyết tâm đưa dược liệu trở thành ngành kinh tế quan trọng &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-10T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Đại công trường hút vốn tỷ USD, hướng tăng trưởng hai con số ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbmxTVm92LTJNa29QSFB1dnBoTzNkUGhrNEtWNXZLMkNmRVJNWklPTU1GYUN1VHhWRGNXSjlqcVdONkFaLTRCYWI4a0FocnMtRkdmMkljSGVNTVozVnlRT29YMUtrZGowTHVSa3hKd2VBMHFnWUp3SmVCZjRvbklnS0d4dThzRGhJdnJqZkhhaXMzOWN5V0F3VmJiakFGR2xnSlhraHdGTQ?oc=5",
+      "date": "10/07/2026",
+      "imageUrl": "",
+      "summary": "Đại công trường hút vốn tỷ USD, hướng tăng trưởng hai con số ở Nghệ An &nbsp;&nbsp; Báo VietNamNet",
+      "publisher": "Báo VietNamNet",
+      "publishedAt": "2026-07-10T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Động lực nào giúp Nghệ An tăng trưởng cao nhất 14 năm?",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVmNnNlU4ZmRKTnJlUk5CVVlOWDg4ck5ISWpvZXNfOVc2bndBdzNMYTNKcXBoMm40bTM4MjZiRE13QzNBeXBBTnB3eWtyTFVnT2pPV3laREE3SHl2Sm9ZVUpJZ0NSLVRwbzZLZ2NsbHZ2QXpOQTRRYjhNVXdxVmp5dk42STZVMDJ1N284LXFsOFQwUQ?oc=5",
       "date": "09/07/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Động lực nào giúp Nghệ An tăng trưởng cao nhất 14 năm? &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-09T07:00:00.000Z"
     },
     {
       "tab": "kinhte",
-      "title": "Chính phủ kéo dài thời hạn ưu đãi thuế xăng dầu đến 30/9",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fe95ca020-f2b9-4f23-ac5f-9cf2f57fcb08",
+      "title": "Kinh tế Nghệ An, lực đẩy mới và áp lực tái cấu trúc",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOEJoekpDSHl0Z1lSenkycUVUY3AxVW9KZDR1cjE3TWxVNl9YREExMXVNdHhHb0xvdk5YRElDcHMzb2F5Xzh0dUdwQktVanlGWmhad2toTy14MUlHWmI1dGN6dFdFMzV2V0MtZWVzUGxFMXQ4bVJiLU5rN1JfS245bDdUbm5zS1NlYV9kcVRn?oc=5",
       "date": "09/07/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Kinh tế Nghệ An, lực đẩy mới và áp lực tái cấu trúc &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-09T07:00:00.000Z"
     },
     {
       "tab": "kinhte",
-      "title": "Thư ngỏ đề nghị người nộp thuế Hưởng ứng Chiến dịch “Làm sạch mã số thuế - Tháo gỡ điểm nghẽn trong kinh doanh”",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fda315c61-6310-4c8b-b27e-d4bcf312d69e",
+      "title": "Nghệ An cần kết hợp chặt chẽ phát triển kinh tế với bảo đảm quốc phòng, an ninh",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMUZXYThGOEJHQldfVW0tcHZ2RURqdVA4WnJtekUtemtPVDZWU1BIRWhkVlNnTGV5QjRVSl9NRWNsVnJhRTNnbjhuWjJObUdXNE9BcVY4T01tWlRoMmhoWjIwY3F6djRyazhJTUdmbGdBc2g5cTFwMWttRGwtYkNXZ3BDV2FDWHFQNDM4cG9va2gzZ2kyOXdwRkRNS1UwbW1PbDR2eWpZLVg4TTU0dngzczZtV25pQUV6THY4Nk1WVV9lUQ?oc=5",
+      "date": "08/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An cần kết hợp chặt chẽ phát triển kinh tế với bảo đảm quốc phòng, an ninh &nbsp;&nbsp; baochinhphu.vn",
+      "publisher": "baochinhphu.vn",
+      "publishedAt": "2026-07-08T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An tổ chức nghiệm thu đề tài “Đánh giá thực trạng và đề xuất giải pháp thúc đẩy phát triển kinh tế số đến năm 2030”",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMjVtMjJmdDQxS3NiaFY2cDZOeF9WNVdLejVZWTBUU2g5YmZGZFE3d3E0MFZTdnNBVzJLdlRhU0h1RW1fNmZNTjd5RTNMSjJ4UFYxeXhUNVBSdTFzNFVfeTlGVjAzSFhfR3Y5R0UyM21QamNWQXJxZHFwRUtXNU5wR0U0RG1IQVc1MVN6cGg3WmVUUG12N21xTFVKRGpzNTc3cy16UTIyemYtbVZNdFc1QmJwb2RZTHo3Vi0xR19lOXl3YW84TUIyVl9OdEV6UkN0ek4tTFk1T09OdWFkc2ItU3cxSjJoWVQyR1NQUnhRNlV1Zw?oc=5",
+      "date": "08/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An tổ chức nghiệm thu đề tài “Đánh giá thực trạng và đề xuất giải pháp thúc đẩy phát triển kinh tế số đến năm 2030” &nbsp;&nbsp; Tạp chí Doanh nghiệp và Hội nhập",
+      "publisher": "Tạp chí Doanh nghiệp và Hội nhập",
+      "publishedAt": "2026-07-08T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Khu kinh tế tự do: Gợi mở động lực tăng trưởng mới cho Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRW1pMTRWaVh2bW1jNFFIcWlCSDVDUkhXUkRlMTlqS1ZHNnIzcmVpQ0NBbGtVWTVrUmlmbkItbVJZXzFZV3RZZElYYUs5RkoxRTUwSEViNFdKMWpGMkxOYzA1c0VKbC04MlBQM05Tc0V3d1BIXy05emJlenZybzhKRlZXTXhoR0g0OXpDZEs2Q0J1dmduMkRJZzB5RmQ?oc=5",
       "date": "07/07/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Khu kinh tế tự do: Gợi mở động lực tăng trưởng mới cho Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-07T07:00:00.000Z"
     },
     {
       "tab": "kinhte",
-      "title": "Tài liệu hướng dẫn doanh nghiệp/tổ chức giải thể/chấm dứt hoạt động/khôi phục hiệu lực mã số thuế",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2Fb01c8a99-d7b0-4695-9831-893611609197",
+      "title": "Nghệ An: Ban Thường vụ Tỉnh ủy thông qua nhiều chủ trương thúc đẩy phát triển kinh tế, xã hội",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN2ZZUmRYYW1mWENmVGoxdldyQ2ZHU0VjT1VnVzhoMEJkX25RWVV0czRiVlQ1VXBBR3U0YV9JT01ZM1RNdXVzQV9uOFJqMjNjbzBsU19YZ0FjSFdKMFZwU21SOFpxNVFyUVhGRkVVek1GTmZGRlY1V3B4a01zS044LS1rQ1cyYmR3YTREZXVGTmJObml0cUsyRHhYc0tFTnlLN0pVSVRxMVRuZUhFODdPdkFya1FxcGNsanhTWEt0ZnhlbEU2c2s2bWNiWVJxWGJQSmItMl92MTBjaVpNN1d6S0ZR?oc=5",
       "date": "07/07/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Nghệ An: Ban Thường vụ Tỉnh ủy thông qua nhiều chủ trương thúc đẩy phát triển kinh tế, xã hội &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2026-07-07T07:00:00.000Z"
     },
     {
       "tab": "kinhte",
-      "title": "Một số điểm mới về tạm hoãn xuất cảnh theo Nghị định số 252/2026/NĐ-CP",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Feconomy%2F7d812d7d-06a6-4f99-87e2-75f45f4f158f",
+      "title": "Nghệ An đẩy mạnh xây dựng chính quyền số, phát triển kinh tế số và xã hội số",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTzR5eldnNHdENVZCWHpDd3lmc3FlZjJQSGg2dF9iZ0s4Mk1hWVp0Z2pVOXFUSjViX0dNQXJfRGU2Ym5WQTJxUVUwTUVmb0tQUEw0MmZqT0hlb08xam10dG5rUzNoVGRKMkZRWFl0MThZY2pXTjBnVTBpOXFBYmQ2MnBRcTRhM1lqVk5saTI4c29BNWNwTk42NlBkMWxyRGl3dE5VdXdULUJ5RUNZNGRkSE9YeUJLYUdL?oc=5",
+      "date": "07/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An đẩy mạnh xây dựng chính quyền số, phát triển kinh tế số và xã hội số &nbsp;&nbsp; Tạp chí Doanh nghiệp và Hội nhập",
+      "publisher": "Tạp chí Doanh nghiệp và Hội nhập",
+      "publishedAt": "2026-07-07T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Sẽ có khu đô thị 7.200 tỷ trong Khu kinh tế Đông Nam Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaUJNaXFVTzlGWEtBejU1TmFJVmF6dWlXWUJZZk1aVFRPQzBiTmlRTUhSZHdnd0FKYkduTi1RZDQtTTJ2ZGgwbmIyeDYtVnMyZmFXZmswWHVPNjRYcjVPMGRpalJVSzdLc1I1WWZJakZDeTg1d2ZaQWFOblM5T3YwYkNjbnV1SUpESm5MVHRRMi1KQjJvcmd6ag?oc=5",
       "date": "06/07/2026",
-      "imageUrl": ""
+      "imageUrl": "",
+      "summary": "Sẽ có khu đô thị 7.200 tỷ trong Khu kinh tế Đông Nam Nghệ An &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2026-07-06T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Công an Nghệ An tổ chức Lễ kỷ niệm 80 năm Ngày truyền thống lực lượng An ninh nhân dân",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOYzdTLWxPYi1iTHhNTFVLWHo3S1RnRWxYOTlPUjlQcmdvVl9SOVpDeXpKSU9nSTJ3Q3VodXd1YWFQSHVMdTA1WUljYTBJM1ZNMElBTEhkb2tkbmVDa3gtdDIwWlhaUFNCczh1Ynh0T3ZZZGtFRE9uVnBQM0VFdnE0VkliZjdrdUNtZER0SmpQeHd2cEtEaG94R1owTE41NndrQUs3bUNudzVKWUVEQ0ZqZjBVbHludWQzckhEckdoLVJpU3VzQlYtcnAwWlJIOW5CR1c4V2ViTUI3XzZ0amljaFpQdmRtQThpeVdIejZlekRnbDA1OElnMTBjZXVES19Ic2RrS2Jn?oc=5",
+      "date": "06/07/2026",
+      "imageUrl": "",
+      "summary": "Công an Nghệ An tổ chức Lễ kỷ niệm 80 năm Ngày truyền thống lực lượng An ninh nhân dân &nbsp;&nbsp; congan.nghean.gov.vn",
+      "publisher": "congan.nghean.gov.vn",
+      "publishedAt": "2026-07-06T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Đứng thứ 3 cả nước về thu hút dòng vốn FDI",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNY2k3OUlTaWNPbDNKV2NWT3N6TC02Sk5QOEczT3NlbEdjQnpsZG96V3ZXR0MtVXQ3dXRrM09VVHFFOUdfQlhOSXBTZi1NRmhYX3B5dDFvc3B4aVNiZnlXVG8yYmgwTzMzeFRCYTVoZE81Q2l2LWs5Ym52aVl1VFJNbE9hQlotQzQ5aVFmMjE3UkVJUFdhRVk4NzBn?oc=5",
+      "date": "03/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Đứng thứ 3 cả nước về thu hút dòng vốn FDI &nbsp;&nbsp; diendandoanhnghiep.vn",
+      "publisher": "diendandoanhnghiep.vn",
+      "publishedAt": "2026-07-03T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An thông tin nhiều kết quả nổi bật về phát triển kinh tế - xã hội trong 6 tháng đầu năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORWJlN1RVMDZUTlVuOHpfdWp3bXhjcnNTQlZ6endKS0JiWTE5dG44dDE5R3dvRUh2M0FkaTNmcVhUUUtlNUluOGVjRjBwaVFNMGpKb3J3clVscURGdnZIRlZlMWk4Q2VpQnpVei00aHFPak1fWmh1NFcyZkZLbGxpTjgycjFRY2hzMmt1Zmh1dW1kTWdfRHNkRXFWNC0tbzJPZnBUNlNiN2lpZWdramF2cDc1NzVrU3QxTndTNTdNNVlHZ3dEdjY4YlgyUkJETGZFZnlwWTNaQlRYdw?oc=5",
+      "date": "02/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An thông tin nhiều kết quả nổi bật về phát triển kinh tế - xã hội trong 6 tháng đầu năm 2026 &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-07-02T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An họp báo về kinh tế - xã hội, quốc phòng - an ninh 6 tháng đầu năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQd3lwRElfM2l6eGZ4Njd1TEtUZ1Q4Y2lwMlVELUtFajR3aVNjY2ZPamtuSnlNUThyMWxQV3ZESjZLMTRVcHNwNTBTYWlYVERSRG1yRTlWaFEwcEd6U0xkNW5WOGROVTZqZkdaNHVuQUpBM3AtUFNQWDZQSWR3c0dWZkhiT3RFWEFBNDhuWlBEUmlyRjdjT0IyVklTQmpsS0ZMX3JONEh5UDBnaGkz?oc=5",
+      "date": "02/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An họp báo về kinh tế - xã hội, quốc phòng - an ninh 6 tháng đầu năm 2026 &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-02T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An nâng cao hiệu quả thu hồi tài sản tham nhũng, kinh tế qua thanh tra",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQa3NGaVFkZ0VQU0puTUdzMnA0SHY4RWVCZ3BMU0JyZjAxQU9Obl9FSGM3Z1lTd2trUFN3Zlg3S0pwUC1lSUpHZ2Y4LU5SZUwwck9kS0FTMmpmX096TnVQdl9Td1ZfcF96cjJucnp0czJrcGVTQ3VGbjVDVDh5UzdlN1JMSUZQMmlYODduOGRUT0N1dHo5UHFYMDlPTDUtclpYSDZ4RW0wVk1JeE9ERXViNTE1QV90NGkwaU4wZGZMVC1VU0hCNVBvWjR1RlZqU2IzZ3prbg?oc=5",
+      "date": "30/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An nâng cao hiệu quả thu hồi tài sản tham nhũng, kinh tế qua thanh tra &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2026-06-30T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Kinh tế 6 tháng đầu năm 2026 đạt mức tăng trưởng tích cực",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWTExSmdjQW81cFhscnl5c3lYdnNZWU9EVFZsNTVnYjJvaTlvb1RROFJFc0ZXaGhwS0xSOFpTRmVpZFh5MS1jNnBHTnFXYXhnTTZmM242bGlEQmw0WXpiX0xjNEhsZHZDUk14T3FVZ0E0VzdVRmFaOEtjeUNyVE8wdXVmOVdfWkE0NjQ4Y2pabUlURlBxeTlaT0pTTzVmUzZKaVJWOTltbw?oc=5",
+      "date": "26/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Kinh tế 6 tháng đầu năm 2026 đạt mức tăng trưởng tích cực &nbsp;&nbsp; kinhtemoitruong.vn",
+      "publisher": "kinhtemoitruong.vn",
+      "publishedAt": "2026-06-26T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Kinh tế Nghệ An tăng trưởng tích cực trong 6 tháng đầu năm, GRDP ước đạt 9,1%",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcWt2cUI5VXFoeXdfclg0Nkx0RUh2MGRHS21fTE02LVpfNEIwUTFEZGFaRmI2d2kzbnhrQmJ0cmxiakNqeEJLRjRyMGptZXRTVkNtU1JDRVdOVjM1QWhRNkRZLVFhQS1rTVdrSldDc3dPYy1NYVB2ZzBsUE5hZS0wR2IyVjlJd1pRa1p4QkR0TkNqWmdQd3BuNk4zcEwzdG83eEp1WHFJN21QMHREbzhvMjA3ZlY0cFdSTGZieHVfYw?oc=5",
+      "date": "26/06/2026",
+      "imageUrl": "",
+      "summary": "Kinh tế Nghệ An tăng trưởng tích cực trong 6 tháng đầu năm, GRDP ước đạt 9,1% &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-06-26T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Kinh tế Nghệ An 6 tháng đầu năm 2026 thiết lập nhiều dấu mốc phát triển mới",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSVE5OTgxZk8zMUh1NjJGRTNhNm1RWlA4c0NHcWRYcmdqWXctU1FoQXJsWW1FMy1VQkRweE5QRC15amdIODFMMktzY2lEV09ZajRhcm1IR2VVbnVmM3R1U0JtTThkbU5LdDRfRjJRTEJxTjRVQ0tWdnpFRFVDZGp1MFBpc2VaOGhCUXZzNXczOWhBcVBoUWYtMGVGVGdwbnltdG9vcU5TQnVrRzgxbVRj?oc=5",
+      "date": "25/06/2026",
+      "imageUrl": "",
+      "summary": "Kinh tế Nghệ An 6 tháng đầu năm 2026 thiết lập nhiều dấu mốc phát triển mới &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-25T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Thu ngân sách Nghệ An đạt hơn 17.650 tỷ đồng, FDI đứng thứ 3 cả nước",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTk4tUW8yZ3RTN3ljakR1ZTJETy1fbEoxTHVLSDl5TGdBQnFneTJaeFlNUlRpTVBDZ05iLXVHdmZEUnozTEJ4T3NNZFp2VmlmUU80ZkNpOUJwU084dFp5clUzMWVsWFZOZmdmYU1PTmhONmVUN2F5VThTVm1jMzZNbHViNjFJalRZQWdNdkd5TjB6RW9yMWdYNEV0OA?oc=5",
+      "date": "25/06/2026",
+      "imageUrl": "",
+      "summary": "Thu ngân sách Nghệ An đạt hơn 17.650 tỷ đồng, FDI đứng thứ 3 cả nước &nbsp;&nbsp; Báo Pháp Luật Việt Nam",
+      "publisher": "Báo Pháp Luật Việt Nam",
+      "publishedAt": "2026-06-25T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Kinh tế tư nhân - động lực đưa Nghệ An trở thành cực tăng trưởng của Bắc Trung Bộ",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVXh0SnhPQTUzcnhWTUJoVmlndDZnaEFGZG5tbGREYldBM3BWQWNJNWRmSVYxNjFwVk04ZWVST3EtUzdUNGxwWXVKOG0tejFlSkhmVmgzLVgxRHJ4Vl9MdkF1RkhjcVdRZUhRWjFuc3ZIV0l4LVlyamJZYW9lUGhyUzdQVGNoVFdfM01NTWFxTU1NVHZ0TjRfOWZOT1JqdkJpN2NJM0ZsU2NLQXRkOVE?oc=5",
+      "date": "23/06/2026",
+      "imageUrl": "",
+      "summary": "Kinh tế tư nhân - động lực đưa Nghệ An trở thành cực tăng trưởng của Bắc Trung Bộ &nbsp;&nbsp; Báo Công Thương",
+      "publisher": "Báo Công Thương",
+      "publishedAt": "2026-06-23T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Ban Kinh tế - Ngân sách HĐND tỉnh thẩm tra dự thảo nghị quyết điều chỉnh quy hoạch tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZ0ZtZUl3LXI4aFBzRVlJNTVxTldwbjQtNjQzZ1RFaW9ieFFVMW9KWVMtQi1fVkE0bDFjdWlseHV1ZDJaZVhld0RTaS14eWhjc2pmcFZseGxwR1VGZjhMVHFiTmRnSkpURlJ5eWprMnc0dU1hVFZzYWs0cE9OdURBNkRPYVdyRUQ1YUdyWExNdG9jcjMwMlI2ZnAtd1pXS0pGNUhJaG1mMnNYQVNEVS1CaUdTWTNFYlp1ck9ZYlZiaHQ1ZXd3Rms0?oc=5",
+      "date": "22/06/2026",
+      "imageUrl": "",
+      "summary": "Ban Kinh tế - Ngân sách HĐND tỉnh thẩm tra dự thảo nghị quyết điều chỉnh quy hoạch tỉnh Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-22T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Chuyển trọng tâm sang kinh tế số để bứt phá tăng trưởng",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZkhVa0l2UVptUURSdVNwWTl3UE9rc3BPMVFpRVJHdjlBVWRtZ0VQcmFQajJOMEJFSmJXM1BVTmdXRDc1ZFdnU2ZwM0lsdXNyT3ExV3ZQQnFERVpBZ1h5bWowQVVISTVnWk0wdjN2M3Rvd1Bacy1LLWNZY2hCcnRvcmNISk42a3dVMmtSRjJKVE93eFFobEhIc0VyNmFYWTU3dG5YTk96RU4?oc=5",
+      "date": "22/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Chuyển trọng tâm sang kinh tế số để bứt phá tăng trưởng &nbsp;&nbsp; mst.gov.vn",
+      "publisher": "mst.gov.vn",
+      "publishedAt": "2026-06-22T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An đẩy mạnh phát triển hạ tầng cảng biển, tạo động lực tăng trưởng kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUVRXWXJjdkRBcEFNOTZJaU83QV9uRW10QUl4dUd4UEJCQjNNZDN4NmFRQmdjSmx6QWUtR1Z0T2dsZHhjVl84bWVlaHVWaE5VSTA0a3UwZkctZXZkdkRtbm9zem5icFAyaGlSaURqVzNUd0VEUmw0YWlSNkdSM21kazdEWXRvcy1XeDdWYmRjQ183dGl4a2tsVHd3eWpKZmV1Zll1a2xfNkExdmQ1Q3g3VExhUQ?oc=5",
+      "date": "20/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An đẩy mạnh phát triển hạ tầng cảng biển, tạo động lực tăng trưởng kinh tế &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-20T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An tiếp tục cải thiện môi trường đầu tư kinh doanh",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNazJ6RGlQaVFuMk9pR05yd0cwVWJ6NHZVV0VscEpHSVlFZHpXemd5NFp3MThpWnJySXlVaEExdmpjTzNwVHFIckViYzI3WWpzajJ0dUw1dUlOSTg0Rk9JSGdGeERnM01nTzFybHVJNDl5TFhmZ2xIVkt4dVhPUEFUS0J2RjFOaEdPRm8xNlBXdzg5SkJ6Rm9NTUtUYXRuLXlJ?oc=5",
+      "date": "18/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An tiếp tục cải thiện môi trường đầu tư kinh doanh &nbsp;&nbsp; Báo Thanh Niên",
+      "publisher": "Báo Thanh Niên",
+      "publishedAt": "2026-06-18T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An thúc đẩy kinh tế tư nhân, hướng tới tăng trưởng hai con số",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNGZXaWNnM0FUOWZUdTQ3bXZYTzhpMl8zMGcyNE1NR2hXcmt0YjBYTXJaZ0lZVU93TlpQMTdyZnRrMWxPMElBVncwWXRQalBJSWEwR2NkcjVlbWoxT0JmbjNRV2s4cHFLaU5uRXJlOVpCNU5ya2d3dzRXOFpuMExobzVZNXF3VkNCV2Zrcm84UFRNSGF0YnNTQm5DVG5rSGNMb1A4dzFtanBzbkk?oc=5",
+      "date": "18/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An thúc đẩy kinh tế tư nhân, hướng tới tăng trưởng hai con số &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2026-06-18T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An thúc đẩy kinh tế tư nhân bằng chuyển đổi số, AI và hạ tầng chiến lược",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnhFcGRUT01nX3dkSFY3cDRuT05BMms4X3k2bUZ4cUUzUTY3MElTV0g5UWFJSXlFZV9xcmFpdWVqV2NWaDBOZFlyVkFfTXhCbDRjTk4zVUtpU3hNcnJzYkdFYm94Qi1xc1Z4MEdpcnhaS2JESXRyTF9xdDJzandsbEV2OXV5V3ZOVXRHdFVBXzB4bm5yT3pSWDZuYy14QVJudldNX0xQVGl4TlFtc0JhWjJxQ28tWGFTZFBoOEhBVEs?oc=5",
+      "date": "18/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An thúc đẩy kinh tế tư nhân bằng chuyển đổi số, AI và hạ tầng chiến lược &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-06-18T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Diễn đàn Kinh tế tư nhân Việt Nam 2026 tại Nghệ An: Thúc đẩy đối thoại, góp phần hoàn thiện thể chế phát triển doanh nghiệp",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPTnNrWDZ5THNxY195U21FajZ5VzNHTXo2ZGp5YktZRXpIZHlsMXFKMjlHSS1GZGlVam1QMk1NMmpCb1BjYk51SGZIM0w2WmI0NENMT1VOcDJ6SF9uSUhTaS1JLVd2bTJ1a3FickhpMjdjQ1VpT2d6bm9Nb2lubVktaDlMa3FfN2tOQlRoQjBaYmlDeXlEc0RKeUMyRkVSSXBZWmVxTGFFQXhEWU5hQXhTUTJFemJOMzRwTERzek1vaVBUaUFDLVR6RVprTld0b1FKMUFlMm5jX19iVng4c3BTVHZ3M0l1QVJEcTZr?oc=5",
+      "date": "18/06/2026",
+      "imageUrl": "",
+      "summary": "Diễn đàn Kinh tế tư nhân Việt Nam 2026 tại Nghệ An: Thúc đẩy đối thoại, góp phần hoàn thiện thể chế phát triển doanh nghiệp &nbsp;&nbsp; Đại biểu nhân dân tỉnh Nghệ An",
+      "publisher": "Đại biểu nhân dân tỉnh Nghệ An",
+      "publishedAt": "2026-06-18T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An định hình 5 hành lang kinh tế, 6 trung tâm đô thị động lực",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYXhRSUJwR0pMTlY5VmhrZmYyX2I1d1UwVnBpOTJOSVUxZEphamNFMmtxdEpiNy1ReUFldGNuVXVjbThxRC1ZM0pKRzY5TWxwOVZYdjZfWkZDWUtOZk8zdG16YTFOTzFBbUxlY0t0OVdTTkJfckIxLVNqV29xVFgxSEFlUnN0cnBLaVluUWluOTBRb2oxczBDZFY1cWtkY1AwenQzSUpkTQ?oc=5",
+      "date": "17/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An định hình 5 hành lang kinh tế, 6 trung tâm đô thị động lực &nbsp;&nbsp; VietnamFinance",
+      "publisher": "VietnamFinance",
+      "publishedAt": "2026-06-17T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An bổ sung kinh tế số, kinh tế đêm vào chiến lược phát triển dài hạn",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQndoMDBCanBuUWFZSjV5TUNFMFdzUVNHWmtxSUYwaThERHBaVzhtWHd1ZkM1bnhGdVZkSGszNE96Q2g1eWlOX00tNWRreFhjcG1VUkVPa0o5cE0yMGtMSlNoM1RoV1hPWGdEMGxGR2FNaDhkX1MxNjJ4aVRkbk95RzhHVE1HRmR3aW84a1I0LXNyamlsVkxyOWk0a3lOUQ?oc=5",
+      "date": "16/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An bổ sung kinh tế số, kinh tế đêm vào chiến lược phát triển dài hạn &nbsp;&nbsp; VnEconomy",
+      "publisher": "VnEconomy",
+      "publishedAt": "2026-06-16T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An xây dựng hệ sinh thái đổi mới sáng tạo để tạo động lực tăng trưởng kinh tế mới",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdWVWbDhPeHVRNWNFUWVIMHhXeDV2dTA1UmQwWW9NdXpIOVByTWZaNTEtcXIxS3Y4N2FFMHk4QUlLcnk2MFBqX0lrMVNUWXZOSmhhaXJsZUl0ZExzQ0loZDBWVjVkNEg4YmJGbDVUa2NLQnB5anpHWWdGWFdHN0libGVxQXVnRVZwMjY4VmhiOXJTcDJvemxvMVpuQ0ZMMHJ4Zmg2RlFpeFkwZGhqOW5oS2s3YU1uX0FSaEd2a2p3ZlFudlpUa0FOMDJJZFQ0Zw?oc=5",
+      "date": "12/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An xây dựng hệ sinh thái đổi mới sáng tạo để tạo động lực tăng trưởng kinh tế mới &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2026-06-12T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Nghệ An: Phát triển thị trường thích ứng với kinh tế số và các mô hình kinh doanh mới",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeW44U2g0akwwQW1jNzhKSTJwQ195WUV5bmJGeFFHaF96UXlmTFRyWnExd1M0Z0RBZHc2Ti1HZ3I2YnVlTWlOZkdUd1ctT2w3SmpOcW9qT3ltSThUSG5oOE5GTkM0NjM1dXlfQjkzY3NEUHNFRUVPZHo0MHRMT3d2TmcyV1ZKVEdMSjlBTlpJckZENjVLU0lHX1ZDLUpxdG82cFExN05ybWtDQzBnZkMzR24zdTUybVN1bllmSFR2cVZ3WHNI?oc=5",
+      "date": "11/06/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Phát triển thị trường thích ứng với kinh tế số và các mô hình kinh doanh mới &nbsp;&nbsp; Tạp chí Doanh nghiệp và Hội nhập",
+      "publisher": "Tạp chí Doanh nghiệp và Hội nhập",
+      "publishedAt": "2026-06-11T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Đổi mới mô hình tăng trưởng ở Nghệ An: Từ thực tế đến triển vọng",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMEUzWThkRWkxN1I5ckkzNVpZYkw4SG9FVU0yZzFJTTdQVUhzeHROZ2VXaVAwTGlWS3Q3ZDA2NVJXUzd5OWNwRkd4YkJodUZGa19RSmpnR0M1WTR4M29sNUdveHB5cDdnU2pZcGhHbVE4VnpFQkJ6ZTg1ejNESVdOeHBucnBYRkFfTGlFanE0WVpsZ2NSamxxaHdreUxUeEk?oc=5",
+      "date": "06/06/2026",
+      "imageUrl": "",
+      "summary": "Đổi mới mô hình tăng trưởng ở Nghệ An: Từ thực tế đến triển vọng &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-06T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Dòng vốn ngoại và cuộc tái định vị nền kinh tế Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMFVNd1FpOVUtQklaSHptQURjVnFEb2JpYXZrb3Z2OGFVYzJnNFVidnp1V3dyWlFiVTY0blc1VVNaOHJCem12eXhYcmI0QjExMlpHaXF2cEZaUjNrQlVMQjVqQ0p4WnZMYkYycU94bk1OOHhuQXhBU08yTWRtaWJtR2F6NTB6dFRtaEtENDBIdGJRWFk?oc=5",
+      "date": "05/06/2026",
+      "imageUrl": "",
+      "summary": "Dòng vốn ngoại và cuộc tái định vị nền kinh tế Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-05T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Dòng vốn ngoại và cuộc tái định vị nền kinh tế Nghệ An: Kỳ 1: Những “lá phiếu tín nhiệm” tỷ USD",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWFdta0pjWkFaQTBnYzBTdTFLeUVxblY4eXN4WmV3Zk4wNmNyMTJTOXlBV0ppNDNVWjl0ZFpBTGcwSlVna0dpUUpWODlvM2otSHJMdVNuMVhUckc3UjBuOWczNWlweF9WeGdaRGFmQWs0RG14UFl3R0x4ekNjMjhsUDlXN2pqdkhneVZKdlJIM0ZkOUJWSjFMZmVrVzE3Z3NjS2ZJalVjLXBHQmFUMVcwdzlZbXVzQkZmZ21Jd2tOOFBKTk5u?oc=5",
+      "date": "04/06/2026",
+      "imageUrl": "",
+      "summary": "Dòng vốn ngoại và cuộc tái định vị nền kinh tế Nghệ An: Kỳ 1: Những “lá phiếu tín nhiệm” tỷ USD &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-06-04T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Kinh tế số tăng trưởng 7,35%/năm, Nghệ An bàn giải pháp tăng tốc",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVW1QMUlwZFpPclBoSGJkdDZ1b05DMmMtQ3oxaEpWLTF6T0QxdGFRMGVJLUJjcFp6azNDN0pLd0tRMnlIX2F0MkdLdlBHODRERWI3TGNZUmNjUC1JSVA3dUpIWXBwWFVrUTZsbGJtS2UtN1FvY25zNFY1RDUxaHN5TFRvdEtPb0hGWWczWHN3?oc=5",
+      "date": "02/06/2026",
+      "imageUrl": "",
+      "summary": "Kinh tế số tăng trưởng 7,35%/năm, Nghệ An bàn giải pháp tăng tốc &nbsp;&nbsp; VnEconomy",
+      "publisher": "VnEconomy",
+      "publishedAt": "2026-06-02T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Bứt phá từ các khu công nghiệp, động lực mới cho kinh tế Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTmxqbjhncS1IbTR1VWJXZ1prSHg0WDBPNDJNdnFvSG5Rd1F4QjhzWEY0d0w1YUozSnJQU0RrWnVDUUx3bjcwYXp3T1hRczJpa2htdmhHVFNpa3dsbVFjQklTUGowVUtidC1rRnh2VnVwRzJMM2dia3hSenRnTDA2bk5ieGlreDBvZ2ppbXAyakpIckxxcWhGLTg0MnQ4M25kX0E?oc=5",
+      "date": "01/06/2026",
+      "imageUrl": "",
+      "summary": "Bứt phá từ các khu công nghiệp, động lực mới cho kinh tế Nghệ An &nbsp;&nbsp; Báo điện tử Tiền Phong",
+      "publisher": "Báo điện tử Tiền Phong",
+      "publishedAt": "2026-06-01T07:00:00.000Z"
+    },
+    {
+      "tab": "kinhte",
+      "title": "Thúc đẩy phát triển kinh tế số trên địa bàn tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWUNpLVhqR1BKMGxsLTg2dkVfalpFbGNTVERpbG1jWHZUNTRMZndCMVc4ZFBzaUdQUlRERHF3TVlVY2x0bHpoTWUwcTd2Vm5yMkhWV1JSYzQwc3RkRUJLd3pocFZBWkdGWTFxWTR5WXdjaXdCcFNRU25nZVYtNkdtazVLYVFfMVI1M05OeHdicEFrWWhYbmtIZTZKYXA4Si03QzFBZDVUN2RfdzRhcEZCa0VRMGw2dHpxUWJPbThRVlU?oc=5",
+      "date": "01/06/2026",
+      "imageUrl": "",
+      "summary": "Thúc đẩy phát triển kinh tế số trên địa bàn tỉnh Nghệ An &nbsp;&nbsp; Đài Phát thanh truyền hình Nghệ An",
+      "publisher": "Đài Phát thanh truyền hình Nghệ An",
+      "publishedAt": "2026-06-01T07:00:00.000Z"
     }
   ],
-  "lastAttemptAt": "2026-08-30T12:04:36.801Z",
-  "itemCount": 5,
-  "fetchedItemCount": 0,
-  "partial": true,
-  "sourceMode": "seed-homepage-only"
+  "dataset": "news-kinhte"
 }

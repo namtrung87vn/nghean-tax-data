@@ -1,52 +1,563 @@
 {
   "ok": true,
-  "dataset": "news-thongbao",
-  "updatedAt": "2026-07-09T15:15:00.000Z",
-  "sourceUpdatedAt": "2026-07-09T15:15:00.000Z",
-  "stale": true,
-  "seed": true,
-  "lastError": "Browser: https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement\", waiting until \"domcontentloaded\"\n | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3\", waiting until \"domcontentloaded\"\n | http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3\", waiting until \"domcontentloaded\"\n | Trực tiếp: /wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: http://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | https://nghean.gdt.gov.vn/wps/portal/news/list?1dmy&current=true&urile=wcm:path:/nghean/site/news/annocement: fetch failed | /wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: http://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed | https://nghean.gdt.gov.vn/wps/portal/?uri=nm:oid:Z6_049IL8VSOJDB70IERMA7G920Q3: fetch failed",
+  "updatedAt": "2026-08-30T13:50:14.316Z",
+  "sourceUpdatedAt": "2026-08-30T13:50:14.316Z",
+  "lastAttemptAt": "2026-08-30T13:50:14.316Z",
+  "stale": false,
+  "partial": false,
+  "seed": false,
+  "lastError": "",
+  "sourceMode": "news-rss-fallback",
+  "sourceUrl": "https://news.google.com/rss/search?q=%22Thu%E1%BA%BF%20t%E1%BB%89nh%20Ngh%E1%BB%87%20An%22%20th%C3%B4ng%20b%C3%A1o&hl=vi&gl=VN&ceid=VN:vi",
+  "sourceStatus": 200,
+  "fetchedItemCount": 54,
+  "diagnostics": {
+    "fallback": "Google News RSS / Bing News RSS",
+    "reason": "Nguồn nghean.gdt.gov.vn không truy cập ổn định từ GitHub-hosted runner."
+  },
+  "itemCount": 54,
+  "previousItemCount": 5,
   "items": [
     {
       "tab": "thongbao",
-      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh ông Thái Bá Nghĩa, giám đốc CTy CP XD PT nhà 68 Nghệ An- 2901870796",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2F720ff9ee-91be-47ca-bb71-477cfa6e1cb6",
-      "date": "03/07/2026",
-      "imageUrl": ""
+      "title": "Quản lý chặt hóa đơn điện tử: Nghệ An đã thu về cho ngân sách hàng chục tỷ đồng - Tạp chí Kinh tế",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYUpST2xEWk4wQzZUWnFLMkl6UW5nOThiVW41OEE2eVJ0aWM3d3dZd2JmSU05bTBvTmlfV2swV1J3R044TFZNaHFSU3FnR3JkU0RBQllESTZqcVB6UDZ2djJwYUdpQ2tDdGt4bjRkZ0hINFRhZmxhUzVrSXJMWHVTQXJaMkpJRlJVS1RZNHpmRmdBaENwMXk2RG5HY0dKWThlUkFkY2prWmNvdVozdG9pcEw3RUxqYUtRUGQ4R2FpSmJKcDdxWjFjcWUtTV9hWFk?oc=5",
+      "date": "28/08/2026",
+      "imageUrl": "",
+      "summary": "Quản lý chặt hóa đơn điện tử: Nghệ An đã thu về cho ngân sách hàng chục tỷ đồng &nbsp;&nbsp; Tạp chí Kinh tế - Tài chính Online",
+      "publisher": "Tạp chí Kinh tế - Tài chính Online",
+      "publishedAt": "2026-08-28T11:22:09.000Z"
     },
     {
       "tab": "thongbao",
-      "title": "THÔNG BÁO Về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh. CÔNG TY TNHH KIẾN TRÚC VÀ XÂY DỰNG ĐẠI PHONG, MST:2901911611.",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fced09645-71b2-496d-93d7-dc3bd7e7b061",
-      "date": "02/07/2026",
-      "imageUrl": ""
+      "title": "Thuế tỉnh Nghệ An thu ngân sách đạt 76% dự toán",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQk5qeE4tekhJXzhRNkJfcGpkcmhWMUZyci1RS1dwTXNNN0dUQlQ4Wi1ySWFCc3U4TlJpemdiY1pyRDJncUdKMUl5QWktSmJpa2pKOHY3YVpFaGUtcWNFb3U2Mm5qLTF2RUZNSEVLcHNyT2o0UUx0Wmo5ZVFwUi03X1YxcHBvS1lXNXNKQ3pqOXNoT09lMkJJ?oc=5",
+      "date": "12/07/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An thu ngân sách đạt 76% dự toán &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-07-12T07:00:00.000Z"
     },
     {
       "tab": "thongbao",
-      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh Ông Dương Đình Thịnh; Giám Đốc Công ty TNHH Kiến trúc và Xây dựng Đại Phong.",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fb699b322-4182-42e9-ad17-0cf8aea7e799",
-      "date": "02/07/2026",
-      "imageUrl": ""
+      "title": "Nghệ An: Thông tin nổi bật ngày 10/7",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DM3B4eTNibUJqOTNhWEVuRHN5UktUTVhSdUFjb0J0YjJxLTFFSHgwWlhJdUxLNVp3anF2NnYtMm5jdHZRRVFBSDZBdzJ3ZUNJcUpHekVTbWt6dWU0aE5jRTlablMtdUE2LTZ4VUU0NHR6NG96Vi1xa09R?oc=5",
+      "date": "10/07/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Thông tin nổi bật ngày 10/7 &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-07-10T07:00:00.000Z"
     },
     {
       "tab": "thongbao",
-      "title": "Thông báo về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh đối với hộ kinh doanh Lữ Xuân Hằng; Mã số thuế: 040078016963; CCCD: 040078016963",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2Fe23a6053-ad67-4ecd-a548-519693ec3540",
-      "date": "30/06/2026",
-      "imageUrl": ""
+      "title": "Thanh tra tỉnh và Thuế tỉnh Nghệ An ký kết quy chế phối hợp",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNa3NyVWN3Y1FKTDFhSEMxeUVUSDhVODl3R1lZdkl3NVdNTk40NGhEMk5UeDZQaXJ6V0FUcWNZQmVSWEpCRFVWNl9YdXNmZm5BdXhQZkYyOEs0WU1UYktoVUdjOFdRc0hDcmE4SjgxY1NsVU1xSmFoRGlURGYwTDI0T21LUVBEY1hFdmh1dWlYWVRnWEZhNVc5WWF3?oc=5",
+      "date": "21/05/2026",
+      "imageUrl": "",
+      "summary": "Thanh tra tỉnh và Thuế tỉnh Nghệ An ký kết quy chế phối hợp &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2026-05-21T07:00:00.000Z"
     },
     {
       "tab": "thongbao",
-      "title": "Về việc sẽ áp dụng biện pháp tạm hoãn xuất cảnh đối với Ông: Lưu Xuân Nghĩa",
-      "url": "https://nghean.gdt.gov.vn/wps/portal?1dmy&page=Z6_049IL8VSOJDB70IERMA7G920M6&urile=wcm%3apath%3a%2Fnghean%2Fsite%2Fnews%2Fannocement%2F549505f5-d1a5-46a5-bb49-29a1a2883a6e",
-      "date": "29/06/2026",
-      "imageUrl": ""
+      "title": "Thanh tra và Thuế tỉnh Nghệ An phối hợp quản lý thuế qua hoạt động thanh tra",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMm1KNjZVYWN1bDVQTHJ1Q1FkVktXMGNHUXZLN05tUFNxSVRWQTZUakdXODVYRU45akJsV3VSSU9tQ3RiNmRqaXF2TXVPemxPUnQtSm9MQ0ZmTTFsX2FsVW5pVGRaVFpCM09hV3dsaWFTbEk0T0JUUWhlM2hlaGhNdGs3Ymx2LXduSnYzLWhlMDlaR0gySlplOHBqRWYtUVdUcVc0SjZFckREeEI4c0hFbGRwSXBLX2MtUXpybl8tX1dWMEdPLTFDVW1ZQlFsREtyT0tHSU1FeGk?oc=5",
+      "date": "21/05/2026",
+      "imageUrl": "",
+      "summary": "Thanh tra và Thuế tỉnh Nghệ An phối hợp quản lý thuế qua hoạt động thanh tra &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2026-05-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Công khai danh sách 1.188 cá nhân, doanh nghiệp nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU284ZVc4bk5MZ1JqRWk1M1pmWktuVlVlV1AwWXFjRHlTRlE3akZxVlNkNDQ0S3BTOVdWR2hZd1ByV0IyY3BrUGt6YnlVY2N1MldDU2VsWkxORUpIVF9semFQWnVxVEdhcGxlZC1kUndTeWxnLVhUemJHZXJCdTNZSXI2b0luTTU4dzd3cm1hQTFOUndJTnU0TWtUbw?oc=5",
+      "date": "21/04/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công khai danh sách 1.188 cá nhân, doanh nghiệp nợ thuế &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2026-04-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An công khai danh sách hàng chục doanh nghiệp nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYTVNbXlaOFdEVEVlLUpfV0FYaVlSdUg5QlVSbS1hcEl2aG94TmIyWEV4c2lQT25rLUVVbldVQmkyTC0yMFpUdEhiS0NWdS1LRXJGSWFoRWxzOEgxYnRSNVdNazQtTXNFVXV0NFVza1FmSTJtaFhLRkFlZDJRQXZmaHA4Q3lqTnJUeEpScE93?oc=5",
+      "date": "21/04/2026",
+      "imageUrl": "",
+      "summary": "Nghệ An công khai danh sách hàng chục doanh nghiệp nợ thuế &nbsp;&nbsp; Báo Đại Đoàn Kết",
+      "publisher": "Báo Đại Đoàn Kết",
+      "publishedAt": "2026-04-21T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thông tin Chính phủ. . ⏰ LƯU Ý QUAN TRỌNG 📌 ………. 💥 Hộ, cá nhân kinh doanh nhớ giùm 2 mốc thời gian này, tuyệt đối đừng quên: - 20/04/2026 - 04/05/2026 🎥 Thông tin chi tiết xin xem trong sản phẩm truyền thông do Thuế tỉnh Nghệ An sản xuất",
+      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOODIyRGNSVGVEOG1ZdWdVeTNSaDJmNndHYU1maS1uTDVtZGJ6VHlYLVVLakVqQjVBLVJkek5uZDd1V2VxY0JhVnY5eDQ0UE40S1E5T2dNczBoeEVIODB2NUtFUHVLRUozdGJtNDBaMGNpTGpZTnNvYWJPUlpxd2dERERkdkhJb0c1d1NGblcwRXZVNDFjU1BKZlQ1cWNGbEkzOUkxaHN3R1R1bTFaRDA4UV9OQ2Vhbjg0eFd1dWhJM0JQcUJxTDJUakw4bExzdzUxWERjN3RNWHpzX25Oei02dVRpRHdiaXZFOTgwSXdRMUt1X3hyT3FId1BIU1BKWTJFdjNNTVBvYmtrU1N5MEtTSGZxT3JabU1reGRhX0pRVlRaZjh5V2dCM05QakpQWnpsci0xdFZPQ3RrN1hRVU40YVRpa1hHSXpPR0s4STFJZzlPVl94VWpuSGtObmVqejg?oc=5",
+      "date": "15/04/2026",
+      "imageUrl": "",
+      "summary": "Thông tin Chính phủ. . ⏰ LƯU Ý QUAN TRỌNG 📌 ………. 💥 Hộ, cá nhân kinh doanh nhớ giùm 2 mốc thời gian này, tuyệt đối đừng quên: - 20/04/2026 - 04/05/2026 🎥 Thông tin chi tiết xin xem trong sản phẩm truyền thông do Thuế tỉnh Nghệ An sản xuất &nbsp;&nbsp; facebook.com",
+      "publisher": "facebook.com",
+      "publishedAt": "2026-04-15T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "💥 ĐỪNG QUÊN \"VỀ BỜ\"! 📌 Hạn nộp báo cáo tài chính và quyết toán thuế 2025 - LÀ HÔM NAY! ⌚️Bà con lưu ý, còn một ít tiếng nữa thôi! --- 🤳 Sản phẩm truyền thông của Thuế tỉnh Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOa2huMW83bTFBSWN5OTdkT0RBLUptSkJlTzZTbDc5dC1wWTdjZVQzQTZrYWpBSWYyRHQzWHZkaTZhQmZqMDU1MGJQOWM5VENfR2JsS2VTUHhtcHBpNDdYeFd1WUxyeFlmYUJUNFJFakpGdUZ2RTlyYTFXM2pVNGJ2WjBUMXgxaFdIa3JxR1F4Y2RKZms1c1hZalVYaEdwTEdreGd2dzByLU9QNl9IWnROd1F6RjlVVUVrd0dzcThGOS1aaUYyVjExQ0QwcWptYTNwODJzOEZadjdyVTd4Qkg1MTN5MWw1MmhDWFQ2N19tSVFzQVluS0JpWFY4c3BuYkpTUEZvcUh6MVQ3M0Q1blliVmRxaHRiR1AzQ055V0lUbF9leFUxZmZFTHJ3eWViNkx2ZmVMZzFIVGdINUlyc1B6M0Y4T20zOUlHZjMzeEs2dnVFSU1RbG02U0tEMU1vWl9lMzJzaGVsS2tSV0hPYTk1bmdMcmlHZkxFWTIxeE11aw?oc=5",
+      "date": "31/03/2026",
+      "imageUrl": "",
+      "summary": "💥 ĐỪNG QUÊN \"VỀ BỜ\"! 📌 Hạn nộp báo cáo tài chính và quyết toán thuế 2025 - LÀ HÔM NAY! ⌚️Bà con lưu ý, còn một ít tiếng nữa thôi! --- 🤳 Sản phẩm truyền thông của Thuế tỉnh Nghệ An &nbsp;&nbsp; facebook.com",
+      "publisher": "facebook.com",
+      "publishedAt": "2026-03-31T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "VNPT NGHỆ AN ĐỒNG HÀNH CÙNG NGÀNH THUẾ TẠI NGHỆ AN TRIỂN KHAI CHIẾN DỊCH 30 NGÀY ĐÊM",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZzVBRE94dzFIYVY1ejFVcGVjb1YyWUtLWXA5bnc1SzJac0t2LXJtSnQtS2kta2lMaHM1aTdXVURfZExZTWh3U19jZndWX0JtLUctaXBVTFdldWppSEVYbVhBaEhteTRYUjZQTUZFaW9BdjB0MTBicE9xQllWaXRFQjNiMkVSWDVpWTlqUE9zcGZKMHRJUVF6NjNOSXVPWFVUZHd6YUpGMDc1ZTBaX25XN214TVpQb0s0cFRuNzB3?oc=5",
+      "date": "07/02/2026",
+      "imageUrl": "",
+      "summary": "VNPT NGHỆ AN ĐỒNG HÀNH CÙNG NGÀNH THUẾ TẠI NGHỆ AN TRIỂN KHAI CHIẾN DỊCH 30 NGÀY ĐÊM &nbsp;&nbsp; VNPT",
+      "publisher": "VNPT",
+      "publishedAt": "2026-02-07T20:01:06.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thuế tỉnh Nghệ An ra mắt ứng dụng Zalo Mini App hỗ trợ người nộp thuế",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSm9pWlBDU2lrUklGSU1XZnBRaU9IeFpXVkJIWWRZVWpVRGxGaGRzX3JPcy1zcVpxelQxMU5LYzY1cWtjTTdjWUl4ZU1OcTZKR0NsTFNYNzc1Y195OFYzVmljU1pXWHRwdFBhZVlUa2xFUm1uUlJFZkhLaFZDakw2VGFtUHZlUG1MLWxxTXllZGlQcU8zR1RFZm9zR0puck5ibkprN1NmYTdTemZqRFhfVDZXTURGQQ?oc=5",
+      "date": "08/01/2026",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An ra mắt ứng dụng Zalo Mini App hỗ trợ người nộp thuế &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2026-01-08T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An đặt mục tiêu chấm dứt tồn đọng hồ sơ cấp giấy chứng nhận trước năm 2026",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHV4UUlzbm9TX1FyZmY1RTZGejRoM3BFUnFvRFdQUzAwQXdYZHI3RGVyMHAtN2VOS0J6alhkUXlzTVRkYTRDVjEzOHRlTUE2SGJTM2VDOGpVQ0VYeHFTem1wazBMT2RsS2U3THljYXlJb3JSMTF1ZG9GbEhSV3ZkcFdhbjkzQ3dXbERmYW9ETXV2ZThhQjg2dWgzNVFUdGh5cDBBLXBCS3R4YWZXMl9DRC1uQTJnTk9oS0xaZ0NhMkpMQlUt?oc=5",
+      "date": "15/11/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An đặt mục tiêu chấm dứt tồn đọng hồ sơ cấp giấy chứng nhận trước năm 2026 &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2025-11-15T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Báo động tình trạng khai thác cát trái phép trên sông Lam",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQemxtOGExbHU3WkQyaUtWQlMzVDh2cjFOQk5mS1BYemtWTUZSSWdiSnlLV0VGZnlIdzBtWmxjTFFzSjBWbTZnTkJuaXI0alRuc1loNXpYa1BkRVBPLW9sdWltQ0J2NWUxTGtGTlVEZGhLcm9NeXZad3hNZEdUbURGQi05bEdXbm5fNUtEX1ZMOVNiRmFjN1ZJUER5b2ZNVE84a19vMTNJV3UzZV9JXzY2QktR?oc=5",
+      "date": "07/11/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An: Báo động tình trạng khai thác cát trái phép trên sông Lam &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2025-11-07T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An công khai 58 doanh nghiệp nợ thuế hơn 1.258 tỉ đồng",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNejF1SjBWc2tESzViNi1QRk9iX0hNU2tlZktBNUk1WlFtSUZPakd0ODhnRFRzYmdVQXVXOC0xbWJ1TzJ6ZG8xMzZadVdfTTU3a1NSNkpfWG5oQ0k0Mllja1ZZdzBXT2lVdGlRTW1xVTRnY0xNb1ZjeFMyMk9sLTZHMkgxM1ZKT3NReml6UTFxd180RnFPQlUwcFVXTUFKOG1sRlE?oc=5",
+      "date": "22/09/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An công khai 58 doanh nghiệp nợ thuế hơn 1.258 tỉ đồng &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2025-09-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thuế tỉnh Nghệ An công khai thông tin 58 doanh nghiệp nợ thuế lớn",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQODdxNWowMktwQ21yX3hZODZHNjF5UkZfcFQ5ME9sbHRLVU5waGVmOUdYTUFLc1BLYUdlWGZJeWd3eVhfT2JCTWtxblhScXYzbmVLSWYyVTVTM29PUzI5OGJRdmlaSzhHcVFVTXhOVUJ3OUNLVkVGWFMzOWhGc0dRb1R4TEtyM1FwTFlqMzhmNkdPZ3NmdnlLZXQzQ0dxdWVIcHRPLTJVU1pnN044TFc0Wg?oc=5",
+      "date": "22/09/2025",
+      "imageUrl": "",
+      "summary": "Thuế tỉnh Nghệ An công khai thông tin 58 doanh nghiệp nợ thuế lớn &nbsp;&nbsp; Thời báo Tài chính Việt Nam",
+      "publisher": "Thời báo Tài chính Việt Nam",
+      "publishedAt": "2025-09-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Ngành Thuế tỉnh Nghệ An kỷ niệm 80 năm ngày truyền thống",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUNnOWd0MHFpYU03bm5oUkVBUG5iYzBnTzVvQXZlZ052Q252N0I5dzN5dTA2NjNZQmlxa3hMWnEtdjdjTjdxelNyVm1rc3d3eVNUNFRuS0ZlTHFGRnV3V2RmRTFwYWx5Qk1GcmdKcUdITkV1ZHNzWGFqQjZ2blg2U0J3VVdVdUlkZnBYZWtMVVlLYm5DYXc?oc=5",
+      "date": "10/09/2025",
+      "imageUrl": "",
+      "summary": "Ngành Thuế tỉnh Nghệ An kỷ niệm 80 năm ngày truyền thống &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2025-09-10T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Danh sách 13 doanh nghiệp nợ thuế hàng đầu ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX1NFaEtONG56RF9LdlRtVzJ5d3ZnMGROejNONGNDQTlBY2I4bVMwdnl4ZkNGckdsZGVwSXcwY0ZjYkhJMnA1Sm9lMXQ3SHcyZlQyXzNnTjJCU3RxUm9QWTNKX0c3NXlxODV1dUx3Z3NpNVotTFRKTGJjN2c1MnJwb3pNZHpmYnBIX0IyUjd3RVBOeTlIM1NwUWRR?oc=5",
+      "date": "07/09/2025",
+      "imageUrl": "",
+      "summary": "Danh sách 13 doanh nghiệp nợ thuế hàng đầu ở Nghệ An &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2025-09-07T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An giao đất đợt 2 cho Eurowindow để thực hiện dự án Khu đô thị",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmJGWHkydVJGSGJxWENsQTc0Q1BROHFTb3JfWFhuOFllNUVDUUl6ZWExOVduVl9EZjVDRzFzSllGSzNXYWw2eEl1WVlOOThIWnZRMkNNMUhMLUVPODVMUWRLNm1jSHZkdGtkQnpVZWhJVFJudDJCUGVXU2dtTzFZS3pzQUlZNGxRa2dNWU16aWtXSkIwWFB1aGdaejgxNkNudGZxbTBsYmVIZUxzTjdNRw?oc=5",
+      "date": "06/08/2025",
+      "imageUrl": "",
+      "summary": "Nghệ An giao đất đợt 2 cho Eurowindow để thực hiện dự án Khu đô thị &nbsp;&nbsp; baodautu",
+      "publisher": "baodautu",
+      "publishedAt": "2025-08-06T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Vinaconex 16: Nợ thuế nhưng vẫn “thâu tóm” lô đất khủng tại Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbW1SSFE5QzFtTlg5Y2FDOEVxNDJqS1ZQUjV3MzZuTl9SSTdNQTdVYUpDcldCa2ROZm90NjBBWUNkTF93Q3lmbjJjOGV0dTl0RmpQSTFzY25VN0ljbDBuRlEwcVZELWNIdkFVSVJhTnVTbFBlcWhlQUVRMzhZdHNPdFd1MGJWWDQtMHJMOEV2N1hORDVZbV9ZLWdGUzBFYm9UdU9IZk5zX3QtTjlMalJUYw?oc=5",
+      "date": "17/05/2025",
+      "imageUrl": "",
+      "summary": "Vinaconex 16: Nợ thuế nhưng vẫn “thâu tóm” lô đất khủng tại Nghệ An &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2025-05-17T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Quản lý thuế thu nhập cá nhân tại cục thuế tỉnh Nghệ An: thực trạng và giải pháp",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOFItSUtBZGM2WkYwcHYyY0ZySmotMmpTR29rVVJzS1Z2cWljNG9VRXhaQUhsQlN5c1hlbHk3MmYzdUJLbVFLakpGQXlrWFMxbHRhNi1INzJWYWlpeklXbHVaSjRlYmk4WTlUQU5fRm8tVXdyNFpSTGRnNTJtWlFuWTAtUFp1dHpUeGF3Z0NBcFgxd1lZYXhfNjgwZGpiUHdVcE5PdFNtUGlkNmVBb2NDSWo5NU5veW9GREFj?oc=5",
+      "date": "03/01/2025",
+      "imageUrl": "",
+      "summary": "Quản lý thuế thu nhập cá nhân tại cục thuế tỉnh Nghệ An: thực trạng và giải pháp &nbsp;&nbsp; Tạp chí Công Thương",
+      "publisher": "Tạp chí Công Thương",
+      "publishedAt": "2025-01-03T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An cảnh báo các đối tượng giả mạo cơ quan thuế",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU0U2cm50dmlzZlpGbFI4WVRkbVJUY2FRamtoMy1aU2FkMGFDX25SdkV4dEFabnl1QXVPSXlpd2E5NF93elBXcXRXQ2steDNxY2ZibVNvXzA1MW5lelM0V0pJVWFpZS1KUW4wN0wtYzFVZHpNTFpVbGpYLVZUdktmU1IwTmY5UllySWVjYkZwM3M1TzJfcTNTYzBSOERuc1QxRVVvYi04WHFtd3A3dFVB?oc=5",
+      "date": "27/11/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An cảnh báo các đối tượng giả mạo cơ quan thuế &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2024-11-27T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Áp dụng biện pháp cưỡng chế thuế đối với công ty BMC do nợ hơn 11,6 tỷ đồng tiền thuế",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYVpPeGtpM3BvcEhjNDl1NnotOHUwck5wT3hsdGF0VEdhaXppMjFscWctQ1lEZk04WFgxMzZYWkFRSENTZGx2UFhtVW0tT0I2UDFEVmlDSlMtd3RIM1RTb0RNc2dDLTNGYmtXdGR3dURKQmtFVHVHNG9BNlZKa3pFNVVfb3M5UWZXazJFeDRZZU81YTBhaDJuOXRrR2VtbnU2ZXZfSVR3TVZubGpSYVhtTzF6NzJrUWF3UmNOUkZkUmJnT3pYN3RMeTZzTEM0N1BmVWZmbHl3bw?oc=5",
+      "date": "25/11/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Áp dụng biện pháp cưỡng chế thuế đối với công ty BMC do nợ hơn 11,6 tỷ đồng tiền thuế &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2024-11-25T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nộp thuế sử dụng đất phi nông nghiệp trên điện thoại thông minh tại Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNThhelYzbkVuLWRrXzB2MFczcVo0ZHFrYUpGRmpHX2dUOEVxZmJ3YTVxOWxiVFd5dVN6UjBJcDFWWnM4MjBjWE5WYnpJdlBoQ0JiUE5MUHp0WnE1cFR6aXktZWc0Y1NMTm9PZ3pYajhSd2tneElOdHZXUVB3bThEaHJBckp3QUZxUWYycUtsZ0JnQzQtNDVSYXVMY0NsUmJBQTdXYVZfU2lRZlU?oc=5",
+      "date": "29/08/2024",
+      "imageUrl": "",
+      "summary": "Nộp thuế sử dụng đất phi nông nghiệp trên điện thoại thông minh tại Nghệ An &nbsp;&nbsp; Đại biểu nhân dân tỉnh Nghệ An",
+      "publisher": "Đại biểu nhân dân tỉnh Nghệ An",
+      "publishedAt": "2024-08-29T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Nộp thuế sử dụng đất phi nông nghiệp qua ứng dụng eTax Mobile",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZGMtLXhWUkJ1UFl4NzcwWk1kQUhVZDhFaXNPLUVvWE5LMEZRY0FXTU9GNlotc09KQ1E4ZVRHdHZfYkxwYndUcHdxQV9RbXZWX0I0LVcwSjQ0RmZ3ajhNcDRWNFVIVVR2MXVtQ180QS1zRVBmUFRPMGpmek5nZUhaYktsazFIYXgwQmxYang4QTBXeW9aWHNGSTM1OGlaNTY4a2tpWFNB?oc=5",
+      "date": "29/08/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Nộp thuế sử dụng đất phi nông nghiệp qua ứng dụng eTax Mobile &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2024-08-29T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Cảnh báo thủ đoạn giả danh cán bộ thuế để lừa đảo ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOejZXVGs3NlhLb0h3NEF3Yy1adW5QN05ON1VUSzZtdXFIS2RUT1ZsR1RaWUNTODNuaVpjaUhTYlpqc0RkY3JrRlc3dnlGUXAzcFRvcl9jajMxaHpYa3BudWhTNEZmU21ONlRtemxzdUVlZmNxYUsyWmtlLXZsbTRWODZOeUc4dkd3R2hHMXNDeFdIRmZfb3YyMDJR?oc=5",
+      "date": "03/08/2024",
+      "imageUrl": "",
+      "summary": "Cảnh báo thủ đoạn giả danh cán bộ thuế để lừa đảo ở Nghệ An &nbsp;&nbsp; baonghean.vn",
+      "publisher": "baonghean.vn",
+      "publishedAt": "2024-08-03T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An quyết liệt xử lý tình trạng nợ đọng thuế",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbkxMT3BTWDRJTFVTODJxMkp4d1U2MndVeWczWXRMeXRGaXJmSzFqMFhubXozLS1FM29wc3hGNkYwZmxaTE5zNG53UDJKazlCUGpFRy12dThKZHRlZDJVWGJCR25BalVLelNTbGVFLVpKd0lTTUV0NXF3M2pFYks4MjVMeGM2cWVGMHBNMFRWamVMOHlrQUx4eExR?oc=5",
+      "date": "02/08/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An quyết liệt xử lý tình trạng nợ đọng thuế &nbsp;&nbsp; Báo Quân đội nhân dân",
+      "publisher": "Báo Quân đội nhân dân",
+      "publishedAt": "2024-08-02T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Công khai 25 doanh nghiệp nợ thuế gần 29 tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT09GcUsxTWstOGlWYkcxTnNjQ3c1akEwRzFLYmV2b3dyUGJrVkJTMVBRdDZfMnNEaGlqaUx5N0dMWWdHVExia0RkZHVWc1VuRTU5WDVpNmdHdXBabmdJNlgwMjc3bVloRUdGZENpUV9ub0hzblFkaVRVOUJtd3kzTEljbDVJcjBHam1NLUN4bFFiQUs2TjRJdVQ5V0RIamlHRzJXMmFoSQ?oc=5",
+      "date": "14/05/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công khai 25 doanh nghiệp nợ thuế gần 29 tỷ đồng &nbsp;&nbsp; Pháp Luật Plus",
+      "publisher": "Pháp Luật Plus",
+      "publishedAt": "2024-05-14T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Công ty Cổ phần Tập đoàn Thiên Minh Đức nợ hơn một nghìn tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPV2ltN2ZodW5BRzFrNllhS04tZ3Noanl1U2djZDhwXzJVc1lNTFI3TG9Fc1FoTFFpQWgtVUl2Z01JQ2FYZ2s2Y0VieXY0MllNUlNBRVJTMnp3QmFfX3kteFNIQlFUeGFhZW9HQ3JwY1JRVzdhdUZEeFY1djhFU1ZJSU82Qkw3WFg5ZzNrMkp5aklnWHBJeDZwUFB4V19tZDlLR1hhdlh1S1U5WnVPdmVKZDdmUdIBsAFBVV95cUxQRzFFam9kUVdCUDBXM1FKMC1NajZVbllFVjlpR2FLZklzZlBSR2ppRHZPcm42VHE4Yk1rZWRCYmNDelFTcGNVZTFXdVdlallOTnJ1WlVBYkR3Q0FXaFZ4bHVRTHBxRDFoaW9zLWhkaXNWWmpMQkpSTC1kWFJZX2tkejBQdHFMR0djRGxpVFJOdnN6QXVqVHFuVFZvQ1lER1ktdHhjbFhJX0xBeGN0cVRjVQ?oc=5",
+      "date": "13/05/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công ty Cổ phần Tập đoàn Thiên Minh Đức nợ hơn một nghìn tỷ đồng &nbsp;&nbsp; Người Đưa Tin",
+      "publisher": "Người Đưa Tin",
+      "publishedAt": "2024-05-13T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An tạm hoãn xuất cảnh đối với 5 lãnh đạo doanh nghiệp nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbG5YZGlmQUo4Y2p5NzhfUGloaXJmd3dPUTlDbGtvZzA0cUVFeDVPaXJYSW1zQ2g3a2tuaThmTXpmWFNmck1jSjE4cmZmVVNjbVpNaEJUREl5N2RZR0JqTHdIcDN1RXh4cEJsUTRrTm1LeHFRMmtyNW52X2NIY1R4V0JDdEFBOTAtT3ZXWTY3eEhBcEFoVDBpRFVSUlJza1JtQXVlVTBibw?oc=5",
+      "date": "09/05/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An tạm hoãn xuất cảnh đối với 5 lãnh đạo doanh nghiệp nợ thuế &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2024-05-09T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Doanh nghiệp nào “đội sổ” nợ thuế nghìn tỷ tại Nghệ An?",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdW9pQ3o1NE1fRkY5Y05VbHJjWDBiMlV4TkdCZFhNSnI0emRfWndlWHJFODVNSlNmZmJRTWVoRmFoZ3dndEIzX0tOeVJjWXJnOXgzT3lGZ3pFclZET3pwZFBiVV9SLVZuTlZ6VGowTE1rcEFZTUUtZDd2akwtVThaNmhfbkNhUGRZLXBzRmZpNW5wRjU2T2FkdUZxbF9ueVds?oc=5",
+      "date": "07/05/2024",
+      "imageUrl": "",
+      "summary": "Doanh nghiệp nào “đội sổ” nợ thuế nghìn tỷ tại Nghệ An? &nbsp;&nbsp; thuonghieucongluan.com.vn",
+      "publisher": "thuonghieucongluan.com.vn",
+      "publishedAt": "2024-05-07T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Tạm hoãn xuất cảnh nhiều giám đốc doanh nghiệp vì nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVU1CVGllbUlvZnU1X09vWkZGSzNaRC1MNHVmUVU1M3lRVDBzdF9ramkzbnlKM0lyeGVVX2Vhdnh2UGpwWUJYVExBSmNNb2RvNjh4T0pWaTROdFB4NHdYaVpmMldfVFZObmFwNWtfQ3pOcFRlcXgtUGZ5TlItWGdqS0R6djhUT1ZtTlk2c1pPUGh0czRsc0pXdlROd1NFdnBFT0ZhWlNPak4?oc=5",
+      "date": "24/03/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Tạm hoãn xuất cảnh nhiều giám đốc doanh nghiệp vì nợ thuế &nbsp;&nbsp; Báo Đại biểu Nhân dân",
+      "publisher": "Báo Đại biểu Nhân dân",
+      "publishedAt": "2024-03-24T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "5 giám đốc doanh nghiệp ở Nghệ An bị tạm hoãn xuất cảnh",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMEIya1duRUZ5bkstWW5DT3FQM2ZlX2d2aEo3T2FzNUc5X0lZU1dacy1uRDZTa1ZwSDd0UkZLUzBQR3hYaVVNWWFLWXNrYUg3MDFDbjAwN0ZqLURNN3NEaHN1M0JFUUI0QWFNYjYtSmk2NGxFUDdxenZrU2F3MjE4ZEY3NkhjYWg2aXczX3Roa0IwMFZfWGhzbVUxTUx6akZJNm15cFZfbVJIUjg?oc=5",
+      "date": "22/03/2024",
+      "imageUrl": "",
+      "summary": "5 giám đốc doanh nghiệp ở Nghệ An bị tạm hoãn xuất cảnh &nbsp;&nbsp; Báo Dân trí",
+      "publisher": "Báo Dân trí",
+      "publishedAt": "2024-03-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Tạm hoãn xuất cảnh 5 giám đốc doanh nghiệp tại Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaEF3SW96bEU5SXMybVJEZUxOSTVGZTluMVVMOFNBUThnRlJxdmxodUVJcWIxSjZhWXA4ajNFQlhuQ3pyVWJuSVV0X0R3b0pFazBkdkE4ckJib0VyZEJnSzdkUkxSbVF6bjFkWkVudndoRURNQkdxZDRZNF9IUE9LalhqNVVhbFNXeXJtcm1CeXI0dw?oc=5",
+      "date": "22/03/2024",
+      "imageUrl": "",
+      "summary": "Tạm hoãn xuất cảnh 5 giám đốc doanh nghiệp tại Nghệ An &nbsp;&nbsp; Nghệ An 24h",
+      "publisher": "Nghệ An 24h",
+      "publishedAt": "2024-03-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Vụ doanh nghiệp bị “trát” nộp thuế ở Nghệ An: “Trống đánh xuôi, kèn thổi ngược”?",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcjZCOFpCOElad09XSXVtUXhSR0tvQ2hUOHpGLVlmejlaQ1RqMDFub0JfTWhsMW5aRkUtY1BrTGJyOXQ1X1ZrMTNiV1ZvZzBFVEdXOE4zdnVUNzdzcEVrcWJ4R1hUTXUzRWlLcnoySlRnbzkwTzNCbEp0NkswZmx5RjNRaFZCaGROUHh5UlJ1QXZ6dW5iRHMwT1Vpa2NPSnFmeUVTU0tZbGlHcDhja0pETHBDTHFJU1JmNFdhUkNySV9HQQ?oc=5",
+      "date": "26/02/2024",
+      "imageUrl": "",
+      "summary": "Vụ doanh nghiệp bị “trát” nộp thuế ở Nghệ An: “Trống đánh xuôi, kèn thổi ngược”? &nbsp;&nbsp; diendandoanhnghiep.vn",
+      "publisher": "diendandoanhnghiep.vn",
+      "publishedAt": "2024-02-26T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Số doanh nghiệp ở Nghệ An tạm dừng hoạt động tăng 13,27%",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdElubUpsWW1OZmJUV1ZTQ0hfTHFXVnRMU2xiSUd1TlVxNi02QXViUVgxRXNfdmM3UkJqRE5wSjdkXzZwVUFTOXRMNWlQVTVYaDBBRGVYM2pCWDZCQWdKRWtqZGhpNnRfVVRNT1M5RllFSkFYMk80RTF1U0VoWmsxa1UyeHBoYkdnLVN3ZERzVXFERDlrYU9EOWtGZkI?oc=5",
+      "date": "30/01/2024",
+      "imageUrl": "",
+      "summary": "Số doanh nghiệp ở Nghệ An tạm dừng hoạt động tăng 13,27% &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2024-01-30T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Giám đốc Công ty Minh Vương vừa bị hoãn xuất cảnh là ai?",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLVlyY3ZiWEp1Q1IwanBlUFI1VjdiWFlHblllWWlsTkVMMXlZMU0zSi1xSk14VnhNak9teFFfVzZzakNSd1VWWlZSYzVDUGFHZmZZVVhRTUNFaXZTWmhKUDFDRFRIdExyXzIydDE0bnRUTmVKSVpvMS1UcHRFTWZIU25PMmhMa01hUG52MTYxdkRNbHJjMm9kUzRyaGZHSGItbUhnTDNsRWhPQQ?oc=5",
+      "date": "24/01/2024",
+      "imageUrl": "",
+      "summary": "Nghệ An: Giám đốc Công ty Minh Vương vừa bị hoãn xuất cảnh là ai? &nbsp;&nbsp; reatimes.vn",
+      "publisher": "reatimes.vn",
+      "publishedAt": "2024-01-24T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Nhiều ngân hàng lớn với khoản nợ xấu khó đòi từ Thiên Minh Đức",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZjh0Z01nNklYTFNsY0sxd0RrdFIyVmdEUFc3M0FkZ08xbWtfcWZBdjhvYzFrRk9QdDU0SVlVRlFHMDFyVk8zWFRYeVM4M3d3RTF2VnF5cE5ERkdqS0Q0VmFrZ1FVSV95Z1VGV1BkTmtxNDlsVGQyU01XRnVLd3ZwN1B1TVlBUVpkc1A5U2tlVXJSZ0FYN2IwcnhNT1FYR2ZXd0pjYk52a2xUNzhUQkotZWRMcG5NYkVHX1E?oc=5",
+      "date": "27/12/2023",
+      "imageUrl": "",
+      "summary": "Nghệ An: Nhiều ngân hàng lớn với khoản nợ xấu khó đòi từ Thiên Minh Đức &nbsp;&nbsp; Chứng khoán DNSE",
+      "publisher": "Chứng khoán DNSE",
+      "publishedAt": "2023-12-27T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Doanh nghiệp xăng dầu lớn nhất Nghệ An nợ xấu hơn 4.300 tỷ tại 3 ngân hàng: Chủ tịch công ty mang hàng chục sổ tiết kiệm, kho xăng dầu, thậm chí cả DN để thế chấp vay vốn",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQTElpRXhQN29kVHdGbkFlNmY0dWp5TW45b0VrT09XWG50LW45MHFlUWJIUHFxN05rMHUtVHlVcGVjWllsUkE2WXE4RTlsVkZHZXUxWHgtYmhBbXVfQ1UyMzdKajA1c3JZQlVkZEpIaG5nR1EzUlVnYW9wRVg2ODhHd3FXejFQZTNjRmp1TDMtakpoUDhkX3RvR3d1N093UE5UWk1pUjNZS09yV2V4dVhKZWM2bHQzVHA2aVBoRkFnams4Vm9nQXhsaUNDc2tJZzJqaXlHQnFsaGw4cEg0RzRGdnhlX1RVWDJadHplSUV2LUs4bk1jY3o3NHBhOEpmRkJwRUJUS3JTLUYtaGpVZ3ZOblIzTHhHNUVGdC02OGtkZWh3eFhwVGhtSWs3LXh4SFE?oc=5",
+      "date": "26/12/2023",
+      "imageUrl": "",
+      "summary": "Doanh nghiệp xăng dầu lớn nhất Nghệ An nợ xấu hơn 4.300 tỷ tại 3 ngân hàng: Chủ tịch công ty mang hàng chục sổ tiết kiệm, kho xăng dầu, thậm chí cả DN để thế chấp vay vốn &nbsp;&nbsp; CafeF",
+      "publisher": "CafeF",
+      "publishedAt": "2023-12-26T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Chủ tịch Tập đoàn Thiên Minh Đức (Nghệ An) bị cấm xuất cảnh",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNX3FXem5Pd1c1dmtKZGJ1VkI2bThxYUlqSk5wYUQxTE8yUzYwOThYMjc4TWRaek5jV0JsNEtFQnZsZjV1QzFkZmpEQ3ctalJqQUNIRXNXTmJXQWJqdDRXUXNJeG1tS2Fadll0UmwxdHZGRG9VcG1IS0trTTFMQm9wSnMxel9UQkUwT3NuTHhVM2lmOU5CUVNhedIBngFBVV95cUxQV0dGQWpmWjdwbW1Bdl9zaDYyQ3ZlZWdHanppR0I2eTdnTklhd1hVNDYwaVNRRFdpQ2dvRlNLZ05WTDVQLThZVXEycVJ0c0ExT0l0OGliZVV6MWNoajB4TVkxcUszaXlIcnpMbTVpRUs3eTVwbWZfdl9kNDlrc1g2NnBVY19CX1FZbUNkeWRKeWlJcFJ4UnpyRW93MjJKdw?oc=5",
+      "date": "25/12/2023",
+      "imageUrl": "",
+      "summary": "Chủ tịch Tập đoàn Thiên Minh Đức (Nghệ An) bị cấm xuất cảnh &nbsp;&nbsp; Trí Thức VN",
+      "publisher": "Trí Thức VN",
+      "publishedAt": "2023-12-25T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nhiều chủ doanh nghiệp bất động sản ở Nghệ An bị tạm hoãn xuất cảnh vì nợ thuế",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdi1Qc3VkN2VyNVB3ZkNqZDQwb2dMaDFMSlBqdzBMYXl4U0UzN0hfSDRHTW1GWkFhLURDclM0YWZVdXVndjV4eWVqdmxFVjhYMGlXWEROQWthdjcwc0psMUhjYTRfdWcyU3VnSEtaSGx0LWtfNm9TLXYwMnpQa3A4NnhPX0dxQS14TjJzXzNVQjdJY096M0I4R1RiUGVYa3h4cng2SzFLZVZISTA1LXUtRXFRWmxGc3NkMU1oWU9jNA?oc=5",
+      "date": "06/11/2023",
+      "imageUrl": "",
+      "summary": "Nhiều chủ doanh nghiệp bất động sản ở Nghệ An bị tạm hoãn xuất cảnh vì nợ thuế &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2023-11-06T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Công ty CP Phức hợp Ôtô DKC nợ thuế hơn 10 tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa0p3ZVY2b2xfZndKbnJxWGtjS3RCTEFxUWVaX21Ic3BYUkNFdFhoVzQ3TThOMmZQenF5NGM2TzBLUU1IdDljUVN3UGlucnlZUkJiZkkzdThJU0NzTE4tOWRqMWNpN1ZWVWk3VmNLNTlLRU9VekVtS0FHSHRyV2s4eWFLYm9xM0VUeUtrckVlcXJNeVAtN2hUTEs5WkFPaWRISG5Eby1XSHc?oc=5",
+      "date": "22/08/2023",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công ty CP Phức hợp Ôtô DKC nợ thuế hơn 10 tỷ đồng &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2023-08-22T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Tập đoàn Thiên Minh Đức nợ thuế hơn 720 tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdGctbGhiR0ZUZ3JqRUh3TGw3ckxSbVp4Q2J6Nk14ZE1DcFBmdEx1Y0VSZDBrd2U4aldzLXp6NTdjandIdFZNd2ZmUlU1M3ExRGxlODd2cHhxMWplbE54TzVnY18tcFoyUklGTTRVZFRlZXp2TnQza2h1NzA1X21BNDJvdUJkNWVvTHFaTGJrQkxMengxRlM0aE1ZcG83UWJyV1VUQw?oc=5",
+      "date": "02/08/2023",
+      "imageUrl": "",
+      "summary": "Nghệ An: Tập đoàn Thiên Minh Đức nợ thuế hơn 720 tỷ đồng &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2023-08-02T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Ngành Thuế tỉnh Nghệ An: Đẩy mạnh triển khai ứng dụng eTax Mobile",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONXpZS3pnWEJUYmZrbERmVk1wOGQ2Tm56c2NiU3ZzV1lrcVZBRy1sd0R6azZMbUtydWJhSFgtR1E5ZjlFa1lWV2lrNzNuUUF3WG1ERjI5QkQyXzZ1Wl9LZmhCRGJ3Sl9rX0pSc1lWLVlEWV9aU1lCVTRSUFBDVlFpLUVsMEVTRV9TdTlsV3N5NjJ3eUtqZmJOY1JGUnB5ZDNXbmwtWnF5ZEwwTWZKcHFsZ01OSDd6YWdt?oc=5",
+      "date": "26/07/2023",
+      "imageUrl": "",
+      "summary": "Ngành Thuế tỉnh Nghệ An: Đẩy mạnh triển khai ứng dụng eTax Mobile &nbsp;&nbsp; Doanh nghiệp và Tiếp thị",
+      "publisher": "Doanh nghiệp và Tiếp thị",
+      "publishedAt": "2023-07-26T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Công ty 482 dẫn đầu danh sách nợ thuế ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaVMxWVFNVDNQODU3dXZEZGpuc1NGVjVkTXVpUzd1dUctZXY0NkdsTWtjMm9RcmhUY0xNNm1ZSWlHYjNNM19BY0NIX3FhWUNrakhUNFJfYThEWDVRSTdHa3RoVEFrMlFMN0JfRmhOT0FJck5YNEhOM2xzUjlvZnFkZmZJeXd3dw?oc=5",
+      "date": "27/06/2023",
+      "imageUrl": "",
+      "summary": "Công ty 482 dẫn đầu danh sách nợ thuế ở Nghệ An &nbsp;&nbsp; Nhadautu.vn",
+      "publisher": "Nhadautu.vn",
+      "publishedAt": "2023-06-27T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Công ty CP Khoáng sản Ricoh-MDC 4 và khoản nợ thuế khó đòi",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOM3NPQ0lqWDFPeUE1Ukp1bnNYNVU1aWp1RzJ4amNSY1ROQkZSS0MyTGtxQWd3MG1iRzgza05ZYVYxbnktcWlKemtYNHl4eDcxMVQ2d2h3elI1TTF2djZfd21NSkR0dW15WTRMNk5qUFJWRkZDX0cxWWlvYXdMN2loNlRQQUp2RW1mdFVQLWFHTF83Z1VZNVdURGphV0pJMXV4UmRfV0xNRFZSanM2QlZfdnVXWQ?oc=5",
+      "date": "23/03/2023",
+      "imageUrl": "",
+      "summary": "Nghệ An: Công ty CP Khoáng sản Ricoh-MDC 4 và khoản nợ thuế khó đòi &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2023-03-23T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Thêm nhiều giám đốc doanh nghiệp ở Nghệ An bị tạm hoãn xuất cảnh",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWldBc3pCd05KcEF3X25DZDlkTUF1bExxWjhLanhyUkRvMURLOTEtclhVeEFIQlZpaDVBQmNuTHJuNkNzZFFvYmhuVElaMzRIN0dxLXR0U3NPYjJKeEdfN3lnZUJnVnhzNm1Pc3lTR3lOVkoxOGltTWE5RjJHc0Q1TlhzaG5wR291YmlfMHNoQWl5RjQ4cUdGaTdHdEZpcDdrUGFhMkZjeVJuTmJpR2tnMVpYcncyN1Nk?oc=5",
+      "date": "16/11/2022",
+      "imageUrl": "",
+      "summary": "Thêm nhiều giám đốc doanh nghiệp ở Nghệ An bị tạm hoãn xuất cảnh &nbsp;&nbsp; Báo Tuổi Trẻ",
+      "publisher": "Báo Tuổi Trẻ",
+      "publishedAt": "2022-11-16T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Tạm hoãn xuất cảnh với nhiều giám đốc doanh nghiệp",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOajBpS2hrajJVTjlfZkM2ODJ1WVZqcWdHS2txVnJYLWplQ3luLXFQM0hNVWFXNGI2cVhhdE10cVpZei1IZ09FREdDU2cyaE11OUpmRlR2TEw0RWVjdDhmMTlQUm5FV1g1MF9fS1hZUFhjU1JfbGVCNXZMN09KV3dCdHV2a2VGU1hPZkFRc3QySk1Bb2QybWhfUXBnYnNnYzMz?oc=5",
+      "date": "15/11/2022",
+      "imageUrl": "",
+      "summary": "Nghệ An: Tạm hoãn xuất cảnh với nhiều giám đốc doanh nghiệp &nbsp;&nbsp; Laodong.vn",
+      "publisher": "Laodong.vn",
+      "publishedAt": "2022-11-15T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Loạt doanh nghiệp nợ thuế hơn 858 tỷ ở Nghệ An",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYnJWLXJTdDZ5SHZtT3U4aVgwWndoQ3EyRVZVUGxqYzhkSUE2aXJIWmgtUkFFdzJRU2RWN19nZ2ZybU9lcVgtT0VhSnpob3RoMXJUcnljazdDZExudmdsQzhvLVpaYXBDMjBzeDgyS25QSUxJU3hRajU3b3NQdFB4X2dod1FvSnVJc1BISjN3?oc=5",
+      "date": "08/06/2022",
+      "imageUrl": "",
+      "summary": "Loạt doanh nghiệp nợ thuế hơn 858 tỷ ở Nghệ An &nbsp;&nbsp; CafeF",
+      "publisher": "CafeF",
+      "publishedAt": "2022-06-08T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Ngành Thuế Nghệ An phát huy sức mạnh đoàn kết, hỗ trợ cho cộng đồng doanh nghiệp",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZXl1Xy1BUC1qSkVxOU5YT1hZUVByMlhwempGRk1seGZMU1ZRdDhIX0l0QVNDZG1ZNWNwMDNEVUZnTTdab0VlRXJRblB0Tk5ZVERPLV9CQ2xhUGxsV3lRVWtFbEV1akcwSmFqNUg0YUlWTkN4Y3d0djg2NVNYOXlZWGJKVUlPNkZ4ZDVtdm5zaUl6dDZpejQ3eVp2c0xQT0NmbE1UVkwwbGVDQkVvdklwaThnMmdkY0V4aXYyblpmbkpUMi1lX3dVaDJFOFhwUG9qS0VmdUU0TWxRT3M?oc=5",
+      "date": "25/07/2021",
+      "imageUrl": "",
+      "summary": "Ngành Thuế Nghệ An phát huy sức mạnh đoàn kết, hỗ trợ cho cộng đồng doanh nghiệp &nbsp;&nbsp; Báo Thanh tra",
+      "publisher": "Báo Thanh tra",
+      "publishedAt": "2021-07-25T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Chung cư Vinaconex 9 – CTB (Nghệ An): Chung cư đã ở hàng chục năm nhưng chưa được giao đất",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb1RxWWdQbTRuMjIyYml3Q0dZRGhDR1dvRURuRTRFZFlQZXN3bDN1TmVkc3FkZXBMNjFybjd3TTNyLWh6MmRuanVUNmJ0R1l0cHY2UEFmZG9PdHA5Mk1Wb1FXYV9uMGhTTlY2OGpyS0tCUzhuOXB5VVE2ZTRXUy1DYUpMOEVzTHVEUXNtMFROSVdwbWs2MHlDMGN3cDhURTJFNWc4XzBsQU94N3llbU9yUThvVkRHYnlkdWQ3WVZNMVJ5QU0?oc=5",
+      "date": "12/07/2021",
+      "imageUrl": "",
+      "summary": "Chung cư Vinaconex 9 – CTB (Nghệ An): Chung cư đã ở hàng chục năm nhưng chưa được giao đất &nbsp;&nbsp; cafeland.vn",
+      "publisher": "cafeland.vn",
+      "publishedAt": "2021-07-12T07:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Dự án 'Khu nhà ở cho người thu nhập thấp và cán bộ công nhân viên' tại xã Hưng Lộc, thành phố Vinh, Nghệ An: UBND TP. Vinh đã cấp phép thi công Hạ tầng kỹ thuật",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNNVlpRVhCMFhxWkNXOHdMcUcxaHptYnZXcDdMQnZKX201eVhicUgxc29NOTYyMk1tMmJZSkF1NmlWc2xhR3JRWjNkcnZWeG14c2RtT010SHcwNmJLWUdJYmtOMWZ1RGJlWDh5YW56Qkg0OHoxaW9BSUZNbkFNT3pHMWZaQS1DQ2lEYXpRenJUbXpxeEd1djJwOHZ1eUtDbk5FdTZXRTJmQkVWeWZ1emh2VmVjQVhZV0hEVXVoMDdtTXMwZVZaeG9JdWp0RWdVQk1FRjg2WEgzY21QRzNGU0dHZ0l0VU1sMnBYTUxvSmVkdzFFbU1aZ3JvQl9KVWdRNm9OTDhlTVVLQUNoalZONlBn?oc=5",
+      "date": "05/01/2021",
+      "imageUrl": "",
+      "summary": "Dự án 'Khu nhà ở cho người thu nhập thấp và cán bộ công nhân viên' tại xã Hưng Lộc, thành phố Vinh, Nghệ An: UBND TP. Vinh đã cấp phép thi công Hạ tầng kỹ thuật &nbsp;&nbsp; Tạp chí Điện tử Luật sư Việt Nam",
+      "publisher": "Tạp chí Điện tử Luật sư Việt Nam",
+      "publishedAt": "2021-01-05T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Cưỡng chế hóa đơn đối với Công ty CP Thương mại đầu tư và Xây dựng 424",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTWp5QmpLUW5raXdHTWJXVkg0Vko5YmpGZS14NnNQUDA3c1V2eG5TSXNzaUhFcVhKTEtoRTFzMjEyU296UTNuVW5QQ2lNcVh3eWtZeXQ5d3pDR1NTbHdfcndBMEE4LXk1RWNyeEpCTWowVkQ2N055ZE9nNVVmakJrNDRqQmpHcUxidUFZaVVpVm44NG02UElfODRIckhGUzNNWDd1NEl2blRzZVRkTE9MSU5ROXpmWWJqbDNhZG1ZbEotQ2s?oc=5",
+      "date": "05/12/2020",
+      "imageUrl": "",
+      "summary": "Nghệ An: Cưỡng chế hóa đơn đối với Công ty CP Thương mại đầu tư và Xây dựng 424 &nbsp;&nbsp; Tạp chí Tài chính Doanh nghiệp",
+      "publisher": "Tạp chí Tài chính Doanh nghiệp",
+      "publishedAt": "2020-12-05T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Bệnh viện Hữu nghị Đa khoa Nghệ An nợ thuế lên đến đến gần 3 tỷ đồng",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU2JGMEl4V0c5dVM4Tk5oNWtGNHpuSE9JdWtOR2M5aEViY1ZtRmp6NkRKdURTY3duN0ZkNGI1M2U0Vlhtb3hIQ0FsZm1PU2VqTk96U3JvRk44T0lRSTdjQXBvVDZRN3JUUUtybDlQS3pFTE95bmJPbDZzdXQ0Ul80Z0dUdHQxVFYzejh5LVZmbTdGb0RLZ3dfLVdEdkhJU0tlc3RmNlRELXhTX2trWllMZktWTGxlaHNZT1dDZmtn?oc=5",
+      "date": "24/11/2020",
+      "imageUrl": "",
+      "summary": "Bệnh viện Hữu nghị Đa khoa Nghệ An nợ thuế lên đến đến gần 3 tỷ đồng &nbsp;&nbsp; Doanh nghiệp và Tiếp thị",
+      "publisher": "Doanh nghiệp và Tiếp thị",
+      "publishedAt": "2020-11-24T08:00:00.000Z"
+    },
+    {
+      "tab": "thongbao",
+      "title": "Nghệ An: Khởi tố một giám đốc về hành vi trốn thuế",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNY3FNbjd1WUF0TGFuWmQ3MGR4M3dESEJfSGpBRUVfdHpXNDY0bkhUUnREXzhWaloxOUxDRlVsaEltanpGaUR0WksyY1h5emVUbjNPSkM5M1dzZWxzdVZNTFhEbDNhTEJNc1kyd0ZWQ09hOGdhTDkxYlpIRW53MDl2Y1VDUWRiV1RySVV3VUJOMHJuVnRWUE8yaExjUHNoYS11NWdZS3Qxa1V1cDRiUE5rYmh4cmtwZkZDQkx1YkpkRHV3NWRlTks0TU9iRXQxYzR2Q3FORlJ5SHM?oc=5",
+      "date": "06/06/2016",
+      "imageUrl": "",
+      "summary": "Nghệ An: Khởi tố một giám đốc về hành vi trốn thuế &nbsp;&nbsp; congan.nghean.gov.vn",
+      "publisher": "congan.nghean.gov.vn",
+      "publishedAt": "2016-06-06T07:00:00.000Z"
     }
   ],
-  "lastAttemptAt": "2026-08-30T12:12:07.966Z",
-  "itemCount": 5,
-  "seedNote": "Gồm dữ liệu HTML đã cung cấp và các mục chính thức đã được lập chỉ mục để bảo đảm phân trang dự phòng.",
-  "fetchedItemCount": 0,
-  "partial": true,
-  "sourceMode": "seed-homepage-only"
+  "dataset": "news-thongbao"
 }
