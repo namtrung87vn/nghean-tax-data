@@ -35,10 +35,8 @@ const bad = [];
 function isOfficialNewsUrl(raw = "") {
   try {
     const u = new URL(String(raw));
-    return (
-      ["http:", "https:"].includes(u.protocol) &&
-      u.hostname === OFFICIAL_NEWS_HOST
-    );
+    return ["http:", "https:"].includes(u.protocol) &&
+      u.hostname === OFFICIAL_NEWS_HOST;
   } catch {
     return false;
   }
@@ -59,7 +57,6 @@ for (const name of critical) {
   const items = Array.isArray(data.items) ? data.items : [];
   const count = items.length;
   const min = minimum[name] || 1;
-  const diag = data.diagnostics?.browser || {};
 
   if (
     !data.ok ||
@@ -79,6 +76,9 @@ for (const name of critical) {
   }
 
   if (name.startsWith("news-")) {
+    const diag = data.diagnostics?.browser || {};
+    const finalizer = data.diagnostics?.finalizer || {};
+
     if (data.sourceMode !== "browser") {
       bad.push(`${name}: nguồn tin không phải browser chính thức (${data.sourceMode || "-"})`);
       continue;
@@ -89,8 +89,8 @@ for (const name of critical) {
       continue;
     }
 
-    if (Array.isArray(diag.errors) && diag.errors.length) {
-      bad.push(`${name}: Browser còn ${diag.errors.length} lỗi crawl`);
+    if (finalizer.trusted !== true) {
+      bad.push(`${name}: finalizer chưa xác nhận dữ liệu Browser là tin cậy`);
       continue;
     }
 
