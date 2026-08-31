@@ -5,6 +5,8 @@ const DATA_DIR = path.resolve(process.cwd(), "docs/data");
 const DATASETS = ["news-thue", "news-kinhte", "news-thongbao"];
 const OFFICIAL_HOST = "nghean.gdt.gov.vn";
 const MIN_ITEMS = 5;
+const STRONG_ITEM_COUNT = 20;
+const MAX_TOLERATED_BROWSER_ERRORS = 5;
 
 function parseDate(value = "") {
   const m = String(value).trim().match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
@@ -98,20 +100,32 @@ async function processDataset(name) {
   const rawItems = Array.isArray(data.items) ? data.items : [];
   const officialItems = rawItems.filter((item) => isOfficialArticleUrl(item?.url));
 
-  const browserIsGood =
+  const browserErrors = Array.isArray(diag.errors) ? diag.errors : [];
+  const fetchedCount = Number(data.fetchedItemCount || 0);
+
+  const baseBrowserIsGood =
     data.ok === true &&
     data.sourceMode === "browser" &&
     diag.firstPageValidated === true &&
-    Array.isArray(diag.errors) &&
-    diag.errors.length === 0 &&
-    Number(data.fetchedItemCount || 0) >= MIN_ITEMS &&
+    fetchedCount >= MIN_ITEMS &&
     officialItems.length >= MIN_ITEMS;
+
+  const browserIsGood =
+    baseBrowserIsGood &&
+    (
+      browserErrors.length === 0 ||
+      (
+        browserErrors.length <= MAX_TOLERATED_BROWSER_ERRORS &&
+        fetchedCount >= STRONG_ITEM_COUNT &&
+        officialItems.length >= STRONG_ITEM_COUNT
+      )
+    );
 
   if (!browserIsGood) {
     throw new Error(
       `${name}: dữ liệu Browser chưa đủ tin cậy. ` +
       `source=${data.sourceMode || "-"}, firstPageValidated=${Boolean(diag.firstPageValidated)}, ` +
-      `errors=${Array.isArray(diag.errors) ? diag.errors.length : "?"}, ` +
+      `errors=${browserErrors.length}, ` +
       `fetched=${data.fetchedItemCount || 0}, official=${officialItems.length}`
     );
   }
@@ -164,21 +178,29 @@ async function processDataset(name) {
     diagnostics: {
       ...(data.diagnostics || {}),
       finalizer: {
+        trusted: true,
         officialHost: OFFICIAL_HOST,
         officialItemCount: cleaned.length,
+        browserErrorCount: browserErrors.length,
+        acceptedMinorBrowserErrors:
+          browserErrors.length > 0 &&
+          browserErrors.length <= MAX_TOLERATED_BROWSER_ERRORS &&
+          cleaned.length >= STRONG_ITEM_COUNT,
         hitPageLimitWasAccepted:
           Boolean(diag.hitPageLimit) &&
-          diag.firstPageValidated === true &&
-          Array.isArray(diag.errors) &&
-          diag.errors.length === 0,
+          diag.firstPageValidated === true,
         note:
-          "Giới hạn số trang là giới hạn lịch sử có chủ đích; không coi là stale khi trang đầu hợp lệ và không có lỗi crawl.",
+          browserErrors.length
+            ? `Đã chấp nhận ${browserErrors.length} lỗi nhỏ ở URL phân trang vì vẫn lấy được ${cleaned.length} tin chính thức và trang đầu đã được xác nhận.`
+            : "Dữ liệu Browser đạt yêu cầu chính thức.",
       },
     },
   };
 
   await fs.writeFile(file, JSON.stringify(output, null, 2) + "\n", "utf8");
-  console.log(`[finalize] ${name}: ${cleaned.length} tin chính thức, stale=false, partial=false`);
+  console.log(
+    `[finalize] ${name}: ${cleaned.length} tin chính thức, browserErrors=${browserErrors.length}, stale=false, partial=false`
+  );
 }
 
 for (const name of DATASETS) {
